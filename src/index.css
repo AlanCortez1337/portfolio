@@ -1,0 +1,64 @@
+:root {
+  --green1: #02C39A;
+  --green2: #0DAF94;
+  --green3: #199C8E;
+  --cyan: #248889;
+  --purple3: #2F7483;
+  --purple2: #3B617D;
+  --purple1: #464D77;
+}
+
+/* hero */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.hero {
+  padding: 0;
+  margin: 0;
+  background-color: var(--green1);
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.wave-1-bg {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 40vh;
+  background-color: var(--cyan);
+}
+
+.wave-1 {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  bottom: 45%;
+}
+
+.wave-1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 60vw;
+  height: 100%;
+  background-color: var(--cyan);
+  transform: rotate(20deg) translate(85%, 60%);
+}
+
+.wave-1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 60vw;
+  height: 100%;
+  background-color: var(--green1);
+  transform: translate(-4%, 40%);
+}
+/* About me */
+
