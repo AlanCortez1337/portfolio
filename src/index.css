@@ -22,43 +22,46 @@ body {
   width: 100vw;
   height: 100vh;
   
+  overflow-y: hidden;
 }
-
-.wave-1-bg {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  height: 40vh;
-  background-color: var(--cyan);
+.wave-1-svg {
+  position: relative;
+  bottom: -90px;
 }
 
 .wave-1 {
-  position: absolute;
-  width: 400px;
-  height: 200px;
-  bottom: 45%;
+  width: 100vw;
+  z-index: 2;
 }
 
-.wave-1::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 60vw;
-  height: 100%;
-  background-color: var(--cyan);
-  transform: rotate(20deg) translate(85%, 60%);
+.wave-2-svg {
+  position: relative;
+  bottom: 70vh;
 }
 
-.wave-1::after {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 60vw;
-  height: 100%;
-  background-color: var(--green1);
-  transform: translate(-4%, 40%);
+.wave-2 {
+  width: 100vw;
+  z-index: 3;
 }
 /* About me */
 
+.about-me {
+  padding: 0;
+  margin: 0;
+  background-color: var(--purple2);
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+/* FIX */
+.wave-3-svg {
+  /* position: relative; */
+  /* bottom: -60px; */
+}
+
+.wave-3 {
+  /* width: 400px; */
+  width: 50px;
+  height: 50px;
+  /* z-index: 2; */
+}
