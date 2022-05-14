@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --green1: #02C39A;
   --green2: #0DAF94;
@@ -12,31 +14,54 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
 }
 
 .hero {
-  padding: 0;
-  margin: 0;
   background-color: var(--green1);
   width: 100vw;
   height: 100vh;
-  
-  overflow-y: hidden;
+  /* overflow: hidden; */
 }
+
+.blurp-hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  padding-left: 120px;
+  
+}
+
+.blurp-hero h3, .blurp-hero h1{
+  margin: 0;
+  padding: 0;
+}
+
+.blurp-hero h3 {
+  font-size: 48px;
+} 
+.blurp-hero h1{
+  font-size: 64px;
+}
+
 .wave-1-svg {
   position: relative;
-  bottom: -90px;
+  bottom: 90vh;
 }
 
 .wave-1 {
   width: 100vw;
-  z-index: 2;
+  z-index: 1;
 }
 
 .wave-2-svg {
   position: relative;
-  bottom: 70vh;
+  bottom: 170vh;
 }
 
 .wave-2 {
@@ -46,22 +71,73 @@ body {
 /* About me */
 
 .about-me {
-  padding: 0;
+  background-color: var(--purple2);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.blurp-abt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  padding-left: 120px;
+  
+}
+
+.blurp-abt h3, .blurp-abt p{
   margin: 0;
+  padding: 0;
+}
+
+.blurp-abt h3{
+  font-size: 48px;
+}
+
+
+.wave-3-svg {
+  position: relative; 
+  bottom: 80vh;
+  width: 100vw;
+}
+
+/* Projects */
+
+.projects {
+  background-color: var(--purple1);
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.wave-4-svg {
+  position: relative; 
+  bottom: 100px;
+  width: 100vw;
+}
+
+/* Contact */
+
+.contact {
   background-color: var(--purple2);
   width: 100vw;
   height: 100vh;
   overflow-y: hidden;
 }
-/* FIX */
-.wave-3-svg {
-  /* position: relative; */
-  /* bottom: -60px; */
+
+.wave-5-svg {
+  position: relative; 
+  bottom: -160px;
+  width: 100vw;
 }
 
-.wave-3 {
-  /* width: 400px; */
-  width: 50px;
-  height: 50px;
-  /* z-index: 2; */
+.wave-6-svg {
+  position: relative; 
+  bottom: 185px;
+  width: 100vw;
 }
