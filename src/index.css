@@ -15,14 +15,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 .hero {
   background-color: var(--green1);
   width: 100vw;
   height: 100vh;
-  
   overflow: hidden;
 }
 
@@ -78,12 +77,15 @@ body {
   overflow: hidden;
 }
 
+.abt-wrapper {
+  display: flex;
+}
+/* About Me - blurp info */
 .blurp-abt {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  width: 100vw;
   height: 100vh;
   position: relative;
   z-index: 2;
@@ -99,7 +101,34 @@ body {
 .blurp-abt h3{
   font-size: 48px;
 }
+/* About Me - grid badges */
+.abt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  width: 50%;
+  margin: 15px 50px;
+  z-index: 4;
+}
 
+.abt-grid > img {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abt-grid img {
+  width: 100px;
+  height: 100px;
+}
+
+/* .badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #02C39A;
+} */
 
 .wave-3-svg {
   position: relative; 
