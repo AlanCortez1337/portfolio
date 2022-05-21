@@ -77,16 +77,13 @@ body {
   overflow: hidden;
 }
 
-.abt-wrapper {
-  display: flex;
-}
 /* About Me - blurp info */
 .blurp-abt {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   z-index: 2;
   padding-left: 120px;
@@ -104,35 +101,70 @@ body {
 /* About Me - grid badges */
 .abt-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   position: relative;
-  width: 50%;
-  margin: 15px 50px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
   z-index: 4;
+  border: #02C39A 5px solid;
+  gap: 30px;
 }
 
-.abt-grid > img {
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .abt-grid img {
-  width: 100px;
-  height: 100px;
+  border: #199C8E 5px solid;
+  border-radius: 20px;
+  align-self: center;
+  justify-self: center;
 }
 
-/* .badge {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #02C39A;
+.abt-grid div {
+  align-self: start;
+  grid-row: 1 / span 2;
+}
+
+.abt-grid img:nth-child(2) {
+  grid-column: 2;
+  justify-self: end;
+  animation: rotate 15000ms infinite linear;
+}
+
+.abt-grid img:nth-child(3) {
+  grid-column: 3;
+  align-self: end;
+  animation: rotate 10000ms infinite linear;
+}
+
+.abt-grid img:nth-child(4) {
+  grid-column: 2;
+  animation: rotate 12000ms infinite linear;
+}
+
+.abt-grid img:nth-child(5) {
+  animation: rotate 13000ms infinite linear;
+}
+
+/* .abt-grid img:hover {
+  animation: rotate 5000ms infinite linear;
 } */
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 
 .wave-3-svg {
   position: relative; 
-  bottom: 80vh;
+  bottom: 70vh;
   width: 100vw;
 }
 

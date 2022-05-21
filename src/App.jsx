@@ -19,23 +19,19 @@ function App() {
         <Wave shape={2}></Wave>
       </section>
       <section className="about-me">
-        <div className="abt-wrapper">
-          <div className="blurp-abt">
-            <h3>hello i am alan cortez,</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, sit!</p>
-          </div>
+        {/* <div className="abt-wrapper"> */}
           <div className="abt-grid">
-              {/* <p>a</p>
-              <p>b</p>
-              <p>c</p>
-              <p>d</p> */}
+            <div className="blurp-abt">
+              <h3>hello i am alan cortez,</h3>
+            </div>
+            {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, sit!</p> */}
 
-              <img src={MeBadge} alt="me" className="badge" />
-              <img src={LuaBadge} alt="me" className="badge" />
-              <img src={BreadBadge} alt="me" className="badge" />
-              <img src={DndBadge} alt="me" className="badge" />
+            <img src={MeBadge} alt="me" className="badge" width={300} height={300} />
+            <img src={LuaBadge} alt="me" className="badge" width={250} height={250} />
+            <img src={BreadBadge} alt="me" className="badge" width={275} height={275} />
+            <img src={DndBadge} alt="me" className="badge" width={150} height={150} />
           </div>
-        </div>
+        {/* </div> */}
         <Wave shape={3}></Wave>
       </section>
       {/* <section className="projects">
