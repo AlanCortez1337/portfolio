@@ -52,7 +52,6 @@ body {
 .wave-1-svg {
   position: relative;
   bottom: 90vh;
-  animation: bounce1 1500ms infinite ease-in-out alternate;
 }
 
 .wave-1 {
@@ -63,7 +62,6 @@ body {
 .wave-2-svg {
   position: relative;
   bottom: 170vh;
-  animation: bounce2 1750ms infinite ease-in-out alternate;
 }
 
 .wave-2 {
@@ -71,25 +69,6 @@ body {
   z-index: 3;
 }
 
-@keyframes bounce1 {
-  from {
-    bottom: 90vh;
-  }
-
-  to {
-    bottom: 95vh;
-  }
-}
-
-@keyframes bounce2 {
-  from {
-    bottom: 170vh;
-  }
-
-  to {
-    bottom: 175vh;
-  }
-}
 /* About me */
 
 .about-me {
@@ -150,14 +129,14 @@ body {
   z-index: 3;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* About Me - blurp info */
 .abt-grid div {
@@ -193,19 +172,8 @@ body {
 
 .wave-3-svg {
   position: relative; 
-  bottom: 71vh;
+  bottom: 79vh;
   width: 100vw;
-  animation: bounce3 1750ms infinite ease-in-out alternate;
-}
-
-@keyframes bounce3 {
-  from {
-    bottom: 71vh;
-  }
-
-  to {
-    bottom: 75vh;
-  }
 }
 
 /* Projects */
