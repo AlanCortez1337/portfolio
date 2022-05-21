@@ -43,15 +43,16 @@ body {
 }
 
 .blurp-hero h3 {
-  font-size: 48px;
+  font-size: 32px;
 } 
 .blurp-hero h1{
-  font-size: 64px;
+  font-size: 48px;
 }
 
 .wave-1-svg {
   position: relative;
   bottom: 90vh;
+  animation: bounce1 1500ms infinite ease-in-out alternate;
 }
 
 .wave-1 {
@@ -62,11 +63,32 @@ body {
 .wave-2-svg {
   position: relative;
   bottom: 170vh;
+  animation: bounce2 1750ms infinite ease-in-out alternate;
 }
 
 .wave-2 {
   width: 100vw;
   z-index: 3;
+}
+
+@keyframes bounce1 {
+  from {
+    bottom: 90vh;
+  }
+
+  to {
+    bottom: 95vh;
+  }
+}
+
+@keyframes bounce2 {
+  from {
+    bottom: 170vh;
+  }
+
+  to {
+    bottom: 175vh;
+  }
 }
 /* About me */
 
@@ -77,28 +99,6 @@ body {
   overflow: hidden;
 }
 
-/* About Me - blurp info */
-.blurp-abt {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  /* height: 100vh; */
-  position: relative;
-  z-index: 2;
-  padding-left: 120px;
-  
-}
-
-.blurp-abt h3, .blurp-abt p{
-  margin: 0;
-  padding: 0;
-}
-
-.blurp-abt h3{
-  font-size: 48px;
-}
-/* About Me - grid badges */
 .abt-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -107,49 +107,49 @@ body {
   width: 100%;
   height: 100%;
   justify-content: center;
-  z-index: 4;
-  border: #02C39A 5px solid;
+  
   gap: 30px;
 }
 
-
+/* About Me - image badges */
 .abt-grid img {
-  border: #199C8E 5px solid;
-  border-radius: 20px;
+  border: var(--purple1) 4px solid;
+  border-radius: 40px;
   align-self: center;
   justify-self: center;
 }
 
-.abt-grid div {
-  align-self: start;
-  grid-row: 1 / span 2;
-}
-
 .abt-grid img:nth-child(2) {
+  position: sticky;
+  bottom: 57vh;
   grid-column: 2;
   justify-self: end;
+  align-self: end;
   animation: rotate 15000ms infinite linear;
 }
 
 .abt-grid img:nth-child(3) {
+  position: sticky;
+  bottom: 50vh;
   grid-column: 3;
   align-self: end;
   animation: rotate 10000ms infinite linear;
 }
 
 .abt-grid img:nth-child(4) {
+  position: relative;
+  left: 150px;
   grid-column: 2;
   animation: rotate 12000ms infinite linear;
+  border-color: var(--purple2);
+  z-index: 3;
 }
 
 .abt-grid img:nth-child(5) {
   animation: rotate 13000ms infinite linear;
+  border-color: var(--purple2);
+  z-index: 3;
 }
-
-/* .abt-grid img:hover {
-  animation: rotate 5000ms infinite linear;
-} */
-
 
 @keyframes rotate {
   from {
@@ -160,12 +160,53 @@ body {
   }
 }
 
+/* About Me - blurp info */
+.abt-grid div {
+  align-self: start;
+  grid-row: 1 / span 2;
+}
 
+.blurp-abt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  padding-left: 120px;
+  padding-top: 17vh; 
+}
+
+.blurp-abt h3, .blurp-abt p{
+  margin: 0 0 60px 0;
+  padding: 0;
+}
+
+.blurp-abt h3{
+  font-size: 48px;
+}
+
+.blurp-abt p {
+  font-size: 28px;
+  font-weight: 500;
+  width: 425px;
+}
 
 .wave-3-svg {
   position: relative; 
-  bottom: 70vh;
+  bottom: 71vh;
   width: 100vw;
+  animation: bounce3 1750ms infinite ease-in-out alternate;
+}
+
+@keyframes bounce3 {
+  from {
+    bottom: 71vh;
+  }
+
+  to {
+    bottom: 75vh;
+  }
 }
 
 /* Projects */
@@ -177,10 +218,20 @@ body {
   overflow-y: hidden;
 }
 
+.project-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  z-index: 4;
+}
+
+
+
 .wave-4-svg {
   position: relative; 
-  bottom: 100px;
+  bottom: 80vh;
   width: 100vw;
+  z-index: 3;
 }
 
 /* Contact */
