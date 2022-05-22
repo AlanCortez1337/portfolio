@@ -98,8 +98,8 @@ body {
 }
 
 .abt-grid img:nth-child(2) {
-  position: sticky;
-  bottom: 57vh;
+  border-color: #02C39A;
+  transform: rotate(45deg);
   grid-column: 2;
   justify-self: end;
   align-self: end;
@@ -107,8 +107,7 @@ body {
 }
 
 .abt-grid img:nth-child(3) {
-  position: sticky;
-  bottom: 50vh;
+  
   grid-column: 3;
   align-self: end;
   animation: rotate 10000ms infinite linear;
@@ -129,14 +128,6 @@ body {
   z-index: 3;
 }
 
-/* @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 /* About Me - blurp info */
 .abt-grid div {
