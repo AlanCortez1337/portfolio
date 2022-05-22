@@ -6,22 +6,23 @@ import { motion } from "framer-motion"
 
 function BadgeImage({badgeName}) {
 
-
+    const badgeBounce = {
+        y: {
+            yoyo: Infinity, duration: 1, ease: "linear"
+        },
+        rotate: {
+            repeat: Infinity, duration: 10, ease: "linear"
+        }
+    }
 
     return(
         <>
             {badgeName === "me" && 
                 <motion.img
-                    // drag
-                    // dragSnapToOrigin
-                    // ERROR IT JUMPS LUL
-                    initial={{ rotate: 45 }}
-                    animate={{ rotate: 360 }}
-                    exit={{ rotate: 45}}
-                    whileHover={{transition: {type: "spring", velocity: 4}, rotate: -315}}
-                    
-                    transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
-                    
+                    // initial={{ rotate: -45 }}
+                    animate={{ rotate: 405, y: ['-75px', '-125px'] }}
+                    transition={badgeBounce}
+                    whileHover={{transition: {type: "spring", velocity: 4}, rotate: -315, y: ['0px', '0px']}}
                     src={MeBadge} alt="me" className="badge badge1" width={250} height={250} 
                 />
             }

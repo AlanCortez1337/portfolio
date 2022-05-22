@@ -99,7 +99,7 @@ body {
 
 .abt-grid img:nth-child(2) {
   border-color: #02C39A;
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
   grid-column: 2;
   justify-self: end;
   align-self: end;
