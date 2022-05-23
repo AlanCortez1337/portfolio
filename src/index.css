@@ -8,6 +8,8 @@
   --purple3: #2F7483;
   --purple2: #3B617D;
   --purple1: #464D77;
+  --purple1shadow: #626daa;
+  --greenHighlist: #02F1BD;
 }
 
 /* hero */
@@ -80,7 +82,7 @@ body {
 
 .abt-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: repeat(2, 1fr);
   position: relative;
   width: 100%;
@@ -95,39 +97,36 @@ body {
   border-radius: 40px;
   align-self: center;
   justify-self: center;
+  z-index: 3;
+  transition: box-shadow 800ms ease-in-out;
 }
 
 .abt-grid img:nth-child(2) {
-  border-color: #02C39A;
-  /* transform: rotate(45deg); */
+  border-color: var(--purple1);
   grid-column: 2;
-  justify-self: end;
   align-self: end;
-  animation: rotate 15000ms infinite linear;
 }
 
 .abt-grid img:nth-child(3) {
-  
   grid-column: 3;
-  align-self: end;
-  animation: rotate 10000ms infinite linear;
 }
 
 .abt-grid img:nth-child(4) {
-  position: relative;
-  left: 150px;
   grid-column: 2;
-  animation: rotate 12000ms infinite linear;
   border-color: var(--purple2);
-  z-index: 3;
 }
 
 .abt-grid img:nth-child(5) {
-  animation: rotate 13000ms infinite linear;
   border-color: var(--purple2);
-  z-index: 3;
 }
 
+.abt-grid img:nth-child(2):hover, .abt-grid img:nth-child(3):hover {
+  box-shadow: 0px 0px 15px var(--purple1shadow);
+}
+
+.abt-grid img:nth-child(4):hover, .abt-grid img:nth-child(5):hover {
+  box-shadow: 0px 0px 10px var(--green1);
+}
 
 /* About Me - blurp info */
 .abt-grid div {
@@ -144,21 +143,28 @@ body {
   z-index: 2;
   padding-left: 120px;
   padding-top: 17vh; 
+  color: aliceblue;
 }
 
 .blurp-abt h3, .blurp-abt p{
   margin: 0 0 60px 0;
+  text-shadow: 0px 0px 6px var(--purple1);
   padding: 0;
 }
 
 .blurp-abt h3{
   font-size: 48px;
+  text-shadow: 0px 0px 6px var(--purple1);
+}
+
+.blurp-abt .highlight {
+  color: var(--greenHighlist);
 }
 
 .blurp-abt p {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 500;
-  width: 425px;
+  width: 60%;
 }
 
 .wave-3-svg {
@@ -211,4 +217,12 @@ body {
   position: relative; 
   bottom: 185px;
   width: 100vw;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1800px){
+  .abt-grid img {
+    /* look into this */
+  }
 }

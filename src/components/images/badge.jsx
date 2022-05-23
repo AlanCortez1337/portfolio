@@ -8,7 +8,7 @@ function BadgeImage({badgeName}) {
     const badgeRotation = {
         badge1: {
             rotate: 360, 
-            y: '-6vh'
+            y: '-8vh'
         },
         badge2: {
             rotate: 360, 
@@ -36,7 +36,7 @@ function BadgeImage({badgeName}) {
                 <motion.img
                     animate={badgeRotation.badge1}
                     transition={badgeBounce}
-                    whileHover={{transition: {type: "spring", velocity: 6}, rotate: -315, y: '-8vh'}}
+                    whileHover={{transition: {type: "spring", velocity: 6}, rotate: -315, y: '-10vh'}}
                     onHoverStart={() => {badgeRotation.badge1.rotate = 406}}
                     src={MeBadge} alt="me" className="badge badge1" width={225} height={225} 
                 />

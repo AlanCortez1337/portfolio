@@ -36,7 +36,7 @@ function Shapes({shape}) {
                 {shape === 3 && 
                     <motion.svg
                         transition={waveBounce}
-                        animate={{y: ['50px', '25px']}}
+                        animate={{y: ['40px', '25px']}}
                         className="wave-3-svg" viewBox="0 0 1512 843" fill="none" xmlns="http://www.w3.org/2000/svg"
                     >
                         <path d="M1.19209e-05 216C1.19209e-05 216 -97.5001 -150.5 631 73.5001C1359.5 297.5 1512 216 1512 216V842.999H1.19209e-05V216Z" fill="#464D77"/>
