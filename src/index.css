@@ -221,8 +221,8 @@ body {
 
 /* Media Queries */
 
-@media screen and (max-width: 1800px){
-  .abt-grid img {
-    /* look into this */
+@media screen and (max-width: 1600px){
+  .blurp-abt p {
+    font-size: 28px;
   }
 }

@@ -19,7 +19,8 @@ function BadgeImage({badgeName}) {
 
     const badgeBounce = {
         y: {
-            yoyo: Infinity, 
+            repeat: Infinity, 
+            repeatType: "mirror",
             duration: 1, 
             ease: "easeInOut"
         },
@@ -36,8 +37,30 @@ function BadgeImage({badgeName}) {
                 <motion.img
                     animate={badgeRotation.badge1}
                     transition={badgeBounce}
+                    // since we want to see my face vertical I need to rotate 45 deg from the original point
+                    // essentially turns the square into a diamond
                     whileHover={{transition: {type: "spring", velocity: 6}, rotate: -315, y: '-10vh'}}
-                    onHoverStart={() => {badgeRotation.badge1.rotate = 406}}
+                    // now that we set the new origin to -315, we still want to make a full loop around
+                    // to do so we just need to make sure the badge is combating the -315 by adding 45 to 360
+                    // in order to make it seem as if it is going full circle
+                    // onHoverStart={() => {badgeRotation.badge1.rotate = 406}}
+                    onHoverStart={(e) => {
+                        const startPoint = e.target.style.transform.search("rotate") + 7;
+                        const endPoint = e.target.style.transform.search("deg");
+
+                        console.log(e.target.style.transform.substring(startPoint, endPoint));
+                        
+                        let newStartDegree = parseFloat(e.target.style.transform.substring(startPoint, endPoint));
+                        console.log("whooo", newStartDegree);
+                        // TODO
+                            // fix the comments above
+                            // do the math calculation so that it does a full loop no matter what
+                            // victory lap
+                        // let newLoopAngle = newStartDegree
+                        
+
+                        badgeRotation.badge1.rotate = 406
+                    }}
                     src={MeBadge} alt="me" className="badge badge1" width={225} height={225} 
                 />
             }
