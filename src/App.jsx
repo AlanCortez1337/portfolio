@@ -23,7 +23,7 @@ function App() {
         </div>
         <Wave shape={3}></Wave>
       </section>
-      {/* <section className="projects">
+      <section className="projects">
         <div className="project-grid">
           <div className="proj1">
             asdf
@@ -42,7 +42,7 @@ function App() {
           </div>
         </div>
         <Wave shape={4}></Wave>
-      </section> */}
+      </section>
       {/* <section className="contact">
         <div className="blurp-abt">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, atque?

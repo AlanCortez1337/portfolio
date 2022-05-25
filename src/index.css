@@ -99,6 +99,8 @@ body {
   justify-self: center;
   z-index: 3;
   transition: box-shadow 800ms ease-in-out;
+
+  
 }
 
 .abt-grid img:nth-child(2) {
