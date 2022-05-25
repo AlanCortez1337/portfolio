@@ -26,7 +26,7 @@ function BadgeImage({badgeName}) {
         },
         rotate: {
             repeat: Infinity, 
-            duration: 10, 
+            duration: 6, 
             ease: "linear"
         }
     }
@@ -48,18 +48,35 @@ function BadgeImage({badgeName}) {
                         const startPoint = e.target.style.transform.search("rotate") + 7;
                         const endPoint = e.target.style.transform.search("deg");
 
-                        console.log(e.target.style.transform.substring(startPoint, endPoint));
                         
                         let newStartDegree = parseFloat(e.target.style.transform.substring(startPoint, endPoint));
-                        console.log("whooo", newStartDegree);
+                        console.log(e.target.style);
+                        
+                        let rotateDegrees;
                         // TODO
                             // fix the comments above
                             // do the math calculation so that it does a full loop no matter what
                             // victory lap
                         // let newLoopAngle = newStartDegree
-                        
+                        // console.log(360 + newStartDegree);
+                        if(newStartDegree > 0) {
+                            console.log("positive", newStartDegree);
+                            // 360 = newStartDegree + rotation => 360 - newStartDegree = rotation
+                            // rotation + 360 => rotate
+                            rotateDegrees = newStartDegree;
+                            console.log(rotateDegrees+405);
+                            badgeRotation.badge1.rotate = rotateDegrees;
+                        } else {
+                            console.log("negative", newStartDegree);
+                            
+                            rotateDegrees = 360 - (newStartDegree);
+                            // rotateDegrees = rotateDegrees + 360;
+                            console.log(rotateDegrees, "result: ", rotateDegrees);
+                            badgeRotation.badge1.rotate = rotateDegrees;
+                            console.log(badgeRotation.badge1.rotate);
+                        }
 
-                        badgeRotation.badge1.rotate = 406
+                        // badgeRotation.badge1.rotate = (360 + newStartDegree);
                     }}
                     src={MeBadge} alt="me" className="badge badge1" width={225} height={225} 
                 />
