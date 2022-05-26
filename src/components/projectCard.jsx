@@ -1,4 +1,4 @@
-import { IoLogoDiscord, IoGameController, IoPhonePortraitOutline } from "react-icons/io5";
+import { IoLogoDiscord, IoGameController, IoPhonePortraitOutline, IoLogoGithub } from "react-icons/io5";
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Burger from "/assests/burg.gif"
@@ -21,8 +21,8 @@ function ProjCard({type}) {
         <>
             {type === 1 &&
                 <motion.div 
-                    onHoverStart={onClick} 
-                    onHoverEnd={onClick}
+                    
+                onHoverEnd={onClick}
                     className="project-card"
                 >
                     <AnimatePresence>
@@ -33,6 +33,7 @@ function ProjCard({type}) {
                                 animate={{opacity: 1}}
                                 exit={{opacity: 0}}
                                 transition={{duration: 0.75, ease: "easeInOut"}}
+                                onHoverStart={onClick} 
                                 className="title-card"
                             >
                                 <h3>Discord Bot</h3>
@@ -45,9 +46,22 @@ function ProjCard({type}) {
                                 animate={{opacity: 1}}
                                 exit={{opacity: 0}}
                                 transition={{duration: 0.75, ease: "easeInOut"}}
+                                
                                 className="content-card"
                             >
-                                <img src={Burger} alt="" width={300} height={350}/>
+                                {/* <img src={Burger} alt="discordBotGif"/> */}
+                                <p>
+                                    My goal with this passion project was to annoy my friends to the maximum.
+                                    Check out the Github repository for the features I developed.
+                                </p>
+                                <motion.a
+                                    initial={{color: "#199C8E"}}
+                                    whileHover={{scale: 1.25, color: "#02F1BD"}}
+                                    transition={{duration: 0.25, ease: "easeInOut"}}
+                                    href="https://github.com/AlanCortez1337/Discord-Bot-Python"
+                                >
+                                    <IoLogoGithub size={"3em"}/>
+                                </motion.a>
                             </motion.div>    
                         }
                     </AnimatePresence>
