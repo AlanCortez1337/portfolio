@@ -8,6 +8,8 @@
   --purple3: #2F7483;
   --purple2: #3B617D;
   --purple1: #464D77;
+  --purpleCard: #4A7A9D;
+  --purpleCardBorder: #426E8D;
   --purple1shadow: #626daa;
   --greenHighlist: #02F1BD;
 }
@@ -197,25 +199,39 @@ body {
 }
 
 .project-grid h3 {
+  font-size: 48px;
   grid-column: span 3;
 }
 
 .project-grid > div {
   border-radius: 30px;
-  background-color: gainsboro;
+  border: var(--purpleCardBorder) 5px solid;
+  border-radius: 30px;
+  background-color: var(--purpleCard);
 }
 
-/* .proj1 {
-  background-color: grey;
+.project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.proj2 {
-  background-color: gainsboro;
+.title-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
 }
 
-.proj3 {
-  background-color: whitesmoke;
-} */
+.title-card h3 {
+  font-weight: 600;
+}
+
+.content-card {
+  position: absolute;
+}
 
 .wave-4-svg {
   position: relative; 

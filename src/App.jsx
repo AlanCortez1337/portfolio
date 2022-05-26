@@ -1,6 +1,7 @@
 import Wave from "./components/svg/wave"
 import Badge from "./components/images/badge"
 import Blurp from "./components/information"
+import Card from "./components/projectCard"
 import './App.css'
 
 
@@ -26,15 +27,9 @@ function App() {
       <section className="projects">
         <div className="project-grid">
           <h3>Projects</h3>
-          <div className="proj1">
-            asdf
-          </div>
-          <div className="proj2">
-            asdffff
-          </div>
-          <div className="proj3">
-            asdfsaf
-          </div>
+          <Card type={1}/>
+          <Card type={2}/>
+          <Card type={3}/>
         </div>
         <Wave shape={4}></Wave>
       </section>
