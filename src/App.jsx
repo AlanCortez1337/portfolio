@@ -25,6 +25,7 @@ function App() {
       </section>
       <section className="projects">
         <div className="project-grid">
+          <h3>Projects</h3>
           <div className="proj1">
             asdf
           </div>
@@ -33,12 +34,6 @@ function App() {
           </div>
           <div className="proj3">
             asdfsaf
-          </div>
-          <div className="proj4">
-            asdfasdf
-          </div>
-          <div className="proj5">
-            asdfsdf
           </div>
         </div>
         <Wave shape={4}></Wave>
