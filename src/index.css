@@ -13,6 +13,7 @@
   --purpleCardBorder: #426E8D;
   --purple1shadow: #626daa;
   --greenHighlist: #02F1BD;
+  --textColor: #f8f8f8;
 }
 
 /* hero */
@@ -148,7 +149,7 @@ body {
   z-index: 2;
   padding-left: 120px;
   padding-top: 17vh; 
-  color: aliceblue;
+  color: var(--textColor);
 }
 
 .blurp-abt h3, .blurp-abt p{
@@ -216,7 +217,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* padding: 15px; */
 }
 
 .title-card {
@@ -231,17 +231,18 @@ body {
   font-weight: 600;
   margin: 0.5em;
 }
-
-.content-card {
+/* Discord Bot Gif */
+.bg-0 {
   width: 100%;
   height: 100%;
-  background-image: url("/assests/burg.gif");
+  background-image: url("/assests/discordBotDemo.gif");
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   border-radius: 30px;
 }
 
-.content-card::before {
+.bg-0::before {
   background-color: var(--purpleCardSemiTransparent);
   border-radius: 30px;
   content: '';
@@ -250,14 +251,50 @@ body {
   position: absolute;
   width: 100%;
 }
-/* 
-.content-card img {
-  position: absolute;
-  width: 30px;
-  opacity: 0.25;
-  z-index: 0;
-} */
 
+/* Memory Game Gif */
+
+.bg-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("/assests/memoryGameDemo.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 30px;
+}
+
+.bg-1::before {
+  background-color: var(--purpleCardSemiTransparent);
+  border-radius: 30px;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Food Tinder Gif */
+
+/* .bg-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("/assests/discordBotDemo.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 30px;
+}
+
+.bg-2::before {
+  background-color: var(--purpleCardSemiTransparent);
+  border-radius: 30px;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+} */
 
 .content-card p {
   position: relative;
@@ -265,11 +302,14 @@ body {
   font-weight: 500;
   z-index: 1;
   padding: 0 25px;
+  color: var(--textColor);
+  text-shadow: 0px 0px 6px var(--green3);
 }
 
 .content-card a {
   position: absolute;
   bottom: 2%;
+  left: 82%;
   padding: 0 25px;
 }
 
@@ -306,5 +346,9 @@ body {
 @media screen and (max-width: 1600px){
   .blurp-abt p {
     font-size: 28px;
+  }
+
+  .content-card p {
+    font-size: 18px;
   }
 }

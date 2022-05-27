@@ -1,7 +1,6 @@
 import { IoLogoDiscord, IoGameController, IoPhonePortraitOutline, IoLogoGithub } from "react-icons/io5";
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import Burger from "/assests/burg.gif"
 
 function ProjCard({type}) {
     const [isVisible, setIsVisible] = useState(true);
@@ -55,7 +54,7 @@ function ProjCard({type}) {
                 <AnimatePresence>
                     {isVisible ? 
                         <motion.div
-                            key="title1"
+                            key={`title${type}`}
                             initial={{opacity: 0}}
                             animate={{opacity: 1}}
                             exit={{opacity: 0}}
@@ -70,18 +69,18 @@ function ProjCard({type}) {
                         </motion.div> 
                         : 
                         <motion.div
-                            key="content1"
+                            key={`content${type}`}
                             initial={{opacity: 0}}
                             animate={{opacity: 1}}
                             exit={{opacity: 0}}
                             transition={{duration: 0.75, ease: "easeInOut"}}
                             // might need to change the className in the future
-                            className="content-card"
+                            className={`content-card bg-${type}`}
                         >
                             <p> {projects[type].blurp} </p>
                             <motion.a
-                                initial={{color: "#199C8E"}}
-                                whileHover={{scale: 1.25, color: "#02F1BD"}}
+                                initial={{color: "#464D77"}}
+                                whileHover={{scale: 1.25, color: "#626daa"}}
                                 transition={{duration: 0.25, ease: "easeInOut"}}
                                 href={projects[type].link}
                             >
