@@ -27,9 +27,9 @@ function App() {
       <section className="projects">
         <div className="project-grid">
           <h3>Projects</h3>
+          <Card type={0}/>
           <Card type={1}/>
           <Card type={2}/>
-          <Card type={3}/>
         </div>
         <Wave shape={4}></Wave>
       </section>
