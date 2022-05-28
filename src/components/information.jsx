@@ -29,7 +29,7 @@ function Info({type}) {
                     animate={{y: ['10px', '-5px']}}
                     className="blurp-abt"
                 >
-                    <h3>About Me</h3>
+                    <h3 className="title">About Me</h3>
                     <p>
                         I am a simple man with the goal, <span className="highlight">to make your life easier</span>. 
                         Currently attending CSUF with a B.S. in Computer Science that is wrapping up in May of 2024. 

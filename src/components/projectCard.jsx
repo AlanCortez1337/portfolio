@@ -1,4 +1,5 @@
-import { IoLogoDiscord, IoGameController, IoPhonePortraitOutline, IoLogoGithub } from "react-icons/io5";
+import { IoGameController, IoLogoGithub } from "react-icons/io5";
+import { SiTinder, SiDiscord } from "react-icons/si";
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -8,22 +9,22 @@ function ProjCard({type}) {
     const projects = [
         // Discord Bot Info
         {
-            title: "Discord Bot",
-            blurp: "My goal with this passion project was to annoy my friends to the maximum. Check out the Github repository for the features I developed.",
+            title: " Bot",
+            blurp: "My goal with this passion project was to annoy my friends to the maximum. Hover to check out a demo of the working bot.",
             link: "https://github.com/AlanCortez1337/Discord-Bot-Python",
             yBoundry: "-5vh"
         },
         // Memory Game Info
         {
-            title: "Memory Game",
-            blurp: "This is my first finished React project which I added onto from a tutorial. You can find a link to the game in my repository and the additional features I made",
+            title: "Memory ",
+            blurp: "This is my first finished React project which is a simple memory game with funny looking animals, hover for more.",
             link: "https://github.com/AlanCortez1337/Memory-Mania",
             yBoundry: "5vh"
         },
         // Food Tinder Info
         {
-            title: "Food Tinder",
-            blurp: "I alongside a few others in my ACM club decided to work on this fun side project. I spearheaded the front-end aspect using Svelte.",
+            title: "Food ",
+            blurp: "In collaboration with my ACM club, I developed the create post page, the nav bar, and assisted in the login screen.",
             link: "https://github.com/acmCSUFDev/Food-Tinder",
             yBoundry: "-5vh"
         }
@@ -62,10 +63,14 @@ function ProjCard({type}) {
                             onHoverStart={changeVisibility} 
                             className="title-card"
                         >
-                            <h3>{projects[type].title}</h3>
-                            {type === 0 && <IoLogoDiscord size={"4em"}/>}
-                            {type === 1 && <IoGameController size={"4em"}/>}
-                            {type === 2 && <IoPhonePortraitOutline size={"4em"}/>}
+                            <h3>
+                                {type === 0 && <SiDiscord size={"1.25em"}/>}
+                                {projects[type].title}
+                                {type === 1 && <IoGameController size={"1.5em"}/>}
+                                {type === 2 && <SiTinder size={"1.25em"}/>}
+                            </h3>
+                            
+                            <p> {projects[type].blurp} </p>
                         </motion.div> 
                         : 
                         <motion.div
@@ -74,10 +79,8 @@ function ProjCard({type}) {
                             animate={{opacity: 1}}
                             exit={{opacity: 0}}
                             transition={{duration: 0.75, ease: "easeInOut"}}
-                            // might need to change the className in the future
-                            className={`content-card bg-${type}`}
+                            className={`hover-effect bg-${type}`}
                         >
-                            <p> {projects[type].blurp} </p>
                             <motion.a
                                 initial={{color: "#464D77"}}
                                 whileHover={{scale: 1.25, color: "#626daa"}}
