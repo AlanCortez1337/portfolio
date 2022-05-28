@@ -55,7 +55,11 @@ body {
 }
 
 .blurp-hero h3 {
-  font-size: 32px;
+  font-size: 48px;
+  position: relative;
+  transform: rotate(-20deg);
+  bottom: 200px;
+  color: var(--cyan);
 } 
 .blurp-hero h1{
   font-size: 48px;
@@ -368,5 +372,31 @@ body {
 
   .content-card p {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 2000px){
+  .title-card h3 {
+    margin: 1.75em 0.5em 0.5em 0.5em;
+    font-size: 54px;
+  }
+  
+  .title-card p {
+    font-size: 24px;
+    padding: 60px 30px;
+  }
+
+  .bg-0 {
+    background-image: url("/assests/discordBotDemo.gif");
+    background-repeat: no-repeat;
+    background-size: 150% 150%;
+    background-position: 0% 100%;
+  }
+
+  .bg-1 {
+    background-image: url("/assests/memoryGameDemo.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 50% 0%;
   }
 }

@@ -82,8 +82,8 @@ function ProjCard({type}) {
                             className={`hover-effect bg-${type}`}
                         >
                             <motion.a
-                                initial={{color: "#464D77"}}
-                                whileHover={{scale: 1.25, color: "#626daa"}}
+                                initial={{color: "#f8f8f8"}}
+                                whileHover={{scale: 1.25, color: "#02F1BD"}}
                                 transition={{duration: 0.25, ease: "easeInOut"}}
                                 href={projects[type].link}
                             >

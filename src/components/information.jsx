@@ -18,7 +18,7 @@ function Info({type}) {
                     animate={{y: ['50px', '75px']}}
                     className="blurp-hero"
                 >
-                    <h3>hello i am alan cortez,</h3>
+                    <h3>I am Alan Cortez</h3>
                     <h1>an inspiring full stack developer_</h1>
                     <button>resume</button>
                 </motion.div>
