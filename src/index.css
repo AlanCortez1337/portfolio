@@ -55,14 +55,34 @@ body {
 }
 
 .blurp-hero h3 {
-  font-size: 48px;
+  font-size: 32px;
   position: relative;
-  transform: rotate(-20deg);
-  bottom: 200px;
-  color: var(--cyan);
+  transform: rotate(-18deg);
+  bottom: 130px;
+  background-color: var(--cyan);
+  padding: 15px;
+  border-radius:  20px 30px 20px 30px;
 } 
 .blurp-hero h1{
-  font-size: 48px;
+  font-size: 40px;
+  position: relative;
+  transform: rotate(5deg);
+  bottom: 10px;
+  background-color: var(--purple2);
+  padding: 15px;
+  border-radius:  20px 30px 20px 30px;
+}
+
+.blurp-hero button{
+  font-size: 32px;
+  position: relative;
+  transform: rotate(5deg);
+  bottom: -90px;
+  left: 400px;
+  background-color: var(--purple2);
+  border: var(--purple3) 5px solid;
+  padding: 15px;
+  border-radius:  30px 20px 30px 20px;
 }
 
 .wave-1-svg {

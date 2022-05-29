@@ -13,15 +13,39 @@ function Info({type}) {
     return(
         <>
             {type === 'hero' && 
-                <motion.div
-                    transition={waveBounce}
-                    animate={{y: ['50px', '75px']}}
-                    className="blurp-hero"
-                >
-                    <h3>I am Alan Cortez</h3>
-                    <h1>an inspiring full stack developer_</h1>
-                    <button>resume</button>
-                </motion.div>
+                <div className="blurp-hero">
+                    <motion.h3
+                        style={{rotate: -18}}
+                        transition={waveBounce}
+                        animate={{y: ['0px', '15px']}}
+                        whileHover={{scale: 1.05}}
+                    > I am Alan Cortez </motion.h3>
+                    <motion.h1
+                        style={{rotate: 5}}
+                        transition={waveBounce}
+                        animate={{y: ['60px', '50px']}}
+                        whileHover={{scale: 1.08}}
+                    > An inspiring full stack web developer </motion.h1>
+                    <motion.button
+                        style={{rotate: -5}}
+                        initial={{color: '#f8f8f8', borderRadius: '30px 20px 30px 20px'}}
+                        transition={waveBounce}
+                        animate={{y: ['15px', '45px']}}
+                        whileHover={{
+                            transistion: {
+                                duration: 0.8, 
+                                yoyo: Infinity, 
+                                ease: "ease"
+                            }, 
+                            color: '#02F1BD', 
+                            borderRadius: '20px 30px 20px 30px',
+                            scale: 1.05
+                        }}
+                        whileTap={{
+                            scale: 0.95
+                        }}
+                    > resume </motion.button>
+                </div>
             }
             {type === 'about' && 
                 <motion.div 
