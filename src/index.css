@@ -18,17 +18,18 @@
 }
 /* Universal */
 
-h1, h2, h3, p {
+* {
   color: var(--textColor);
 }
 
-/* hero */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
 }
+
+/* hero */
 
 .hero {
   background-color: var(--green1);
@@ -403,15 +404,27 @@ body {
   overflow-y: hidden;
 }
 
+.contact-grid {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.contact-blurp h3 {
+  grid-row: span 4;
+}
+
 .wave-5-svg {
   position: relative; 
-  bottom: -160px;
+  bottom: 85vh;
   width: 100vw;
 }
 
 .wave-6-svg {
   position: relative; 
-  bottom: 185px;
+  bottom: 120vh;
   width: 100vw;
 }
 

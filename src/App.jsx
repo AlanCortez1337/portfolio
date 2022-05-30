@@ -33,13 +33,14 @@ function App() {
         </div>
         <Wave shape={4}></Wave>
       </section>
-      {/* <section className="contact">
-        <div className="blurp-abt">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, atque?
+      <section className="contact">
+        <div className="contact-grid">
+          <Blurp type={'contact'}/>
+          {/* add the badges */}
         </div>
         <Wave shape={5}></Wave>
         <Wave shape={6}></Wave>
-      </section> */}
+      </section>
     </>
   )
 }

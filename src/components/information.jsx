@@ -92,6 +92,19 @@ function Info({type}) {
                     className="project-title"
                 >Projects</motion.h3>
             }
+            {type === 'contact' &&
+                <>  
+                    {/* title */}
+                    <h3>Contact Me</h3>
+                    {/* contact info */}
+                    <div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, atque.</p>
+                        <button>Let's Chat</button>
+                    </div>
+                    {/* footer */}
+                    <footer>Designed and Developed by Alan Cortez</footer>
+                </>
+            }
         </>
     );
 }

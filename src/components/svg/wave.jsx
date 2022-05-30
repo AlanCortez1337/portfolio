@@ -46,7 +46,7 @@ function Shapes({shape}) {
                 {shape === 4 && 
                     <motion.svg
                         transition={waveBounce}
-                        animate={{y: ['50px', '75px']}}
+                        animate={{y: ['30px', '75px']}}
                         className="wave-4-svg" viewBox="0 0 1512 783" fill="none" xmlns="http://www.w3.org/2000/svg"
                     >
                         <path d="M1.90381e-05 145C1.90381e-05 145 -14.4999 -93.0001 750 41.9999C1514.5 177 1512 145 1512 145V783H1.90381e-05V145Z" fill="#3B617D"/>
@@ -56,7 +56,7 @@ function Shapes({shape}) {
                 {shape === 5 && 
                     <motion.svg 
                         transition={waveBounce}
-                        animate={{y: ['50px', '75px']}}
+                        animate={{y: ['50px', '10px']}}
                         className="wave-5-svg" viewBox="0 0 1512 719" fill="none" xmlns="http://www.w3.org/2000/svg"
                     >
                         <path d="M0 71.2992C0 71.2992 268 115.767 556.5 89.7151C845 63.6634 978 35.3657 1192 5.72061C1406 -23.9245 1512 71.2992 1512 71.2992V719H0V71.2992Z" fill="#248889"/>
