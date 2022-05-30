@@ -26,20 +26,20 @@ function App() {
       </section>
       <section className="projects">
         <div className="project-grid">
-          <h3>Projects</h3>
+          <Blurp type={'project'}/>
           <Card type={0}/>
           <Card type={1}/>
           <Card type={2}/>
         </div>
         <Wave shape={4}></Wave>
       </section>
-      {/* <section className="contact">
+      <section className="contact">
         <div className="blurp-abt">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, atque?
         </div>
         <Wave shape={5}></Wave>
         <Wave shape={6}></Wave>
-      </section> */}
+      </section>
     </>
   )
 }

@@ -18,7 +18,7 @@
 }
 /* Universal */
 
-h1, h3, p {
+h1, h2, h3, p {
   color: var(--textColor);
 }
 
@@ -49,7 +49,7 @@ body {
   padding-left: 120px;
 }
 
-.blurp-hero h3, .blurp-hero h1{
+.blurp-hero h3, .blurp-hero h2, .blurp-hero h1{
   margin: 0;
   padding: 0;
 }
@@ -57,7 +57,6 @@ body {
 .blurp-hero h3 {
   font-size: 32px;
   position: relative;
-  transform: rotate(-18deg);
   bottom: 130px;
   background-color: var(--cyan);
   padding: 15px;
@@ -66,7 +65,6 @@ body {
 .blurp-hero h1{
   font-size: 40px;
   position: relative;
-  transform: rotate(5deg);
   bottom: 10px;
   background-color: var(--purple2);
   padding: 15px;
@@ -76,13 +74,22 @@ body {
 .blurp-hero button{
   font-size: 32px;
   position: relative;
-  transform: rotate(5deg);
   bottom: -90px;
   left: 400px;
   background-color: var(--purple2);
   border: var(--purple3) 5px solid;
   padding: 15px;
   border-radius:  30px 20px 30px 20px;
+}
+
+.blurp-hero h2{
+  font-size: 28px;
+  position: relative;
+  bottom: 300px;
+  left: 60%;
+  background-color: var(--cyan);
+  padding: 15px;
+  border-radius:  30px 20px 20px 30px;
 }
 
 .wave-1-svg {
@@ -128,7 +135,7 @@ body {
 /* About Me - image badges */
 .abt-grid img {
   border: var(--purple1) 4px solid;
-  border-radius: 40px;
+  /* border-radius: 40px; */
   align-self: center;
   justify-self: center;
   z-index: 3;
@@ -183,17 +190,11 @@ body {
 
 .blurp-abt h3, .blurp-abt p{
   margin: 0 0 60px 0;
-  text-shadow: 0px 0px 6px var(--purple1);
   padding: 0;
 }
 
 .blurp-abt h3{
   font-size: 48px;
-  text-shadow: 0px 0px 6px var(--purple1);
-}
-
-.blurp-abt .highlight {
-  color: var(--greenHighlist);
 }
 
 .blurp-abt p {
@@ -201,6 +202,12 @@ body {
   font-weight: 500;
   width: 60%;
 }
+
+.blurp-abt .highlight {
+  color: var(--greenHighlist);
+}
+
+
 
 .wave-3-svg {
   position: relative; 
@@ -224,7 +231,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 3fr 2fr;
-  gap: 35px;
+  gap: 60px;
   position: relative;
   z-index: 2;
 }
@@ -232,6 +239,15 @@ body {
 .project-grid h3 {
   font-size: 48px;
   grid-column: span 3;
+  
+}
+
+.project-title {
+  width: 180px;
+  justify-self: center;
+  background-color: var(--purple2);
+  padding: 15px;
+  border-radius: 20px 30px 20px 30px;
 }
 
 .project-grid > div {
@@ -395,7 +411,35 @@ body {
   }
 }
 
-@media screen and (max-width: 2000px){
+@media screen and (max-width: 2400px){
+  .blurp-hero h3 {
+    font-size: 32px;
+    position: relative;
+    transform: rotate(-18deg);
+    bottom: 90px;
+    left: 380px;
+    background-color: var(--purple2);
+    padding: 15px;
+    border-radius:  20px 30px 20px 30px;
+  } 
+
+  .blurp-abt h3{
+    background-color: var(--purple1);
+    padding: 15px;
+    border-radius: 30px;
+    position: relative;
+    left: 400px;
+    bottom: 60px;
+  }
+  
+  .blurp-abt p {
+    background-color: var(--purple2);
+    padding: 25px;
+    border-radius: 50px 30px 50px 30px;
+    position: relative;
+    top: 20px;
+  }
+
   .title-card h3 {
     margin: 1.75em 0.5em 0.5em 0.5em;
     font-size: 54px;
@@ -403,7 +447,7 @@ body {
   
   .title-card p {
     font-size: 24px;
-    padding: 60px 30px;
+    padding: 40px 30px;
   }
 
   .bg-0 {

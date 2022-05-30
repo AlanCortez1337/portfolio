@@ -12,29 +12,34 @@ function ProjCard({type}) {
             title: " Bot",
             blurp: "My goal with this passion project was to annoy my friends to the maximum. Hover to check out a demo of the working bot.",
             link: "https://github.com/AlanCortez1337/Discord-Bot-Python",
-            yBoundry: "-5vh"
+            yBoundry: "-2vh",
+            rotate: "3deg"
         },
         // Memory Game Info
         {
             title: "Memory ",
             blurp: "This is my first finished React project which is a simple memory game with funny looking animals, hover for more.",
             link: "https://github.com/AlanCortez1337/Memory-Mania",
-            yBoundry: "5vh"
+            yBoundry: "2vh",
+            rotate: "-2deg"
         },
         // Food Tinder Info
         {
             title: "Food ",
             blurp: "In collaboration with my ACM club, I developed the create post page, the nav bar, and assisted in the login screen.",
             link: "https://github.com/acmCSUFDev/Food-Tinder",
-            yBoundry: "-5vh"
+            yBoundry: "-2vh",
+            rotate: "2deg"
         }
     ]
     
     const yTransition = {
-        repeat: Infinity, 
-        repeatType: "mirror", 
-        duration: 1, 
-        ease: "easeInOut"
+        y: {
+            repeat: Infinity, 
+            repeatType: "mirror", 
+            duration: 1, 
+            ease: "easeInOut"
+        }
     };
 
     const changeVisibility = () => {
@@ -45,9 +50,10 @@ function ProjCard({type}) {
 
     return(
         <>
-            <motion.div 
+            <motion.div
+            style={{rotate: projects[type].rotate}} 
             animate={{y: projects[type].yBoundry}}
-            whileHover={{transition: {type: "spring", duration: 1}, y: "0vh"}}
+            whileHover={{ y: "0vh", rotate: 0}}
             transition={yTransition}
             onHoverEnd={changeVisibility}
                 className="project-card"
