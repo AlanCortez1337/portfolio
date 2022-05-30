@@ -57,8 +57,9 @@ body {
 .blurp-hero h3 {
   font-size: 32px;
   position: relative;
-  bottom: 130px;
-  background-color: var(--cyan);
+  bottom: 90px;
+  left: 380px;
+  background-color: var(--purple2);
   padding: 15px;
   border-radius:  20px 30px 20px 30px;
 } 
@@ -195,12 +196,23 @@ body {
 
 .blurp-abt h3{
   font-size: 48px;
+  background-color: var(--purple1);
+  padding: 15px;
+  border-radius: 30px;
+  position: relative;
+  left: 400px;
+  bottom: 60px;
 }
 
 .blurp-abt p {
   font-size: 32px;
   font-weight: 500;
   width: 60%;
+  background-color: var(--purple2);
+  padding: 25px;
+  border-radius: 50px 30px 50px 30px;
+  position: relative;
+  top: 20px;
 }
 
 .blurp-abt .highlight {
@@ -239,12 +251,13 @@ body {
 .project-grid h3 {
   font-size: 48px;
   grid-column: span 3;
-  
 }
 
 .project-title {
   width: 180px;
   justify-self: center;
+  position: relative;
+  left: 150px;
   background-color: var(--purple2);
   padding: 15px;
   border-radius: 20px 30px 20px 30px;
@@ -276,16 +289,17 @@ body {
 
 .title-card h3 {
   font-weight: 600;
-  margin: 1.5em 0.5em 0.25em 0.5em;
+  margin: 1.75em 0.5em 0.5em 0.5em;
+  font-size: 54px;
   display: flex;
   gap: 0.5em;
 }
 
 .title-card p {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   text-align: center;
-  padding: 30px 30px;
+  padding: 40px 30px;
   background-color: var(--purpleCardBorder);
   border-radius: 0 0 20px 20px;
   height: 100%;
@@ -294,10 +308,11 @@ body {
 .bg-0 {
   width: 100%;
   height: 100%;
+  position: relative;
   background-image: url("/assests/discordBotDemo.gif");
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-size: 150% 150%;
+  background-position: 0% 100%;
   border-radius: 30px;
 }
 
@@ -316,10 +331,11 @@ body {
 .bg-1 {
   width: 100%;
   height: 100%;
+  position: relative;
   background-image: url("/assests/memoryGameDemo.gif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  position: relative;
+  background-position: 50% 0%;
   border-radius: 30px;
 }
 
@@ -401,66 +417,112 @@ body {
 
 /* Media Queries */
 
+/* Laptop */
 @media screen and (max-width: 1600px){
-  .blurp-abt p {
-    font-size: 28px;
-  }
-
-  .content-card p {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 2400px){
+  /* hero section */
   .blurp-hero h3 {
-    font-size: 32px;
-    position: relative;
-    transform: rotate(-18deg);
-    bottom: 90px;
-    left: 380px;
-    background-color: var(--purple2);
-    padding: 15px;
-    border-radius:  20px 30px 20px 30px;
+    bottom: -10px;
+    left: 320px;
   } 
 
-  .blurp-abt h3{
-    background-color: var(--purple1);
+  .blurp-hero h1{
+    bottom: -80px;
     padding: 15px;
-    border-radius: 30px;
-    position: relative;
-    left: 400px;
-    bottom: 60px;
+  }
+  
+  .blurp-hero button{
+    bottom: -140px;
+    left: 260px;
+  }
+
+  .blurp-hero h2{
+    font-size: 18px;
+    bottom: 250px;
+  }
+  /* about section */
+  .blurp-abt h3{
+    left: 240px;
   }
   
   .blurp-abt p {
-    background-color: var(--purple2);
-    padding: 25px;
-    border-radius: 50px 30px 50px 30px;
-    position: relative;
-    top: 20px;
+    font-size: 28px;
+    top: -30px;
+    right: 50px;
+  }
+  /* project section */
+  .project-grid {
+    grid-template-rows: 200px 300px;
+  }
+
+  .project-title {
+    /* fix? for laptop  */
   }
 
   .title-card h3 {
-    margin: 1.75em 0.5em 0.5em 0.5em;
-    font-size: 54px;
+    margin: 1.25em 0.5em 0.34em 0.5em;
+    font-size: 48px;
   }
   
   .title-card p {
-    font-size: 24px;
-    padding: 40px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 0 0 20px 20px;
+    height: 100%;
   }
-
+  /* Discord Bot Gif */
   .bg-0 {
+    width: 100%;
+    height: 100%;
+    position: relative;
     background-image: url("/assests/discordBotDemo.gif");
     background-repeat: no-repeat;
     background-size: 150% 150%;
     background-position: 0% 100%;
+    border-radius: 30px;
   }
 
+  
+  /* Memory Game Gif */
+  
   .bg-1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
     background-image: url("/assests/memoryGameDemo.gif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 50% 0%;
+    border-radius: 30px;
+  }
+
+  
+  /* Food Tinder Gif */
+  
+  .bg-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url("/assests/foodTinderDemo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+  }
+  
+  .content-card p {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 25px;
+    z-index: 1;
+    text-shadow: 0px 0px 6px var(--green3);
+  }
+  
+  .hover-effect a {
+    position: absolute;
+    bottom: 2%;
+    left: 82%;
+    padding: 0 25px;
   }
 }

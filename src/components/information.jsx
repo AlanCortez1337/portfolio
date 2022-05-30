@@ -84,7 +84,7 @@ function Info({type}) {
             }
             {type === 'project' &&
                 <motion.h3
-                    style={{rotate: -5}}
+                    style={{rotate: 9}}
                     transition={waveBounce}
                     animate={{y: ['5px', '-5px']}}
                     whileHover={{rotate: 0}}
