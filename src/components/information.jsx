@@ -54,7 +54,7 @@ function Info({type}) {
                         transition={waveBounce}
                         animate={{y: ['60px', '50px']}}
                         whileHover={{scale: 0.95}}
-                    > Hover over the bubbles</motion.h2>
+                    > Hover over the bubbles!</motion.h2>
                 </div>
             }
             {type === 'about' && 
@@ -95,14 +95,35 @@ function Info({type}) {
             {type === 'contact' &&
                 <div className="contact-blurp">  
                     {/* title */}
-                    <h3>Contact Me</h3>
+                    <motion.h3
+                        style={{rotate: -8}}
+                        transition={waveBounce}
+                        animate={{y: ['7px', '-1px']}}
+                        whileHover={{rotate: 0}}
+                        whileTap={{scale: 1.05}}
+                    >Contact Me</motion.h3>
                     {/* contact info */}
-                    <div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, atque.</p>
-                        <button>Let's Chat</button>
-                    </div>
+                    <motion.p
+                        style={{rotate: 9}}
+                        transition={waveBounce}
+                        animate={{y: ['0px', '10px']}}
+                        whileHover={{rotate: 0, y:0}}
+                    >
+                        Thank you for reaching the end, while I currently 
+                        have a few things on my plate. I would love to follow 
+                        up if you have an inquiry about my skills or talents.
+                    </motion.p>
+                    <motion.button
+                        style={{rotate: -3}}
+                        transition={waveBounce}
+                        animate={{y: ['5px', '-6px']}}
+                        whileHover={{rotate: 0}}
+                    >Let's Chat!</motion.button>
                     {/* footer */}
-                    <footer>Designed and Developed by Alan Cortez</footer>
+                    <motion.footer
+                        transition={waveBounce}
+                        animate={{y: ['0px', '-15px']}}
+                    >Designed and Developed by Alan Cortez</motion.footer>
                 </div>
             }
         </>

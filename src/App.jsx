@@ -34,10 +34,7 @@ function App() {
         <Wave shape={4}></Wave>
       </section>
       <section className="contact">
-        <div className="contact-grid">
-          <Blurp type={'contact'}/>
-          {/* add the badges */}
-        </div>
+        <Blurp type={'contact'}/>
         <Wave shape={5}></Wave>
         <Wave shape={6}></Wave>
       </section>

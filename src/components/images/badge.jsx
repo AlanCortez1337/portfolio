@@ -57,6 +57,15 @@ function BadgeImage({badgeName}) {
                     transition={badgeBounce}
                     src={DndBadge} alt="me" className="badge" width={150} height={150} 
                 />
+            }
+            {badgeName === "github" && 
+                <div>github</div>
+            } 
+            {badgeName === "linkedin" && 
+                <div>linkedIn</div>
+            } 
+            {badgeName === "resume" && 
+                <div>resume</div>
             }            
         </>
     );
