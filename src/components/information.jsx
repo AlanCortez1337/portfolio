@@ -1,3 +1,4 @@
+import Badge from "../components/images/badge"
 import { motion } from "framer-motion"
 import '../App.css'
 
@@ -102,6 +103,10 @@ function Info({type}) {
                         whileHover={{rotate: 0}}
                         whileTap={{scale: 1.05}}
                     >Contact Me</motion.h3>
+                    {/* badges */}
+                    <Badge badgeName={"github"}/>
+                    <Badge badgeName={"linkedin"}/>
+                    <Badge badgeName={"resume"}/>
                     {/* contact info */}
                     <motion.p
                         style={{rotate: 9}}

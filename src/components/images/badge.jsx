@@ -3,6 +3,7 @@ import DndBadge from "/assests/dnd.png"
 import LuaBadge from "/assests/lua.png"
 import BreadBadge from "/assests/bread.png"
 import { motion } from "framer-motion"
+import { IoDocumentText, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 
 function BadgeImage({badgeName}) { 
 
@@ -59,13 +60,25 @@ function BadgeImage({badgeName}) {
                 />
             }
             {badgeName === "github" && 
-                <div>github</div>
+                <IoLogoGithub 
+                    size={"8em"}
+                    color={"#464D77"}
+                    className="github-badge"
+                />
+                
             } 
             {badgeName === "linkedin" && 
-                <div>linkedIn</div>
+                <IoLogoLinkedin 
+                    size={"8em"} 
+                    className="linkedIn-badge"
+                />
             } 
             {badgeName === "resume" && 
-                <div>resume</div>
+                <IoDocumentText 
+                    size={"8em"} 
+                    color={"#464D77"}
+                    className="resume-badge"
+                />
             }            
         </>
     );

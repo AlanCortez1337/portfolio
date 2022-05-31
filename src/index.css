@@ -420,13 +420,81 @@ body, button {
 .contact-blurp h3 {
   grid-column: span 3;
   font-size: 48px;
-  /* width: 180px; */
   justify-self: end;
-  /* position: relative;
-  left: 150px; */
-  background-color: var(--green3);
+  background-color: var(--cyan);
   padding: 15px;
   border-radius: 30px 20px 30px 20px;
+}
+
+.contact-blurp p {
+  /* styles */
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  width: 50%;
+  background-color: var(--green1);
+  padding: 25px;
+  border-radius: 50px 30px 50px 30px;
+  /* grid alignment */
+  grid-column: 3 / span 2;
+  grid-row: 2;
+  justify-self: center;
+  /* outer alignments */
+  position: relative;
+  top: 32px;
+}
+
+.contact-blurp button {
+  /* styles */
+  font-size: 28px;
+  font-weight: 700;
+  background-color: var(--green1);
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  height: 50%;
+  /* grid alignment */
+  grid-column: 3;
+  justify-self: end;
+}
+
+.contact-blurp footer {
+  font-size: 22px;
+  font-weight: 700;
+  grid-column: span 3;
+  grid-row: 4;
+  align-self: end;
+  position: relative;
+  left: 30px;
+  bottom: 25px;
+}
+
+/* badges */
+.github-badge {
+  /* styles */
+  padding: 15px;
+  background-color: var(--green1);
+  border: var(--purple3) 5px solid;
+  border-radius: 30px;
+  /* grid alignment */
+  grid-column: 1;
+  /* inner alignment */
+  position: relative;
+  left: 50px;
+}
+
+.linkedIn-badge {
+  /* styles */
+  background-color: #02C39A;
+  /* grid alignment */
+  grid-column: 2;
+}
+
+.resume-badge {
+  /* styles */
+  background-color: #02C39A;
+  /* grid alignment */
+  grid-column: 1;
 }
 
 .wave-5-svg {
@@ -437,7 +505,7 @@ body, button {
 
 .wave-6-svg {
   position: relative; 
-  bottom: 120vh;
+  bottom: 112vh;
   width: 100vw;
 }
 
@@ -553,40 +621,10 @@ body, button {
   }
   /* contact section */
   
-  .contact-blurp {
-    width: 100%;
-    height: 100%;
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 50px;
-    position: relative;
-    z-index: 3;
-  }
-  
-  .contact-blurp h3 {
-    grid-column: span 3;
-    font-size: 48px;
-    justify-self: end;
-    background-color: var(--cyan);
-    padding: 15px;
-    border-radius: 30px 20px 30px 20px;
-  }
-  
   .contact-blurp p {
     /* styles */
     font-size: 24px;
-    font-weight: 600;
-    text-align: center;
     width: 70%;
-    background-color: var(--green1);
-    padding: 25px;
-    border-radius: 50px 30px 50px 30px;
-    /* grid alignment */
-    grid-column: 3 / span 2;
-    justify-self: center;
     /* outer alignments */
     position: relative;
     top: 32px;
@@ -595,35 +633,21 @@ body, button {
   .contact-blurp button {
     /* styles */
     font-size: 28px;
-    font-weight: 700;
-    background-color: var(--green1);
-    border: none;
-    border-radius: 20px;
     width: 50%;
-    /* grid alignment */
-    grid-column: 3;
-    justify-self: end;
   }
 
   .contact-blurp footer {
     font-size: 22px;
-    font-weight: 700;
-    grid-column: span 3;
-    grid-row: 4;
-    align-self: end;
-    position: relative;
     left: 30px;
     bottom: 25px;
   }
   
   .wave-5-svg {
-    position: relative; 
     bottom: 580px;
     width: 100vw;
   }
   
   .wave-6-svg {
-    position: relative; 
     bottom: 855px;
     width: 100vw;
   }
