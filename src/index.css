@@ -405,15 +405,32 @@ body {
 }
 
 .contact-grid {
+  
+}
+
+.contact-blurp {
+  width: 100%;
+  height: 100%;
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  gap: 50px;
+  position: relative;
+  z-index: 3;
 }
 
 .contact-blurp h3 {
-  grid-row: span 4;
+  grid-column: span 3;
+  font-size: 48px;
+  /* width: 180px; */
+  justify-self: end;
+  /* position: relative;
+  left: 150px; */
+  background-color: var(--green3);
+  padding: 15px;
+  border-radius: 30px 20px 30px 20px;
 }
 
 .wave-5-svg {

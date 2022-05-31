@@ -93,7 +93,7 @@ function Info({type}) {
                 >Projects</motion.h3>
             }
             {type === 'contact' &&
-                <>  
+                <div className="contact-blurp">  
                     {/* title */}
                     <h3>Contact Me</h3>
                     {/* contact info */}
@@ -103,7 +103,7 @@ function Info({type}) {
                     </div>
                     {/* footer */}
                     <footer>Designed and Developed by Alan Cortez</footer>
-                </>
+                </div>
             }
         </>
     );
