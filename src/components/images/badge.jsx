@@ -18,6 +18,12 @@ function BadgeImage({badgeName}) {
             repeat: Infinity, 
             duration: 8,
             ease: "linear"
+        },
+        borderRadius: {
+            repeat: Infinity, 
+            repeatType: "mirror",
+            duration: 1, 
+            ease: "easeInOut"
         }
     }
 
@@ -62,7 +68,8 @@ function BadgeImage({badgeName}) {
             {badgeName === "linkedin" && 
                 <motion.a
                     href=""
-                    animate={{rotate: -360, y: '-4vh'}}
+                    style={{borderRadius: '10px'}}
+                    animate={{rotate: -360, y: '-4vh', borderRadius: '60px'}}
                     whileHover={{scale: 0.9}}
                     transition={badgeBounce}
                     className="linkedIn-badge"
@@ -76,7 +83,8 @@ function BadgeImage({badgeName}) {
             {badgeName === "github" && 
                 <motion.a
                     href=""
-                    animate={{rotate: 360, y: '-3vh'}}
+                    style={{borderRadius: '100px'}}
+                    animate={{rotate: -360, y: '6vh', borderRadius: '40px'}}
                     whileHover={{scale: 0.9}}
                     transition={badgeBounce}
                     className="github-badge"
@@ -91,7 +99,8 @@ function BadgeImage({badgeName}) {
             {badgeName === "resume" && 
                 <motion.a
                     href=""
-                    animate={{rotate: 360, y: '-8vh'}}
+                    initial={{borderRadius: '50px'}}
+                    animate={{rotate: 360, y: '-8vh', borderRadius: '20px'}}
                     whileHover={{scale: 1.3}}
                     transition={badgeBounce}
                     className="resume-badge"

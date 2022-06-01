@@ -470,15 +470,6 @@ body, button {
 }
 
 /* badges */
-.contact-blurp div {
-  /* grid alignment */
-  grid-column: 1;
-  /* inner alignment */
-  /* position: relative;
-  left: 150px;
-  bottom: 160px; */
-
-}
 
 .contact-blurp a * {
   width: 100%;
@@ -490,8 +481,7 @@ body, button {
   height: 8em;
   padding: 15px;
   background-color: var(--cyan);
-  /* border: var(--purple3) 5px solid; */
-  border-radius: 30px;
+  font-size: 1.25em;
   /* grid alignment */
   grid-column: 1;
   /* outer alignment */
@@ -506,13 +496,13 @@ body, button {
   height: 12em;
   padding: 5px;
   background-color: var(--green1);
-  border-radius: 40px 60px 40px 60px;
+  font-size: 1.25em;
   /* grid alignment */
   grid-column: 2;
   /* outer alignment */
   position: relative;
   left: 50px;
-  top: 130px;
+  top: 180px;
 }
 
 .resume-badge {
@@ -521,13 +511,13 @@ body, button {
   height: 5em;
   padding: 8px;
   background-color: var(--green1);
-  border-radius: 30px 50px 30px 30px;
+  font-size: 1.5em;
   /* grid alignment */
   grid-column: 1;
   /* outer alignment */
   position: relative;
   left: 100px;
-  bottom: 150px;
+  bottom: 20px;
 }
 
 .wave-5-svg {
@@ -579,10 +569,6 @@ body, button {
   /* project section */
   .project-grid {
     grid-template-rows: 200px 300px;
-  }
-
-  .project-title {
-    /* fix? for laptop  */
   }
 
   .title-card h3 {
@@ -675,6 +661,25 @@ body, button {
     bottom: 25px;
   }
   
+  /* badges */
+  .github-badge {
+    /* styles */
+    font-size: unset;
+    /* outer alignment */
+    position: relative;
+    left: 50px;
+    top: 130px;
+  }
+  
+  .resume-badge {
+    /* styles */
+    font-size: unset;
+    /* outer alignment */
+    position: relative;
+    left: 100px;
+    bottom: 150px;
+  }
+
   .wave-5-svg {
     bottom: 580px;
     width: 100vw;
