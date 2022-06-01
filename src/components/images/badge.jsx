@@ -59,26 +59,48 @@ function BadgeImage({badgeName}) {
                     src={DndBadge} alt="me" className="badge" width={150} height={150} 
                 />
             }
+            {badgeName === "linkedin" && 
+                <motion.a
+                    href=""
+                    animate={{rotate: -360, y: '-4vh'}}
+                    whileHover={{scale: 0.9}}
+                    transition={badgeBounce}
+                    className="linkedIn-badge"
+                    >
+                    <IoLogoLinkedin 
+                        size={"8em"} 
+                        color={"#464D77"}
+                    />
+                </motion.a>
+            } 
             {badgeName === "github" && 
-                <IoLogoGithub 
-                    size={"8em"}
-                    color={"#464D77"}
+                <motion.a
+                    href=""
+                    animate={{rotate: 360, y: '-3vh'}}
+                    whileHover={{scale: 0.9}}
+                    transition={badgeBounce}
                     className="github-badge"
-                />
+                >
+                    <IoLogoGithub 
+                        size={"12em"}
+                        color={"#3B617D"}
+                    />
+                </motion.a>
                 
             } 
-            {badgeName === "linkedin" && 
-                <IoLogoLinkedin 
-                    size={"8em"} 
-                    className="linkedIn-badge"
-                />
-            } 
             {badgeName === "resume" && 
-                <IoDocumentText 
-                    size={"8em"} 
-                    color={"#464D77"}
+                <motion.a
+                    href=""
+                    animate={{rotate: 360, y: '-8vh'}}
+                    whileHover={{scale: 1.3}}
+                    transition={badgeBounce}
                     className="resume-badge"
-                />
+                >
+                    <IoDocumentText 
+                        size={"5em"}
+                        color={"#3B617D"}
+                    />
+                </motion.a>
             }            
         </>
     );

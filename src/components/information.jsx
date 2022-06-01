@@ -104,8 +104,8 @@ function Info({type}) {
                         whileTap={{scale: 1.05}}
                     >Contact Me</motion.h3>
                     {/* badges */}
-                    <Badge badgeName={"github"}/>
                     <Badge badgeName={"linkedin"}/>
+                    <Badge badgeName={"github"}/>
                     <Badge badgeName={"resume"}/>
                     {/* contact info */}
                     <motion.p
