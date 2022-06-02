@@ -16,7 +16,24 @@
   --textColor: #f8f8f8;
 
 }
-/* Universal */
+/* scrollbar */
+* {
+  scrollbar-color:var(--purple1) var(--cyan);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--cyan);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--purple1);
+}
+
 
 button, h1, h2, h3, p, footer {
   color: var(--textColor);
@@ -27,6 +44,7 @@ body, button {
   padding: 0;
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
+  
 }
 
 /* hero */
@@ -75,6 +93,7 @@ body, button {
 
 .blurp-hero button{
   font-size: 32px;
+  font-weight: 700;
   position: relative;
   bottom: -90px;
   left: 400px;
