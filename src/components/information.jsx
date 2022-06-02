@@ -11,6 +11,13 @@ function Info({type}) {
         }
     }
 
+    const scrollToContact = () => {
+        window.scrollTo({
+            top: (3 * window.innerHeight),
+            behavior: "smooth"
+        })
+    }
+
     return(
         <>
             {type === 'hero' && 
@@ -30,25 +37,27 @@ function Info({type}) {
                         whileHover={{scale: 1.08}}
                     > An inspiring full stack web developer </motion.h1>
                      {/* Resume Button */}
-                    <motion.button
-                        style={{rotate: -5}}
-                        initial={{color: '#f8f8f8', borderRadius: '30px 20px 30px 20px'}}
-                        transition={waveBounce}
-                        animate={{y: ['15px', '45px']}}
-                        whileHover={{
-                            transistion: {
-                                duration: 0.8, 
-                                yoyo: Infinity, 
-                                ease: "ease"
-                            }, 
-                            color: '#02F1BD', 
-                            borderRadius: '20px 30px 20px 30px',
-                            scale: 1.05
-                        }}
-                        whileTap={{
-                            scale: 0.95
-                        }}
-                    > resume </motion.button>
+
+                        <motion.button
+                            style={{rotate: -5}}
+                            initial={{color: '#f8f8f8', borderRadius: '30px 20px 30px 20px'}}
+                            transition={waveBounce}
+                            animate={{y: ['15px', '45px']}}
+                            whileHover={{
+                                transistion: {
+                                    duration: 0.8, 
+                                    yoyo: Infinity, 
+                                    ease: "ease"
+                                }, 
+                                color: '#02F1BD', 
+                                borderRadius: '20px 30px 20px 30px',
+                                scale: 1.05
+                            }}
+                            whileTap={{
+                                scale: 0.95
+                            }}
+                            onClick={scrollToContact}
+                        > Contact Me! </motion.button>
                      {/* Reminder to hover */}
                     <motion.h2
                         style={{rotate: 4}}
