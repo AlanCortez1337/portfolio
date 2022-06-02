@@ -1,4 +1,4 @@
-import Badge from "../components/images/badge"
+import Badge from "./badge"
 import { motion } from "framer-motion"
 import '../App.css'
 
@@ -127,12 +127,18 @@ function Info({type}) {
                         have a few things on my plate. I would love to follow 
                         up if you have an inquiry about my skills or talents.
                     </motion.p>
-                    <motion.button
-                        style={{rotate: -3}}
+                    <motion.a
+                        style={{rotate: -6}}
                         transition={waveBounce}
-                        animate={{y: ['5px', '-6px']}}
-                        whileHover={{rotate: 0}}
-                    >Let's Chat!</motion.button>
+                        animate={{y: ['0px', '-24px']}}
+                        whileHover={{rotate: 0, scale: 1.05}}
+                        whileTap={{scale: 0.9}}
+                        href="mailto:cortez.alan060@gmail.com"
+                        className="contact-me-button"
+                    >
+                        <button
+                        >Let's Chat!</button>
+                    </motion.a>
                     {/* footer */}
                     <motion.footer
                         transition={waveBounce}
