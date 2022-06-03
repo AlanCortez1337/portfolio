@@ -1,4 +1,4 @@
-import Badge from "./badge"
+import Badge from "./badges"
 import { motion } from "framer-motion"
 import '../App.css'
 
@@ -84,11 +84,11 @@ function Info({type}) {
                         whileHover={{rotate: 0}}
                         whileTap={{scale: 0.95}}
                     >
-                        I am a simple man with the goal, <span className="highlight">to make your life easier</span>. 
-                        Currently attending CSUF with a B.S. in Computer Science that is wrapping up in May of 2024. 
-                        I love <span className="highlight">coding</span>, <span className="highlight">baking bread</span>, 
-                        playing <span className="highlight">Dungeons and Dragons</span>, but most importantly working with  
-                        <span className="highlight"> you</span>.
+                        Hey, how's it going? <i>Well I suppose you can't answer that...</i> My name is Alan and I want <span className="highlight">to make your life easier</span>. 
+                        Attending CSUF made me realize how far a great website can go, <i>and how bad one can get</i>. 
+                        My road so far has led me to dabbling in <span className="highlight">Svelte</span>, and <span className="highlight">React</span>.
+                        On the side I love <span className="highlight">baking bread</span>, 
+                        playing <span className="highlight">D&D</span>, and chilling with my bird <span className="highlight">Lua</span>.
                     </motion.p>
                 </div>
             }

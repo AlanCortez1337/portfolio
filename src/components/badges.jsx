@@ -42,7 +42,7 @@ function BadgeImage({badgeName}) {
                 <motion.img
                     style={{borderRadius: '20px'}} 
                     animate={{ rotate: -360, y: '-3vh', borderRadius: '80px' }}
-                    whileHover={{scale: 0.9}}
+                    whileHover={{scale: 1.1}}
                     transition={badgeBounce}
                     src={LuaBadge} alt="me" className="badge" width={175} height={175} 
                 />
@@ -51,7 +51,7 @@ function BadgeImage({badgeName}) {
                 <motion.img
                     style={{borderRadius: '30px'}} 
                     animate={{ rotate: -360, y: '3vh', borderRadius: '90px' }}
-                    whileHover={{scale: 1.2}}
+                    whileHover={{scale: 0.9}}
                     transition={badgeBounce}
                     src={BreadBadge} alt="me" className="badge" width={225} height={225} 
                 />

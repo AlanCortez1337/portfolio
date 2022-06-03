@@ -1,5 +1,5 @@
 import Wave from "./components/wave"
-import Badge from "./components/badge"
+import Badge from "./components/badges"
 import Blurp from "./components/content-info"
 import Card from "./components/projectCard"
 import './App.css'
@@ -24,7 +24,7 @@ function App() {
         </div>
         <Wave shape={3}></Wave>
       </section>
-      {/* <section className="projects">
+      <section className="projects">
         <div className="project-grid">
           <Blurp type={'project'}/>
           <Card type={0}/>
@@ -37,7 +37,7 @@ function App() {
         <Blurp type={'contact'}/>
         <Wave shape={5}></Wave>
         <Wave shape={6}></Wave>
-      </section> */}
+      </section>
     </>
   )
 }
