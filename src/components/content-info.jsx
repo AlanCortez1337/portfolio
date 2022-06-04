@@ -117,7 +117,7 @@ function Info({type}) {
                     {/* badges */}
                     <Badge badgeName={"linkedin"}/>
                     <Badge badgeName={"github"}/>
-                    {/* <Badge badgeName={"resume"}/> */}
+                    <Badge badgeName={"resume"}/>
                     {/* contact info */}
                     <motion.p
                         style={{rotate: 9}}
