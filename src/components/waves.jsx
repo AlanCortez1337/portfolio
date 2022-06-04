@@ -13,7 +13,7 @@ function Shapes({shape}) {
 
     return(
 
-            <>
+            <div className='wave'>
                 {shape === 1 && 
                     <motion.svg
                         transition={waveBounce}
@@ -30,7 +30,7 @@ function Shapes({shape}) {
                         className="wave-2-svg" viewBox="0 0 1512 500" fill="none" xmlns="http://www.w3.org/2000/svg"
                     >
                         <path className="wave-2" d="M0 173C0 173 887.5 295 1032.5 77.5001C1177.5 -140 1512 173 1512 173V500H0V173Z" fill="#3B617D"/>
-                    </motion.svg>                    
+                    </motion.svg>
                 }
                 {/* Fix width/height */}
                 {shape === 3 && 
@@ -71,7 +71,7 @@ function Shapes({shape}) {
                         <path d="M2.78652e-05 57C2.78652e-05 57 -18.5 -32.5 233 13C484.5 58.5 1512 57 1512 57V207H2.78652e-05V57Z" fill="#02C39A"/>
                     </motion.svg>
                 }
-            </>
+            </div>
     );
 }
 export default Shapes;

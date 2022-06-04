@@ -67,7 +67,7 @@ function BadgeImage({badgeName}) {
             }
             {badgeName === "linkedin" && 
                 <motion.a
-                    href=""
+                    href="https://www.linkedin.com/in/alancortez1337/"
                     style={{borderRadius: '10px'}}
                     animate={{rotate: -360, y: '-4vh', borderRadius: '60px'}}
                     whileHover={{scale: 0.9}}
@@ -82,7 +82,7 @@ function BadgeImage({badgeName}) {
             } 
             {badgeName === "github" && 
                 <motion.a
-                    href=""
+                    href="https://github.com/AlanCortez1337"
                     style={{borderRadius: '100px'}}
                     animate={{rotate: -360, y: '6vh', borderRadius: '40px'}}
                     whileHover={{scale: 0.9}}
@@ -98,7 +98,7 @@ function BadgeImage({badgeName}) {
             } 
             {badgeName === "resume" && 
                 <motion.a
-                    href=""
+                    href="https://www.youtube.com/shorts/k8LnKGWmNTk?&ab_channel=1980sGamer"
                     initial={{borderRadius: '50px'}}
                     animate={{rotate: 360, y: '-8vh', borderRadius: '20px'}}
                     whileHover={{scale: 1.3}}

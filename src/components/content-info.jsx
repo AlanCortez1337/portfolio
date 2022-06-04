@@ -1,5 +1,6 @@
 import Badge from "./badges"
 import { motion } from "framer-motion"
+import { IoDocumentText, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 import '../App.css'
 
 function Info({type}) {
@@ -64,6 +65,7 @@ function Info({type}) {
                         transition={waveBounce}
                         animate={{y: ['60px', '50px']}}
                         whileHover={{scale: 0.95}}
+                        className="hero-notice"
                     > Hover over the bubbles!</motion.h2>
                 </div>
             }
@@ -115,7 +117,7 @@ function Info({type}) {
                     {/* badges */}
                     <Badge badgeName={"linkedin"}/>
                     <Badge badgeName={"github"}/>
-                    <Badge badgeName={"resume"}/>
+                    {/* <Badge badgeName={"resume"}/> */}
                     {/* contact info */}
                     <motion.p
                         style={{rotate: 9}}
@@ -143,7 +145,20 @@ function Info({type}) {
                     <motion.footer
                         transition={waveBounce}
                         animate={{y: ['0px', '-15px']}}
-                    >Designed and Developed by Alan Cortez</motion.footer>
+                    >
+                        <div className="mobile-socials">
+                            <a href="https://www.youtube.com/shorts/k8LnKGWmNTk?&ab_channel=1980sGamer">
+                                <IoDocumentText size={"2em"}/>
+                            </a>
+                            <a href="https://github.com/AlanCortez1337">
+                                <IoLogoGithub size={"2em"}/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/alancortez1337/">
+                                <IoLogoLinkedin size={"2em"}/>
+                            </a>
+                        </div>
+                        Designed and Developed by Alan Cortez
+                    </motion.footer>
                 </div>
             }
         </>

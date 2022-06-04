@@ -1,7 +1,7 @@
-import Wave from "./components/wave"
+import Wave from "./components/waves"
 import Badge from "./components/badges"
 import Blurp from "./components/content-info"
-import Card from "./components/projectCard"
+import Card from "./components/projectCards"
 import './App.css'
 
 

@@ -51,12 +51,12 @@ function ProjCard({type}) {
     return(
         <>
             <motion.div
-            style={{rotate: projects[type].rotate}} 
-            animate={{y: projects[type].yBoundry}}
-            whileHover={{ y: "0vh", rotate: 0}}
-            transition={yTransition}
-            onHoverEnd={changeVisibility}
-                className="project-card"
+                style={{rotate: projects[type].rotate}} 
+                animate={{y: projects[type].yBoundry}}
+                whileHover={{ y: "0vh", rotate: 0}}
+                transition={yTransition}
+                onHoverEnd={changeVisibility}
+                className={`project-card ${type === 2 && 'remove-card'}`}
             >
                 <AnimatePresence>
                     {isVisible ? 
