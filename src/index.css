@@ -584,23 +584,23 @@ body, button {
 @media screen and (max-width: 1600px){
   /* hero section */
   .blurp-hero h3 {
-    bottom: -10px;
-    left: 320px;
+    bottom: 60px;
+    left: 300px;
   } 
 
   .blurp-hero h1{
-    bottom: -80px;
+    bottom: 10px;
     padding: 15px;
   }
   
   .blurp-hero button{
-    bottom: -140px;
+    bottom: -50px;
     left: 260px;
   }
 
   .blurp-hero h2{
     font-size: 18px;
-    bottom: 250px;
+    bottom: 32  0px;
   }
   /* about section */
   .blurp-abt h3{
@@ -626,7 +626,7 @@ body, button {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    padding: 20px 30px;
+    padding: 20px 20px;
     border-radius: 0 0 20px 20px;
     height: 100%;
   }
@@ -744,8 +744,9 @@ body, button {
   }
 }
 
-/* Mobile */
-@media screen and (max-width: 480px){ 
+/* Large Mobile */
+/*iPhone 12/13 Pro Max iOS 14.6*/
+@media screen and (max-height: 927px){ 
   .blurp-hero {
     padding-left: 0px;
   }
@@ -941,7 +942,7 @@ body, button {
     background-color: var(--purple2);
     width: 100vw;
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
   }
   
   .contact-blurp {
@@ -954,7 +955,6 @@ body, button {
     font-size: 42px;
     width: 225px;
     position: relative;
-    /* change */
     left: 25%;
   }
   
@@ -966,7 +966,7 @@ body, button {
     justify-self: center;
     /* outer alignments */
     position: relative;
-    top: -180px;
+    top: 75px;
     left: 40px;
   }
   
@@ -999,7 +999,7 @@ body, button {
     align-self: end;
     position: relative;
     left: -35px;
-    bottom: calc(-10vh - 30px);
+    bottom: calc(-10vh - 140px);
   }
   
   /* badges */
@@ -1035,4 +1035,152 @@ body, button {
     width: 550vw;
   }
 }
-
+/* Medium Large Mobile 1*/
+/*Galaxy Note 20 Linux, Galaxy S20 Ultra Linux*/
+@media screen and (max-height: 916px){ 
+  /* contact */
+  .contact-blurp p {
+    top: 55px;
+  }
+  .contact-me-button {
+    top: 90px;
+  }
+  .contact-blurp footer {
+    bottom: calc(-10vh - 70px);
+  }
+}
+/* Medium Large Mobile 2*/
+/* Galaxy Note 20 Ultra Linux, iPhone 11 Pro Max iOS 14.6*/
+@media screen and (max-height: 896px){ 
+  /* contact */
+  .contact-blurp footer {
+    bottom: calc(-10vh - 90px);
+  }
+}
+/* Medium Mobile 1*/
+/*Galaxy S20+ Linux*/
+@media screen and (max-height: 855px){ 
+  /* projects */
+  .title-card p {
+    padding: 15px 15px;
+  }
+  /* contact */
+  .contact-blurp p {
+    top: 30px;
+  }
+  .contact-me-button {
+    top: 65px;
+  }
+  .contact-blurp footer {
+    left: -20px;
+    bottom: calc(-10vh - 20px);
+  }
+  .wave-6-svg { 
+    bottom: 212vh;
+  }
+}
+/* Medium Mobile 2*/
+/*iPhone 12/13 + Pro iOS 14.6*/
+@media screen and (max-height: 845px){ 
+  .contact-me-button {
+    top: 65px;
+  }
+  .contact-blurp footer {
+    left: -20px;
+    bottom: calc(-10vh - 20px);
+  }
+  .wave-6-svg { 
+    bottom: 217vh;
+  }
+}
+/* Medium Small Mobile 1*/
+/*iPhone 11 Pro iOS 14.6*/
+@media screen and (max-height: 813px){ 
+  /* hero */
+  .blurp-hero h1{
+    font-size: 22px;
+    padding: 15px 45px;
+  }
+  /* projects */
+  .title-card p {
+    padding: 10px 15px;
+  }
+  /* contact */
+  .contact-blurp p {
+    font-size: 22px;
+  }
+  .contact-blurp footer {
+    left: -20px;
+    bottom: calc(-10vh - 30px);
+  }
+  .wave-6-svg { 
+    bottom: 219vh;
+  }
+}
+/* Medium Small Mobile 2*/
+/*Galaxy S20 Linux*/
+@media screen and (max-height: 801px){ 
+  /* About Me */
+  .blurp-abt p {
+    font-size: 22px;
+    left: -6vw;
+  }
+  /* contact */
+  .contact-blurp p {
+    top: 20px;
+  }
+  .contact-blurp footer {
+    left: -10px;
+    bottom: calc(-10vh - 15px);
+  }
+  .mobile-socials {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .wave-6-svg { 
+    bottom: 210.5vh;
+  }
+}
+/* Small Mobile 1*/
+/*Galaxy S10/S10+ Linux*/
+@media screen and (max-height: 761px){ 
+  /* hero */
+  .blurp-hero h1{
+    font-size: 22px;
+    bottom: 30px;
+    padding: 15px 35px;
+  }
+  .blurp-hero h2{
+    font-size: 18px;
+    bottom: calc(-20vh + 25px);
+    left: calc(50% - 10px);
+  }
+  .wave-2-svg {
+    bottom: 110vh;
+  }
+  /* projects */
+  .title-card p {
+    padding: 5px 15px;
+  }
+  /* contact */
+  .contact-blurp p {
+    left: 28px;
+  }
+  .contact-me-button {
+    top: 52px;
+  }
+  .contact-blurp footer {
+    font-size: 14px;
+    left: -50px;
+    bottom: calc(-10vh - 0px);
+  }
+  .mobile-socials {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .wave-6-svg { 
+    bottom: 218vh;
+  }
+}
