@@ -746,7 +746,7 @@ body, button {
 
 /* Large Mobile */
 /*iPhone 12/13 Pro Max iOS 14.6*/
-@media screen and (max-height: 927px){ 
+@media screen and (max-height: 927px) and (max-width: 927px){ 
   .blurp-hero {
     padding-left: 0px;
   }
@@ -1036,8 +1036,8 @@ body, button {
   }
 }
 /* Medium Large Mobile 1*/
-/*Galaxy Note 20 Linux, Galaxy S20 Ultra Linux*/
-@media screen and (max-height: 916px){ 
+/*Galaxy Note 20 Linux*/
+@media screen and (max-height: 916px) and (max-width: 927px){ 
   /* contact */
   .contact-blurp p {
     top: 55px;
@@ -1046,12 +1046,30 @@ body, button {
     top: 90px;
   }
   .contact-blurp footer {
-    bottom: calc(-10vh - 70px);
+    font-size: 16px;
+    left: -60px;
+    bottom: calc(-10vh - 60px);
   }
 }
 /* Medium Large Mobile 2*/
+/*Galaxy S20 Ultra Linux*/
+@media screen and (max-height: 916px) and (max-width: 413px){ 
+  /* contact */
+  .contact-blurp p {
+    top: 55px;
+  }
+  .contact-me-button {
+    top: 90px;
+  }
+  .contact-blurp footer {
+    font-size: 18px;
+    left: -35px;
+    bottom: calc(-10vh - 70px);
+  }
+}
+/* Medium Large Mobile 3*/
 /* Galaxy Note 20 Ultra Linux, iPhone 11 Pro Max iOS 14.6*/
-@media screen and (max-height: 896px){ 
+@media screen and (max-height: 896px) and (max-width: 927px){ 
   /* contact */
   .contact-blurp footer {
     bottom: calc(-10vh - 90px);
@@ -1059,7 +1077,7 @@ body, button {
 }
 /* Medium Mobile 1*/
 /*Galaxy S20+ Linux*/
-@media screen and (max-height: 855px){ 
+@media screen and (max-height: 855px) and (max-width: 927px){ 
   /* projects */
   .title-card p {
     padding: 15px 15px;
@@ -1081,7 +1099,7 @@ body, button {
 }
 /* Medium Mobile 2*/
 /*iPhone 12/13 + Pro iOS 14.6*/
-@media screen and (max-height: 845px){ 
+@media screen and (max-height: 845px) and (max-width: 927px){ 
   .contact-me-button {
     top: 65px;
   }
@@ -1095,7 +1113,7 @@ body, button {
 }
 /* Medium Small Mobile 1*/
 /*iPhone 11 Pro iOS 14.6*/
-@media screen and (max-height: 813px){ 
+@media screen and (max-height: 813px) and (max-width: 927px){ 
   /* hero */
   .blurp-hero h1{
     font-size: 22px;
@@ -1119,7 +1137,11 @@ body, button {
 }
 /* Medium Small Mobile 2*/
 /*Galaxy S20 Linux*/
-@media screen and (max-height: 801px){ 
+@media screen and (max-height: 801px) and (max-width: 927px){ 
+  /* hero */
+  .blurp-hero h2{
+    left: 50%;
+  }
   /* About Me */
   .blurp-abt p {
     font-size: 22px;
@@ -1128,6 +1150,7 @@ body, button {
   /* contact */
   .contact-blurp p {
     top: 20px;
+    left: 31px;
   }
   .contact-blurp footer {
     left: -10px;
@@ -1144,7 +1167,7 @@ body, button {
 }
 /* Small Mobile 1*/
 /*Galaxy S10/S10+ Linux*/
-@media screen and (max-height: 761px){ 
+@media screen and (max-height: 761px) and (max-width: 927px){ 
   /* hero */
   .blurp-hero h1{
     font-size: 22px;
@@ -1182,5 +1205,65 @@ body, button {
   }
   .wave-6-svg { 
     bottom: 218vh;
+  }
+}
+/* Small Mobile 2*/
+/*iPhone SE 2nd gen iOS 14.6*/
+@media screen and (max-height: 668px) and (max-width: 376px){ 
+  /* hero */
+  .blurp-hero h1{
+    bottom: 10px;
+  }
+  .wave-2-svg {
+    bottom: 121vh;
+  }
+  /* about me */
+  .blurp-abt h3{
+    font-size: 38px;
+  }
+  .blurp-abt p {
+    font-size: 22px;
+  }
+  /* projects */
+  .project-title {
+    left: 50px;
+    bottom: calc(5% + 2vw);
+  }
+  .project-grid h3 {
+    font-size: 42px;
+  }
+  .project-card {
+    height: calc(30vh - 5px);
+    width: calc(50% + 145px);
+  }
+  .title-card p {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  /* contact */
+  .contact-blurp h3 {
+    font-size: 38px;
+    width: 202px;
+  }
+  .contact-blurp p {
+    font-size: 20px;
+    left: 28px;
+  }
+  .contact-me-button {
+    top: 52px;
+    width: 150px;
+  }
+  .contact-blurp button {
+    font-size: 22px;
+  }
+  .contact-blurp footer {
+    bottom: -75px;
+  }
+  .wave-5-svg {
+    bottom: 104vh;
+  }
+  .wave-6-svg { 
+    bottom: 262vh;
+    right: 380px;
   }
 }
