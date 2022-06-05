@@ -10,7 +10,7 @@ function ProjCard({type}) {
         // Discord Bot Info
         {
             title: " Bot",
-            blurp: "My goal with this passion project was to annoy my friends to the maximum. Hover to check out a demo of the working bot.",
+            blurp: "My goal with this passion project was to annoy my friends to the maximum. Interact to check out a demo of the working bot.",
             link: "https://github.com/AlanCortez1337/Discord-Bot-Python",
             yBoundry: "-2vh",
             rotate: "3deg"
@@ -18,7 +18,7 @@ function ProjCard({type}) {
         // Memory Game Info
         {
             title: "Memory ",
-            blurp: "This is my first finished React project which is a simple memory game with funny looking animals, hover for more.",
+            blurp: "This is my first finished React project which is a memory card game with funny animals. There is a link to play in the GitHub repository.",
             link: "https://github.com/AlanCortez1337/Memory-Mania",
             yBoundry: "2vh",
             rotate: "-2deg"
@@ -26,7 +26,7 @@ function ProjCard({type}) {
         // Food Tinder Info
         {
             title: "Food ",
-            blurp: "In collaboration with my ACM club, I developed the create post page, the nav bar, and assisted in the login screen.",
+            blurp: "In collaboration with my ACM club, I developed the create post page, the nav bar, and assisted in the login screen of Food Tinder.",
             link: "https://github.com/acmCSUFDev/Food-Tinder",
             yBoundry: "-2vh",
             rotate: "2deg"
@@ -56,6 +56,7 @@ function ProjCard({type}) {
                 whileHover={{ y: "0vh", rotate: 0}}
                 transition={yTransition}
                 onHoverEnd={changeVisibility}
+                onClick={changeVisibility}
                 className={`project-card ${type === 2 && 'remove-card'}`}
             >
                 <AnimatePresence>
