@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
   --green1: #02C39A;
   --green2: #0DAF94;
@@ -22,41 +21,31 @@
   scrollbar-color: var(--scrollBarThumb) var(--scrollBarBackground);
   scrollbar-width: thin;
 }
-
 ::-webkit-scrollbar {
   width: 0.5em;
 }
-
 ::-webkit-scrollbar-track {
   background-color: var(--scrollBarBackground);
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: var(--scrollBarThumb);
 }
-
-
 button, h1, h2, h3, p, footer {
   color: var(--textColor);
 }
-
 body, button {
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
-  
 }
-
 /* hero */
-
 .hero {
   background-color: var(--green1);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
-
 .blurp-hero {
   display: flex;
   justify-content: center;
@@ -68,12 +57,10 @@ body, button {
   z-index: 2;
   padding-left: 120px;
 }
-
 .blurp-hero h3, .blurp-hero h2, .blurp-hero h1{
   margin: 0;
   padding: 0;
 }
-
 .blurp-hero h3 {
   font-size: 32px;
   position: relative;
@@ -81,7 +68,7 @@ body, button {
   left: 380px;
   background-color: var(--purple2);
   padding: 15px;
-  border-radius:  20px 30px 20px 30px;
+  border-radius: 20px 30px;
 } 
 .blurp-hero h1{
   font-size: 40px;
@@ -89,9 +76,8 @@ body, button {
   bottom: 10px;
   background-color: var(--purple2);
   padding: 15px;
-  border-radius:  20px 30px 20px 30px;
+  border-radius: 20px 30px;
 }
-
 .blurp-hero button{
   font-size: 32px;
   font-weight: 700;
@@ -101,17 +87,14 @@ body, button {
   background-color: var(--purple2);
   border: var(--purple3) 5px solid;
   padding: 15px;
-  border-radius:  30px 20px 30px 20px;
+  border-radius: 30px 20px;
 }
-
 .desktop-notice {
   display: block;
 }
-
 .mobile-notice {
   display: none;
 }
-
 .blurp-hero h2{
   font-size: 28px;
   position: relative;
@@ -119,41 +102,34 @@ body, button {
   left: 60%;
   background-color: var(--cyan);
   padding: 15px;
-  border-radius:  30px 20px 20px 30px;
+  border-radius: 30px 20px 20px 30px;
 }
 .wave {
   position: relative;
 }
-
 .wave-1-svg {
   position: absolute;
   bottom: -25vh;
 }
-
 .wave-1 {
   width: 100vw;
   z-index: 1;
 }
-
 .wave-2-svg {
   position: absolute;
   bottom: -15vh;
 }
-
 .wave-2 {
   width: 100vw;
   z-index: 3;
 }
-
 /* About me */
-
 .about-me {
   background-color: var(--purple2);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
-
 .abt-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -164,7 +140,6 @@ body, button {
   justify-content: center;
   gap: 30px;
 }
-
 /* About Me - image badges */
 .abt-grid img {
   border: var(--purple1) 8px solid;
@@ -172,43 +147,33 @@ body, button {
   justify-self: center;
   z-index: 3;
   transition: box-shadow 800ms ease-in-out;
-
-  
 }
-
 .abt-grid img:nth-child(2) {
   border-color: var(--purple1);
   grid-column: 2;
   align-self: end;
 }
-
 .abt-grid img:nth-child(3) {
   grid-column: 3;
 }
-
 .abt-grid img:nth-child(4) {
   grid-column: 2;
   border-color: var(--purple2);
 }
-
 .abt-grid img:nth-child(5) {
   border-color: var(--purple2);
 }
-
 .abt-grid img:nth-child(2):hover, .abt-grid img:nth-child(3):hover {
   box-shadow: 0px 0px 15px var(--purple1shadow);
 }
-
 .abt-grid img:nth-child(4):hover, .abt-grid img:nth-child(5):hover {
   box-shadow: 0px 0px 10px var(--green1);
 }
-
 /* About Me - blurp info */
 .abt-grid div {
   align-self: start;
   grid-row: 1 / span 2;
 }
-
 .blurp-abt {
   display: flex;
   justify-content: center;
@@ -219,12 +184,10 @@ body, button {
   padding-left: 120px;
   padding-top: 17vh; 
 }
-
 .blurp-abt h3, .blurp-abt p{
   margin: 0 0 60px 0;
   padding: 0;
 }
-
 .blurp-abt h3{
   font-size: 48px;
   background-color: var(--purple1);
@@ -234,41 +197,34 @@ body, button {
   left: 400px;
   bottom: 60px;
 }
-
 .blurp-abt p {
   font-size: 32px;
   font-weight: 500;
   width: 60%;
   background-color: var(--purple2);
   padding: 25px;
-  border-radius: 50px 30px 50px 30px;
+  border-radius: 50px 30px;
   position: relative;
   top: 20px;
 }
-
 .blurp-abt .highlight {
   color: var(--greenHighlist);
 }
-
 .blurp-abt i {
   font-size: smaller;
 }
-
 .wave-3-svg {
   position: relative; 
   bottom: 79vh;
   width: 100vw;
 }
-
 /* Projects */
-
 .projects {
   background-color: var(--purple1);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
-
 .project-grid {
   margin: 50px 120px 0 120px;
   width: calc(100% - 240px);
@@ -280,12 +236,10 @@ body, button {
   position: relative;
   z-index: 2;
 }
-
 .project-grid h3 {
   font-size: 48px;
   grid-column: span 3;
 }
-
 .project-title {
   width: 180px;
   justify-self: center;
@@ -293,23 +247,20 @@ body, button {
   left: 150px;
   background-color: var(--purple2);
   padding: 15px;
-  border-radius: 20px 30px 20px 30px;
+  border-radius: 20px 30px;
 }
-
 .project-grid > div {
   border-radius: 30px;
   border: var(--purpleCardBorder) 5px solid;
   border-radius: 30px;
   background-color: var(--purpleCard);
 }
-
 .project-card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
 .title-card {
   display: flex;
   justify-content: center;
@@ -319,7 +270,6 @@ body, button {
   width: 100%;
   height: 100%;
 }
-
 .title-card h3 {
   font-weight: 600;
   margin: 1.75em 0.5em 0.5em 0.5em;
@@ -327,7 +277,6 @@ body, button {
   display: flex;
   gap: 0.5em;
 }
-
 .title-card p {
   font-size: 24px;
   font-weight: 500;
@@ -348,7 +297,6 @@ body, button {
   background-position: 0% 100%;
   border-radius: 30px;
 }
-
 .bg-0::before {
   background-color: var(--purpleCardSemiTransparent);
   border-radius: 30px;
@@ -358,9 +306,7 @@ body, button {
   position: absolute;
   width: 100%;
 }
-
 /* Memory Game Gif */
-
 .bg-1 {
   width: 100%;
   height: 100%;
@@ -371,7 +317,6 @@ body, button {
   background-position: 50% 0%;
   border-radius: 30px;
 }
-
 .bg-1::before {
   background-color: var(--purpleCardSemiTransparent);
   border-radius: 30px;
@@ -381,9 +326,7 @@ body, button {
   position: absolute;
   width: 100%;
 }
-
 /* Food Tinder Gif */
-
 .bg-2 {
   width: 100%;
   height: 100%;
@@ -393,7 +336,6 @@ body, button {
   position: relative;
   border-radius: 30px;
 }
-
 .bg-2::before {
   background-color: var(--purpleCardSemiTransparent);
   border-radius: 30px;
@@ -403,7 +345,6 @@ body, button {
   position: absolute;
   width: 100%;
 }
-
 .content-card p {
   position: relative;
   font-size: 24px;
@@ -412,30 +353,25 @@ body, button {
   z-index: 1;
   text-shadow: 0px 0px 6px var(--green3);
 }
-
 .hover-effect a {
   position: absolute;
   bottom: 2%;
   left: 82%;
   padding: 0 25px;
 }
-
 .wave-4-svg {
   position: relative; 
   bottom: 90vh;
   width: 100vw;
   z-index: 1;
 }
-
 /* Contact */
-
 .contact {
   background-color: var(--purple2);
   width: 100vw;
   height: 100vh;
   overflow-y: hidden;
 }
-
 .contact-blurp {
   width: 100%;
   height: 100%;
@@ -448,25 +384,22 @@ body, button {
   position: relative;
   z-index: 3;
 }
-
 .contact-blurp h3 {
   grid-column: span 3;
   font-size: 48px;
   justify-self: end;
   background-color: var(--cyan);
   padding: 15px;
-  border-radius: 30px 20px 30px 20px;
+  border-radius: 30px 20px;
 }
-
 .contact-blurp p {
-  /* styles */
   font-size: 28px;
   font-weight: 600;
   text-align: center;
   width: 50%;
   background-color: var(--green1);
   padding: 25px;
-  border-radius: 50px 30px 50px 30px;
+  border-radius: 50px 30px;
   /* grid alignment */
   grid-column: 3 / span 2;
   grid-row: 2;
@@ -475,7 +408,6 @@ body, button {
   position: relative;
   top: 32px;
 }
-
 .contact-me-button {
   grid-column: 3;
   justify-self: end;
@@ -483,7 +415,6 @@ body, button {
   position: relative;
   top: 50px;
 }
-
 .contact-blurp button {
   font-size: 28px;
   font-weight: 700;
@@ -494,12 +425,10 @@ body, button {
   padding: 15px;
   transition: all 500ms ease-in-out;
 }
-
 .contact-blurp button:hover {
   border-color: var(--green1);
   background-color: var(--green2);
 }
-
 .contact-blurp footer {
   font-size: 22px;
   font-weight: 700;
@@ -510,15 +439,11 @@ body, button {
   left: 30px;
   bottom: 25px;
 }
-
 /* badges */
-
 .contact-blurp a * {
   width: 100%;
 }
-
 .linkedIn-badge {
-  /* styles */
   width: 8em;
   height: 8em;
   padding: 15px;
@@ -531,9 +456,7 @@ body, button {
   left: 280px;
   bottom: 180px;
 }
-
 .github-badge {
-  /* styles */
   width: 12em;
   height: 12em;
   padding: 5px;
@@ -546,9 +469,7 @@ body, button {
   left: 50px;
   top: 180px;
 }
-
 .resume-badge {
-  /* styles */
   width: 5em;
   height: 5em;
   padding: 8px;
@@ -561,25 +482,19 @@ body, button {
   left: 100px;
   bottom: 20px;
 }
-
 .mobile-socials {
   display: none;
 }
-
 .wave-5-svg {
   position: relative; 
   bottom: 85vh;
   width: 100vw;
 }
-
 .wave-6-svg {
   position: relative; 
   bottom: 112vh;
   width: 100vw;
 }
-
-/* Media Queries */
-
 /* Laptop */
 @media screen and (max-width: 1600px){
   /* hero section */
@@ -587,17 +502,14 @@ body, button {
     bottom: 60px;
     left: 300px;
   } 
-
   .blurp-hero h1{
     bottom: 10px;
     padding: 15px;
   }
-  
   .blurp-hero button{
     bottom: -50px;
     left: 260px;
   }
-
   .blurp-hero h2{
     font-size: 18px;
     bottom: 32  0px;
@@ -606,7 +518,6 @@ body, button {
   .blurp-abt h3{
     left: 240px;
   }
-  
   .blurp-abt p {
     font-size: 25px;
     top: -30px;
@@ -616,12 +527,10 @@ body, button {
   .project-grid {
     grid-template-rows: 200px 300px;
   }
-
   .title-card h3 {
     margin: 1.25em 0.5em 0.34em 0.5em;
     font-size: 48px;
   }
-  
   .title-card p {
     font-size: 20px;
     font-weight: 600;
@@ -630,44 +539,6 @@ body, button {
     border-radius: 0 0 20px 20px;
     height: 100%;
   }
-  /* Discord Bot Gif */
-  .bg-0 {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-image: url("/assests/discordBotDemo.gif");
-    background-repeat: no-repeat;
-    background-size: 150% 150%;
-    background-position: 0% 100%;
-    border-radius: 30px;
-  }
-
-  /* Memory Game Gif */
-  
-  .bg-1 {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-image: url("/assests/memoryGameDemo.gif");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 50% 0%;
-    border-radius: 30px;
-  }
-
-  
-  /* Food Tinder Gif */
-  
-  .bg-2 {
-    width: 100%;
-    height: 100%;
-    background-image: url("/assests/foodTinderDemo.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border-radius: 30px;
-  }
-  
   .content-card p {
     position: relative;
     font-size: 24px;
@@ -676,7 +547,6 @@ body, button {
     z-index: 1;
     text-shadow: 0px 0px 6px var(--green3);
   }
-  
   .hover-effect a {
     position: absolute;
     bottom: 2%;
@@ -684,73 +554,58 @@ body, button {
     padding: 0 25px;
   }
   /* contact section */
-  
   .contact-blurp p {
-    /* styles */
     font-size: 24px;
     width: 70%;
     /* outer alignments */
     position: relative;
     top: 32px;
   }
-
   .contact-blurp button {
-    /* styles */
     font-size: 28px;
     position: relative;
     bottom: 25px;
   }
-
   .contact-blurp footer {
     font-size: 22px;
     left: 30px;
     bottom: 25px;
   }
-  
   /* badges */
   .github-badge {
-    /* styles */
     font-size: unset;
     /* outer alignment */
     position: relative;
     left: 50px;
     top: 90px;
   }
-  
   .linkedIn-badge {
-    /* styles */
     width: 8em;
     height: 8em;
     font-size: 16px;
   }
-  
   .resume-badge {
-    /* styles */
     font-size: unset;
     /* outer alignment */
     position: relative;
     left: 100px;
     bottom: 150px;
   }
-
   .wave-5-svg {
     bottom: 580px;
     width: 100vw;
   }
-  
   .wave-6-svg {
     bottom: 855px;
     width: 100vw;
   }
 }
-
 /* Large Mobile */
 /*iPhone 12/13 Pro Max iOS 14.6*/
-@media screen and (max-height: 927px) and (max-width: 927px){ 
+@media screen and (max-height: 927px) and (max-width: 429px){ 
   .blurp-hero {
     padding-left: 0px;
   }
-
   .blurp-hero h3 {
     font-size: 28px;
     position: relative;
@@ -759,7 +614,6 @@ body, button {
     background-color: var(--cyan);
     padding: 15px;
   } 
-
   .blurp-hero h1{
     font-size: 24px;
     width: 60%;
@@ -768,7 +622,6 @@ body, button {
     right: calc(50% - 225px);
     padding: 15px 45px;
   }
-  
   .blurp-hero button{
     font-size: 22px;
     position: relative;
@@ -776,38 +629,31 @@ body, button {
     left: calc(50% - 150px);
     padding: 15px;
   }
-  
   .desktop-notice {
     display: none;
   }
-
   .mobile-notice {
     display: block;
   }
-
   .blurp-hero h2{
     font-size: 18px;
     bottom: calc(-20vh - 10px);
     left: calc(50% + 15px);
     background-color: var(--purple1);
   }
-  
   .wave-1-svg {
     width: 250vw;
     position: relative;
     bottom: 80vh;
     right: 25vw;
   }
-  
   .wave-2-svg {
     width: 250vw;
     position: relative;
     bottom: 100vh;
     right: 100vw;
   }
-  
   /* About me */
-  
   .abt-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -818,19 +664,15 @@ body, button {
     justify-content: center;
     gap: 30px;
   }
-  
-  /* About Me - image badges */
+  /* About Me-image badges */
   .abt-grid img {
     display: none;
   }
-  
-  /* About Me - blurp info */
+  /* About Me-blurp info */
   .abt-grid div {
     align-self: start;
     grid-row: 1;
   }
-
-  
   .blurp-abt {
     display: flex;
     justify-content: center;
@@ -841,7 +683,6 @@ body, button {
     padding: 0 60px;
     padding-top: 6vh; 
   }
-  
   .blurp-abt h3{
     font-size: 42px;
     background-color: var(--purple1);
@@ -851,27 +692,23 @@ body, button {
     left: 15vw;
     bottom: 3vh;
   }
-  
   .blurp-abt p {
     font-size: 24px;
     font-weight: 500;
     width: 100%;
     background-color: var(--purple2);
     padding: 25px;
-    border-radius: 50px 30px 50px 30px;
+    border-radius: 50px 30px;
     position: relative;
     top: calc(10vh - 70px);
     left: -5.5vw;
   }
-  
   .wave-3-svg {
     width: 250vh;
     bottom: 90vh;
     right: 85vw;
   }
-  
-  /* Projects */
-  
+  /*Projects*/
   .project-grid {
     /* welp now its a flex */
     display: flex;
@@ -884,18 +721,15 @@ body, button {
     position: relative;
     z-index: 2;
   }
-  
   .project-title {
     font-size: 42px;
     left: 25px;
     bottom: calc(5% + 7vw);
     width: 155px;
   }
-  
   .project-grid h3 {
     font-size: 42px;
   }
-  
   .project-card {
     display: flex;
     justify-content: center;
@@ -904,60 +738,49 @@ body, button {
     height: calc(30vh - 15px);
     width: calc(50% + 120px);
   }
-  
   .remove-card {
     display: none;
   }
-
   .title-card h3 {
     margin: 0.75em 0.5em 0.25em 0.5em;
     font-size: 38px;
   }
-  
   .title-card p {
     font-size: 18px;
     margin: 0;
     padding: 30px 15px;
     height: 100%;
   }
-  
   .content-card p {
     font-size: 24px;
   }
-  
   .hover-effect a {
     left: 75%;
   }
-  
   .wave-4-svg {
     position: relative; 
     bottom: 88vh;
     width: 450vw;
     right: 100vw;
   }
-  
-  /* Contact */
-  
+  /*Contact*/
   .contact {
     background-color: var(--purple2);
     width: 100vw;
     height: 100vh;
     overflow: hidden;
   }
-  
   .contact-blurp {
     display: flex;
     flex-direction: column;
     gap: 25px;
   }
-  
   .contact-blurp h3 {
     font-size: 42px;
     width: 225px;
     position: relative;
     left: 25%;
   }
-  
   .contact-blurp p {
     /* styles */
     font-size: 24px;
@@ -969,7 +792,6 @@ body, button {
     top: 75px;
     left: 40px;
   }
-  
   .contact-me-button {
     grid-column: 3;
     justify-self: end;
@@ -1037,7 +859,7 @@ body, button {
 }
 /* Medium Large Mobile 1*/
 /*Galaxy Note 20 Linux*/
-@media screen and (max-height: 916px) and (max-width: 927px){ 
+@media screen and (max-height: 916px) and (max-width: 413px){ 
   /* contact */
   .contact-blurp p {
     top: 55px;
@@ -1068,8 +890,8 @@ body, button {
   }
 }
 /* Medium Large Mobile 3*/
-/* Galaxy Note 20 Ultra Linux, iPhone 11 Pro Max iOS 14.6*/
-@media screen and (max-height: 896px) and (max-width: 927px){ 
+/*iPhone 11 Pro Max iOS 14.6*/
+@media screen and (max-height: 896px) and (max-width: 415px){ 
   /* contact */
   .contact-blurp footer {
     bottom: calc(-10vh - 90px);
@@ -1077,7 +899,7 @@ body, button {
 }
 /* Medium Mobile 1*/
 /*Galaxy S20+ Linux*/
-@media screen and (max-height: 855px) and (max-width: 927px){ 
+@media screen and (max-height: 855px) and (max-width: 385px){ 
   /* projects */
   .title-card p {
     padding: 15px 15px;
@@ -1099,7 +921,7 @@ body, button {
 }
 /* Medium Mobile 2*/
 /*iPhone 12/13 + Pro iOS 14.6*/
-@media screen and (max-height: 845px) and (max-width: 927px){ 
+@media screen and (max-height: 845px) and (max-width: 391px){ 
   .contact-me-button {
     top: 65px;
   }
@@ -1113,7 +935,7 @@ body, button {
 }
 /* Medium Small Mobile 1*/
 /*iPhone 11 Pro iOS 14.6*/
-@media screen and (max-height: 813px) and (max-width: 927px){ 
+@media screen and (max-height: 813px) and (max-width: 376px){ 
   /* hero */
   .blurp-hero h1{
     font-size: 22px;
@@ -1137,7 +959,7 @@ body, button {
 }
 /* Medium Small Mobile 2*/
 /*Galaxy S20 Linux*/
-@media screen and (max-height: 801px) and (max-width: 927px){ 
+@media screen and (max-height: 801px) and (max-width: 361px){ 
   /* hero */
   .blurp-hero h2{
     left: 50%;
@@ -1167,7 +989,7 @@ body, button {
 }
 /* Small Mobile 1*/
 /*Galaxy S10/S10+ Linux*/
-@media screen and (max-height: 761px) and (max-width: 927px){ 
+@media screen and (max-height: 761px) and (max-width: 361px){ 
   /* hero */
   .blurp-hero h1{
     font-size: 22px;
