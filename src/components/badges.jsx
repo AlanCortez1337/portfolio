@@ -1,7 +1,7 @@
-import MeBadge from "/assests/meBadge.png"
-import DndBadge from "/assests/dnd.png"
-import LuaBadge from "/assests/lua.png"
-import BreadBadge from "/assests/bread.png"
+import MeBadge from "/assests/meBadge.webp"
+import DndBadge from "/assests/dnd.webp"
+import LuaBadge from "/assests/lua.webp"
+import BreadBadge from "/assests/bread.webp"
 import { motion } from "framer-motion"
 import { IoDocumentText, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 
