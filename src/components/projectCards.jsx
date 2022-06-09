@@ -37,7 +37,7 @@ function ProjCard({type}) {
         y: {
             repeat: Infinity, 
             repeatType: "mirror", 
-            duration: 1, 
+            duration: 2, 
             ease: "easeInOut"
         }
     };

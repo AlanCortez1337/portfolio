@@ -6,7 +6,15 @@ import '../App.css'
 function Info({type}) {
     const waveBounce = {
         y: {
-            duration: 0.8, 
+            duration: 1.8, 
+            yoyo: Infinity, 
+            ease: "easeInOut",
+        }
+    }
+
+    const waveBounceSlow = {
+        y: {
+            duration: 2.8, 
             yoyo: Infinity, 
             ease: "easeInOut",
         }
@@ -151,7 +159,7 @@ function Info({type}) {
                     </motion.a>
                     {/* footer */}
                     <motion.footer
-                        transition={waveBounce}
+                        transition={waveBounceSlow}
                         animate={{y: ['0px', '-15px']}}
                     >
                         <div className="mobile-socials">

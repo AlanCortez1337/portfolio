@@ -5,7 +5,7 @@ function Shapes({shape}) {
 
     const waveBounce = {
         y: {
-            duration: 0.8, 
+            duration: 2.8, 
             yoyo: Infinity, 
             ease: "easeInOut",
         }

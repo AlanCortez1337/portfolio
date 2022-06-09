@@ -365,7 +365,7 @@ body, button {
   width: 100vw;
   height: 100vh;
   position: relative;
-  z-index: 2;
+  z-index: 2; 
   overflow: hidden;
 }
 .contact-blurp {
@@ -510,6 +510,17 @@ body, button {
     font-size: 18px;
     bottom: 32  0px;
   }
+  /* experimental */
+  /* .wave-1-svg {
+    width: 1550px;
+    position: absolute;
+    bottom: calc(-25vw + 25vh);
+  }
+  .wave-2-svg {
+    width: 1550px;
+    position: absolute;
+    bottom: calc(-10vw + 5vh);
+  } */
   /* about section */
   .blurp-abt h3{
     left: 240px;
@@ -679,7 +690,7 @@ body, button {
     left: 15vw;
     bottom: 3vh;
   }
-  .blurp-abt p {
+  .blurp-abt p{
     font-size: 24px;
     font-weight: 500;
     width: 100%;
@@ -687,7 +698,7 @@ body, button {
     padding: 25px;
     border-radius: 50px 30px;
     position: relative;
-    top: calc(10vh - 70px);
+    top: calc(10vh - 1vw);
     left: -5.5vw;
   }
   .wave-3-svg {
@@ -830,10 +841,16 @@ body, button {
     padding: 15px 45px;
   }
   /* About Me */
+  .about-me {
+    height: 105vh;
+  }
   .blurp-abt p {
     font-size: 22px;
   }
   /*Contact*/
+  .contact {
+    height: 105vh;
+  }
   .contact-blurp p {
     font-size: 22px;
     width: 70%;
@@ -854,7 +871,7 @@ body, button {
     font-size: 14px;
     position: relative;
     left: -50px;
-    bottom: calc(-10vw - 10vh);
+    bottom: calc(-10vw - 20vh);
   }
   .mobile-socials {
     margin-bottom: 10px;
