@@ -621,7 +621,7 @@ body, button {
     left: 240px;
   }
   .blurp-abt p {
-    font-size: 28px;
+    font-size: 26px;
     top: -30px;
     right: 50px;
   }
@@ -654,7 +654,9 @@ body, button {
   .remove-card {
     display: none;
   }
-  
+  .wave-4-svg {
+    bottom: 85vh;
+  }
 }
 /* Tablet (Maybe?) Screen break point */
 @media screen and (max-width: 930px){
@@ -715,6 +717,25 @@ body, button {
     right: 100px;
   }
   /* fix project and contact */
+  .project-grid {
+    margin: 50px 175px 0 175px;
+    width: calc(100% - 350px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .project-title {
+    width: 140px;
+  }
+  .project-grid h3 {
+    font-size: 38px;
+  }
+  .project-grid > div {
+    height: 275px;
+  }
+  .title-card p {
+    font-size: 20px;
+  }
 }
 /* Tablet (Maybe?) Screen break point */
 @media screen and (max-width: 750px){
@@ -759,4 +780,11 @@ body, button {
   }
   /* fix */
   /* project section */
+  .project-grid {
+    margin: 50px 100px 0 100px;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
