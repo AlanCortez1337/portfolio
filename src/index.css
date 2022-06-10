@@ -486,7 +486,7 @@ body, button {
   width: 1920px;
 }
 /* Laptop */
-@media screen and (max-width: 1750px){
+@media screen and (max-width: 1650px){
   /* hero section */
   .blurp-hero h3 {
     bottom: 60px;
@@ -502,19 +502,21 @@ body, button {
   }
   .blurp-hero h2{
     font-size: 18px;
-    bottom: 32  0px;
+    bottom: -100px;
+    background-color: var(--purple1);
+    left: 700px;
   }
   /* experimental */
-  /* .wave-1-svg {
-    width: 1550px;
+  .wave-1-svg {
+    width: 1650px;
     position: absolute;
     bottom: calc(-25vw + 25vh);
   }
   .wave-2-svg {
-    width: 1550px;
+    width: 1650px;
     position: absolute;
-    bottom: calc(-10vw + 5vh);
-  } */
+    bottom: calc(-10vw + 5svh);
+  }
   /* about section */
   .blurp-abt h3{
     left: 240px;
@@ -593,77 +595,147 @@ body, button {
     bottom: calc(50vw + 65vh);
   }
 }
-/* Large Mobile */
-@media screen and (max-height: 927px) and (max-width: 429px){ 
-  .blurp-hero {
-    padding-left: 0px;
-  }
+/* Smaller Laptop Screen break point */
+@media screen and (max-width: 1250px){
+  /* fix */
+  /* hero section */
   .blurp-hero h3 {
-    font-size: 28px;
-    position: relative;
-    bottom: 21vh;
-    left: calc(50% - 150px);
-    background-color: var(--cyan);
-    padding: 15px;
+    bottom: 60px;
+    left: 300px;
   } 
   .blurp-hero h1{
-    font-size: 24px;
-    width: 60%;
-    text-align: center;
-    bottom: 50px;
-    right: calc(50% - 225px);
-    padding: 15px 45px;
-  }
-  .blurp-hero button{
-    font-size: 22px;
-    position: relative;
-    bottom: -55px;
-    left: calc(50% - 150px);
+    bottom: 10px;
     padding: 15px;
   }
-  .desktop-notice {
+  .blurp-hero button{
+    bottom: -50px;
+    left: 260px;
+  }
+  .blurp-hero h2{
+    bottom: -180px;
+    left: 500px;
+  }
+  .wave-2-svg {
+    bottom: -8vh;
+  }
+  /* about section */
+  .blurp-abt h3{
+    left: 240px;
+  }
+  .blurp-abt p {
+    font-size: 25px;
+    top: -30px;
+    right: 50px;
+  }
+  .abt-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .abt-grid img:nth-child(3), .abt-grid img:nth-child(4)  {
     display: none;
   }
-  .mobile-notice {
-    display: block;
+  /* fix */
+  /* project section */
+  .project-grid {
+    grid-template-rows: 200px 300px;
+  }
+  .title-card h3 {
+    margin: 1.25em 0.5em 0.34em 0.5em;
+    font-size: 48px;
+  }
+  .title-card p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 0 0 20px 20px;
+    height: 100%;
+  }
+  .hover-effect a {
+    position: absolute;
+    bottom: 2%;
+    left: 78%;
+    padding: 0 25px;
+  }
+  /* contact section */
+  .contact-blurp p {
+    font-size: 24px;
+    width: 70%;
+    /* outer alignments */
+    position: relative;
+    top: 32px;
+  }
+  .contact-blurp button {
+    font-size: 28px;
+    position: relative;
+    bottom: 25px;
+  }
+  .contact-blurp footer {
+    font-size: 22px;
+    left: 30px;
+    bottom: 25px;
+  }
+  /* badges */
+  .github-badge {
+    font-size: unset;
+    /* outer alignment */
+    position: relative;
+    left: 50px;
+    top: 90px;
+  }
+  .linkedIn-badge {
+    width: 8em;
+    height: 8em;
+    font-size: 16px;
+  }
+  .resume-badge {
+    font-size: unset;
+    /* outer alignment */
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+  }
+  .wave-5-svg {
+    width: 150vw;
+    right: 40vw;
+  }
+  .wave-6-svg {
+    width: 100vw;
+    bottom: calc(50vw + 65vh);
+  }
+}
+/* Tablet (Maybe?) Screen break point */
+@media screen and (max-width: 930px){
+  /* fix */
+  /* hero section */
+  /* HERE */
+  .blurp-hero {
+    padding: 20px;
+  }
+  .blurp-hero h3 {
+    bottom: 60px;
+    left: 300px;
+  } 
+  .blurp-hero h1{
+    bottom: 10px;
+    padding: 15px;
+  }
+  .blurp-hero button{
+    bottom: -50px;
+    left: 260px;
   }
   .blurp-hero h2{
     font-size: 18px;
-    bottom: calc(-20vh - 10px);
-    left: calc(50% + 15px);
-    background-color: var(--purple1);
+    bottom: 32px 0px;
   }
-  .wave-1-svg {
-    width: 250vw;
-    position: relative;
-    bottom: 80vh;
-    right: 25vw;
+  /* about section */
+  .blurp-abt h3{
+    left: 140px;
   }
-  .wave-2-svg {
-    width: 250vw;
-    position: relative;
-    bottom: 100vh;
-    right: 100vw;
-  }
-  /* About me */
-  .abt-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    gap: 30px;
-  }
-  /* About Me-image badges */
-  .abt-grid img {
-    display: none;
-  }
-  /* About Me-blurp info */
-  .abt-grid div {
-    align-self: start;
-    grid-row: 1;
+  .blurp-abt p {
+    font-size: 28px;
+    top: 10px;
+    right: 0px;
   }
   .blurp-abt {
     display: flex;
@@ -672,263 +744,88 @@ body, button {
     align-items: flex-start;
     position: relative;
     z-index: 2;
-    padding: 0 60px;
-    padding-top: 6vh; 
+    padding-top: 17vh; 
   }
-  .blurp-abt h3{
-    font-size: 42px;
-    background-color: var(--purple1);
-    padding: 15px;
-    border-radius: 30px;
-    position: relative;
-    left: 15vw;
-    bottom: 3vh;
+  .abt-grid {
+    display: grid;
+    grid-template-columns: 2fr;
+    width: 100vw;
+    padding: 0;
   }
-  .blurp-abt p{
-    font-size: 24px;
-    font-weight: 500;
-    width: 100%;
-    background-color: var(--purple2);
-    padding: 25px;
-    border-radius: 50px 30px;
-    position: relative;
-    top: calc(10vh - 1vw);
-    left: -5.5vw;
+  .abt-grid img:nth-child(2), .abt-grid img:nth-child(3), .abt-grid img:nth-child(4), .abt-grid img:nth-child(5)  {
+    display: none;
   }
   .wave-3-svg {
-    width: 250vh;
-    bottom: 90vh;
-    right: 85vw;
+    position: relative; 
+    right: 100px;
   }
-  /*Projects*/
+  /* fix */
+  /* project section */
   .project-grid {
-    /* welp now its a flex */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    margin: 0;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-  }
-  .project-title {
-    font-size: 42px;
-    left: 25px;
-    bottom: calc(5% + 7vw);
-    width: 155px;
-  }
-  .project-grid h3 {
-    font-size: 42px;
-  }
-  .project-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: calc(30vh - 15px);
-    width: calc(50% + 120px);
-  }
-  .remove-card {
-    display: none;
+    grid-template-rows: 200px 300px;
   }
   .title-card h3 {
-    margin: 0.75em 0.5em 0.25em 0.5em;
-    font-size: 38px;
+    margin: 1.25em 0.5em 0.34em 0.5em;
+    font-size: 48px;
   }
   .title-card p {
-    display: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 0 0 20px 20px;
+    height: 100%;
   }
   .hover-effect a {
-    left: 75%;
+    position: absolute;
+    bottom: 2%;
+    left: 78%;
+    padding: 0 25px;
   }
-  .wave-4-svg {
-    position: relative; 
-    bottom: 88vh;
-    width: 450vw;
-    right: 100vw;
-  }
-  /*Contact*/
-  .contact {
-    background-color: var(--purple2);
-    width: 100vw;
-    height: 100vh;
-  }
-  .contact-blurp {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-  .contact-blurp h3 {
-    font-size: 42px;
-    width: 225px;
-    position: relative;
-    left: 25%;
-  }
+  /* contact section */
   .contact-blurp p {
-    /* styles */
     font-size: 24px;
     width: 70%;
     /* outer alignments */
     position: relative;
-    top: 75px;
-    left: 40px;
-  }
-  .contact-me-button {
-    justify-self: end;
-    height: 5%;
-    width: 200px;
-    top: 120px;
-    left: 50px;
+    top: 32px;
   }
   .contact-blurp button {
     font-size: 28px;
-    font-weight: 700;
-    background-color: var(--green1);
-    /* border: none; */
-    border: var(--green2) 5px solid;
-    border-radius: 20px;
-    padding: 15px;
-    transition: all 500ms ease-in-out;
+    position: relative;
+    bottom: 25px;
   }
   .contact-blurp footer {
-    font-size: 18px;
-    position: relative;
-    left: -35px;
-    bottom: calc(-10vw - 14vh);
+    font-size: 22px;
+    left: 30px;
+    bottom: 25px;
   }
   /* badges */
-  .contact-blurp a {
-    color: white;
+  .github-badge {
+    font-size: unset;
+    /* outer alignment */
+    position: relative;
+    left: 50px;
+    top: 90px;
   }
-  .contact-blurp a * {
-    width: 100%;
+  .linkedIn-badge {
+    width: 8em;
+    height: 8em;
+    font-size: 16px;
   }
-  .mobile-socials {
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: space-around;
-  }
-  .linkedIn-badge, .github-badge,  .resume-badge{
-    display: none;
+  .resume-badge {
+    font-size: unset;
+    /* outer alignment */
+    position: relative;
+    left: 100px;
+    bottom: 50px;
   }
   .wave-5-svg {
-    position: relative; 
-    bottom: 100vh;
-    right: 400vw;
-    width: 900vw;
+    width: 150vw;
+    right: 40vw;
   }
   .wave-6-svg {
-    position: relative; 
-    bottom: calc(50vw + 200vh);
-    right: 300px;
-    width: 550vw;
-  }
-}
-/* Meidum Mobile */
-@media screen and (max-height: 845px) and (max-width: 391px){ 
-  /* Hero */
-  .blurp-hero h1{
-    font-size: 22px;
-    width: 60%;
-    padding: 15px 45px;
-  }
-  /* About Me */
-  .about-me {
-    height: 105vh;
-  }
-  .blurp-abt p {
-    font-size: 22px;
-  }
-  /*Contact*/
-  .contact {
-    height: 105vh;
-  }
-  .contact-blurp p {
-    font-size: 22px;
-    width: 70%;
-    /* outer alignments */
-    position: relative;
-    top: 45px;
-    left: 30px;
-  }
-  .contact-me-button {
-    width: 175px;
-    top: 95px;
-    left: 50px;
-  }
-  .contact-blurp button {
-    font-size: 24px;
-  }
-  .contact-blurp footer {
-    font-size: 14px;
-    position: relative;
-    left: -50px;
-    bottom: calc(-10vw - 20vh);
-  }
-  .mobile-socials {
-    margin-bottom: 10px;
-  }
-}
-/* Small Mobile */
-@media screen and (max-height: 668px) and (max-width: 376px){ 
-  /* Hero */
-  .blurp-hero h1{
-    font-size: 22px;
-    width: 60%;
-    padding: 15px 45px;
-  }
-  .blurp-hero {
-    padding-left: 0px;
-  }
-  .blurp-hero h3 {
-    font-size: 28px;
-    position: relative;
-    bottom: 21vh;
-    left: calc(50% - 150px);
-    background-color: var(--cyan);
-    padding: 15px;
-  } 
-  .blurp-hero h1{
-    font-size: 22px;
-    width: 60%;
-    text-align: center;
-    bottom: 30px;
-  }
-  .blurp-hero h2{
-    font-size: 18px;
-    bottom: calc(-20vh + 20px);
-    left: calc(50% - 15px);
-    background-color: var(--purple1);
-  }
-  .wave-1-svg {
-    bottom: 90vh;
-  }
-  .wave-2-svg {
-    bottom: 120vh;
-  }
-  /* About Me */
-  .blurp-abt p {
-    font-size: 22px;
-  }
-  /*Contact*/
-  .contact-blurp p {
-    font-size: 20px;
-    width: 70%;
-    position: relative;
-    top: 45px;
-    left: 30px;
-  }
-  .contact-me-button {
-    width: 170px;
-    top: 75px;
-    left: 50px;
-  }
-  .contact-blurp button {
-    font-size: 22px;
-  }
-  .wave-6-svg {
-    bottom: calc(50vw + 226vh);
+    width: 100vw;
+    bottom: calc(50vw + 65vh);
   }
 }

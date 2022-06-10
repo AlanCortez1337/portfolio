@@ -46,7 +46,7 @@ function Info({type}) {
                         animate={{y: ['30px', '50px']}}
                         whileHover={{scale: 1.08}}
                         whileTap={{rotate: 0}}
-                    > An inspiring full stack web developer </motion.h1>
+                    > An aspiring full stack web developer </motion.h1>
                      {/* Resume Button */}
 
                     <motion.button
