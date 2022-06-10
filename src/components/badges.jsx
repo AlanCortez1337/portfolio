@@ -11,18 +11,18 @@ function BadgeImage({badgeName}) {
         y: {
             repeat: Infinity, 
             repeatType: "mirror",
-            duration: 1, 
+            duration: 1.5, 
             ease: "easeInOut"
         },
         rotate: {
             repeat: Infinity, 
-            duration: 8,
+            duration: 12,
             ease: "linear"
         },
         borderRadius: {
             repeat: Infinity, 
             repeatType: "mirror",
-            duration: 1, 
+            duration: 2, 
             ease: "easeInOut"
         }
     }

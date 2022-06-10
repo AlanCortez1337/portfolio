@@ -99,7 +99,7 @@ body, button {
   font-size: 28px;
   position: relative;
   bottom: 350px;
-  left: 60%;
+  left: 1200px;
   background-color: var(--cyan);
   padding: 15px;
   border-radius: 30px 20px 20px 30px;
@@ -108,20 +108,14 @@ body, button {
   position: relative;
 }
 .wave-1-svg {
+  width: 1920px;
   position: absolute;
   bottom: -25vh;
 }
-.wave-1 {
-  width: 100vw;
-  z-index: 1;
-}
 .wave-2-svg {
+  width: 1920px;
   position: absolute;
   bottom: -15vh;
-}
-.wave-2 {
-  width: 100vw;
-  z-index: 3;
 }
 /* About me */
 .about-me {
@@ -218,7 +212,7 @@ body, button {
 .wave-3-svg {
   position: relative; 
   bottom: 79vh;
-  width: 100vw;
+  width: 1920px;
 }
 /* Projects */
 .projects {
@@ -356,7 +350,7 @@ body, button {
 .wave-4-svg {
   position: relative; 
   bottom: 90vh;
-  width: 100vw;
+  width: 1920px;
   z-index: 1;
 }
 /* Contact */
@@ -365,7 +359,7 @@ body, button {
   width: 100vw;
   height: 100vh;
   position: relative;
-  z-index: 2;
+  z-index: 2; 
   overflow: hidden;
 }
 .contact-blurp {
@@ -484,12 +478,12 @@ body, button {
 .wave-5-svg {
   position: relative; 
   bottom: 85vh;
-  width: 100vw;
+  width: 1920px;
 }
 .wave-6-svg {
   position: relative; 
   bottom: calc(50vw + 10vh);
-  width: 100vw;
+  width: 1920px;
 }
 /* Laptop */
 @media screen and (max-width: 1750px){
@@ -510,6 +504,17 @@ body, button {
     font-size: 18px;
     bottom: 32  0px;
   }
+  /* experimental */
+  /* .wave-1-svg {
+    width: 1550px;
+    position: absolute;
+    bottom: calc(-25vw + 25vh);
+  }
+  .wave-2-svg {
+    width: 1550px;
+    position: absolute;
+    bottom: calc(-10vw + 5vh);
+  } */
   /* about section */
   .blurp-abt h3{
     left: 240px;
@@ -679,7 +684,7 @@ body, button {
     left: 15vw;
     bottom: 3vh;
   }
-  .blurp-abt p {
+  .blurp-abt p{
     font-size: 24px;
     font-weight: 500;
     width: 100%;
@@ -687,7 +692,7 @@ body, button {
     padding: 25px;
     border-radius: 50px 30px;
     position: relative;
-    top: calc(10vh - 70px);
+    top: calc(10vh - 1vw);
     left: -5.5vw;
   }
   .wave-3-svg {
@@ -830,10 +835,16 @@ body, button {
     padding: 15px 45px;
   }
   /* About Me */
+  .about-me {
+    height: 105vh;
+  }
   .blurp-abt p {
     font-size: 22px;
   }
   /*Contact*/
+  .contact {
+    height: 105vh;
+  }
   .contact-blurp p {
     font-size: 22px;
     width: 70%;
@@ -854,7 +865,7 @@ body, button {
     font-size: 14px;
     position: relative;
     left: -50px;
-    bottom: calc(-10vw - 10vh);
+    bottom: calc(-10vw - 20vh);
   }
   .mobile-socials {
     margin-bottom: 10px;
