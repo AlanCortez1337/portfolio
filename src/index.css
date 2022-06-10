@@ -250,8 +250,10 @@ body, button {
   border: var(--purpleCardBorder) 5px solid;
   border-radius: 30px;
   background-color: var(--purpleCard);
+  background: linear-gradient(#4A7A9D, #426E8D);
 }
 .project-card {
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,7 +504,7 @@ body, button {
   }
   .blurp-hero h2{
     font-size: 18px;
-    bottom: -100px;
+    bottom: -170px;
     background-color: var(--purple1);
     left: 700px;
   }
@@ -515,7 +517,7 @@ body, button {
   .wave-2-svg {
     width: 1650px;
     position: absolute;
-    bottom: calc(-10vw + 5svh);
+    bottom: -2vh;
   }
   /* about section */
   .blurp-abt h3{
@@ -535,12 +537,8 @@ body, button {
     font-size: 48px;
   }
   .title-card p {
-    font-size: 20px;
     font-weight: 600;
-    text-align: center;
     padding: 20px 20px;
-    border-radius: 0 0 20px 20px;
-    height: 100%;
   }
   .hover-effect a {
     position: absolute;
@@ -616,14 +614,14 @@ body, button {
     left: 500px;
   }
   .wave-2-svg {
-    bottom: -8vh;
+    bottom: -2vh;
   }
   /* about section */
   .blurp-abt h3{
     left: 240px;
   }
   .blurp-abt p {
-    font-size: 25px;
+    font-size: 28px;
     top: -30px;
     right: 50px;
   }
@@ -631,78 +629,32 @@ body, button {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
+  .abt-grid img:nth-child(2) {
+    border-color: var(--purple2);
+    position: relative;
+    top: 120px;
+    right: 120px;
+  }
+  .abt-grid img:nth-child(2):hover{
+    box-shadow: 0px 0px 15px var(--green1);
+  }
   .abt-grid img:nth-child(3), .abt-grid img:nth-child(4)  {
     display: none;
   }
   /* fix */
   /* project section */
   .project-grid {
-    grid-template-rows: 200px 300px;
+    margin: 50px 60px 0 60px;
+    width: calc(100% - 120px);
+    grid-template-columns: repeat(2, 1fr);
   }
-  .title-card h3 {
-    margin: 1.25em 0.5em 0.34em 0.5em;
-    font-size: 48px;
+  .project-grid h3 {
+    grid-column: span 2;
   }
-  .title-card p {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    padding: 20px 20px;
-    border-radius: 0 0 20px 20px;
-    height: 100%;
+  .remove-card {
+    display: none;
   }
-  .hover-effect a {
-    position: absolute;
-    bottom: 2%;
-    left: 78%;
-    padding: 0 25px;
-  }
-  /* contact section */
-  .contact-blurp p {
-    font-size: 24px;
-    width: 70%;
-    /* outer alignments */
-    position: relative;
-    top: 32px;
-  }
-  .contact-blurp button {
-    font-size: 28px;
-    position: relative;
-    bottom: 25px;
-  }
-  .contact-blurp footer {
-    font-size: 22px;
-    left: 30px;
-    bottom: 25px;
-  }
-  /* badges */
-  .github-badge {
-    font-size: unset;
-    /* outer alignment */
-    position: relative;
-    left: 50px;
-    top: 90px;
-  }
-  .linkedIn-badge {
-    width: 8em;
-    height: 8em;
-    font-size: 16px;
-  }
-  .resume-badge {
-    font-size: unset;
-    /* outer alignment */
-    position: relative;
-    left: 100px;
-    bottom: 50px;
-  }
-  .wave-5-svg {
-    width: 150vw;
-    right: 40vw;
-  }
-  .wave-6-svg {
-    width: 100vw;
-    bottom: calc(50vw + 65vh);
-  }
+  
 }
 /* Tablet (Maybe?) Screen break point */
 @media screen and (max-width: 930px){
@@ -710,7 +662,7 @@ body, button {
   /* hero section */
   /* HERE */
   .blurp-hero {
-    padding: 20px;
+    padding: 40px;
   }
   .blurp-hero h3 {
     bottom: 60px;
@@ -726,7 +678,10 @@ body, button {
   }
   .blurp-hero h2{
     font-size: 18px;
-    bottom: 32px 0px;
+    bottom: -162px;
+  }
+  .wave-2-svg {
+    bottom: 10vh;
   }
   /* about section */
   .blurp-abt h3{
@@ -734,7 +689,7 @@ body, button {
   }
   .blurp-abt p {
     font-size: 28px;
-    top: 10px;
+    top: 40px;
     right: 0px;
   }
   .blurp-abt {
@@ -759,73 +714,49 @@ body, button {
     position: relative; 
     right: 100px;
   }
+  /* fix project and contact */
+}
+/* Tablet (Maybe?) Screen break point */
+@media screen and (max-width: 750px){
+  /* fix */
+  /* hero section */
+  /* HERE */
+  .blurp-hero {
+    width: calc(100vw - 30px);
+    padding: 15px;
+  }
+  .blurp-hero h3 {
+    font-size: 24px;
+    bottom: 60px;
+    left: 300px;
+  } 
+  .blurp-hero h1{
+    font-size: 28px;
+    bottom: 10px;
+    padding: 15px;
+  }
+  .blurp-hero button{
+    font-size: 24px;
+    bottom: -50px;
+    left: 260px;
+  }
+  .blurp-hero h2{
+    font-size: 18px;
+    bottom: -132px;
+    left: 200px;
+  }
+  .wave-2-svg {
+    width: 3250px;
+    position: absolute;
+    bottom: -25vh;
+  }
+  /* fix, change the waves here */
+  /* about section */
+  .blurp-abt p {
+    font-size: 24px;
+    top: 10px;
+    right: 0px;
+  }
   /* fix */
   /* project section */
-  .project-grid {
-    grid-template-rows: 200px 300px;
-  }
-  .title-card h3 {
-    margin: 1.25em 0.5em 0.34em 0.5em;
-    font-size: 48px;
-  }
-  .title-card p {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    padding: 20px 20px;
-    border-radius: 0 0 20px 20px;
-    height: 100%;
-  }
-  .hover-effect a {
-    position: absolute;
-    bottom: 2%;
-    left: 78%;
-    padding: 0 25px;
-  }
-  /* contact section */
-  .contact-blurp p {
-    font-size: 24px;
-    width: 70%;
-    /* outer alignments */
-    position: relative;
-    top: 32px;
-  }
-  .contact-blurp button {
-    font-size: 28px;
-    position: relative;
-    bottom: 25px;
-  }
-  .contact-blurp footer {
-    font-size: 22px;
-    left: 30px;
-    bottom: 25px;
-  }
-  /* badges */
-  .github-badge {
-    font-size: unset;
-    /* outer alignment */
-    position: relative;
-    left: 50px;
-    top: 90px;
-  }
-  .linkedIn-badge {
-    width: 8em;
-    height: 8em;
-    font-size: 16px;
-  }
-  .resume-badge {
-    font-size: unset;
-    /* outer alignment */
-    position: relative;
-    left: 100px;
-    bottom: 50px;
-  }
-  .wave-5-svg {
-    width: 150vw;
-    right: 40vw;
-  }
-  .wave-6-svg {
-    width: 100vw;
-    bottom: calc(50vw + 65vh);
-  }
 }
