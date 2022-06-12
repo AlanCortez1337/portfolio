@@ -504,7 +504,7 @@ body, button {
   }
   .blurp-hero h2{
     font-size: 18px;
-    bottom: -170px;
+    bottom: -120px;
     background-color: var(--purple1);
     left: 700px;
   }
@@ -517,7 +517,7 @@ body, button {
   .wave-2-svg {
     width: 1650px;
     position: absolute;
-    bottom: -2vh;
+    bottom: -18vh;
   }
   /* about section */
   .blurp-abt h3{
@@ -530,11 +530,7 @@ body, button {
   }
   /* project section */
   .project-grid {
-    grid-template-rows: 200px 300px;
-  }
-  .title-card h3 {
-    margin: 1.25em 0.5em 0.34em 0.5em;
-    font-size: 48px;
+    grid-template-rows: 200px 400px;
   }
   .title-card p {
     font-weight: 600;
@@ -592,6 +588,12 @@ body, button {
     width: 100vw;
     bottom: calc(50vw + 65vh);
   }
+  /* PROJECT */
+  .title-card h3 {
+    font-weight: 600;
+    margin: 1.75em 0.5em 0.5em 0.5em;
+    font-size: 48px;
+  }
 }
 /* Smaller Laptop Screen break point */
 @media screen and (max-width: 1250px){
@@ -647,6 +649,11 @@ body, button {
     margin: 50px 60px 0 60px;
     width: calc(100% - 120px);
     grid-template-columns: repeat(2, 1fr);
+  }
+  .title-card h3 {
+    font-weight: 600;
+    margin: 1.75em 0.5em 0.5em 0.5em;
+    font-size: 54px;
   }
   .project-grid h3 {
     grid-column: span 2;
@@ -715,34 +722,57 @@ body, button {
     right: 100px;
   }
   /* fix project and contact */
+  .project-grid {
+    /* now a flex for ease of use */
+    margin: 50px 180px 0 180px;
+    width: calc(100% - 360px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .remove-card {
+    display: none;
+  }
+  .project-card {
+    height: 350px;
+  }
+  .title-card h3 {
+    margin: 1.75em 0.5em 0.25em 0.5em;
+  }
+  .title-card p {
+    font-size: 22px;
+  }
+  .wave-4-svg { 
+    bottom: 82vh;
+  }
 }
 /* Tablet (Maybe?) Screen break point */
 @media screen and (max-width: 750px){
   /* fix */
   /* hero section */
-  /* HERE */
   .blurp-hero {
     width: calc(100vw - 30px);
     padding: 15px;
   }
   .blurp-hero h3 {
     font-size: 24px;
-    bottom: 60px;
-    left: 300px;
+    bottom: 180px;
+    left: 330px;
   } 
   .blurp-hero h1{
     font-size: 28px;
-    bottom: 10px;
+    bottom: 120px;
+    left: 50px;
     padding: 15px;
   }
   .blurp-hero button{
     font-size: 24px;
-    bottom: -50px;
+    bottom: 40px;
     left: 260px;
   }
   .blurp-hero h2{
     font-size: 18px;
-    bottom: -132px;
+    bottom: -102px;
     left: 200px;
   }
   .wave-2-svg {
@@ -759,4 +789,78 @@ body, button {
   }
   /* fix */
   /* project section */
+  .project-grid {
+    /* now a flex for ease of use */
+    margin: 50px 100px 0 100px;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .title-card h3 {
+    margin: 1.25em 0.5em 0.5em 0.5em;
+  }
+  .title-card p {
+    font-size: 20px;
+  }
+}
+
+/* Small Tablet Screen break point */
+@media screen and (max-width: 660px){
+  /* fix > make it go to 475*/
+  /* hero section */
+  .blurp-hero {
+    width: calc(100vw - 30px);
+    padding: 15px;
+  }
+  .blurp-hero h3 {
+    font-size: 24px;
+    bottom: 180px;
+    left: 330px;
+  } 
+  .blurp-hero h1{
+    font-size: 28px;
+    bottom: 120px;
+    left: 50px;
+    padding: 15px;
+  }
+  .blurp-hero button{
+    font-size: 24px;
+    bottom: 40px;
+    left: 260px;
+  }
+  .blurp-hero h2{
+    font-size: 18px;
+    bottom: -102px;
+    left: 200px;
+  }
+  .wave-2-svg {
+    width: 3250px;
+    position: absolute;
+    bottom: -25vh;
+  }
+  /* fix, change the waves here */
+  /* about section */
+  .blurp-abt p {
+    font-size: 24px;
+    top: 10px;
+    right: 0px;
+  }
+  /* fix */
+  /* project section */
+  .project-grid {
+    /* now a flex for ease of use */
+    margin: 50px 100px 0 100px;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    bottom: 8vh;
+    gap: 10px;
+  }
+  .title-card h3 {
+    margin: 1.25em 0.5em 0.5em 0.5em;
+  }
+  .title-card p {
+    font-size: 20px;
+  }
 }
