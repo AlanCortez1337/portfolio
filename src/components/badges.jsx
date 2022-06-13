@@ -32,7 +32,7 @@ function BadgeImage({badgeName}) {
             {badgeName === "me" && 
                 <motion.img
                     style={{borderRadius: '80px'}} 
-                    animate={{rotate: 360, y: '-8vh', borderRadius: '20px'}}
+                    animate={{rotate: 360, y: '-4vh', borderRadius: '20px'}}
                     whileHover={{scale: 0.9}}
                     transition={badgeBounce}
                     src={MeBadge} alt="me" className="badge badge1" width={225} height={225} 
