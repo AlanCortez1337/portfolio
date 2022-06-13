@@ -57,7 +57,7 @@ function ProjCard({type}) {
                 transition={yTransition}
                 onHoverEnd={changeVisibility}
                 onClick={changeVisibility}
-                className={`project-card ${type === 2 && 'remove-card'}`}
+                className="project-card"
             >
                 <AnimatePresence>
                     {isVisible ? 

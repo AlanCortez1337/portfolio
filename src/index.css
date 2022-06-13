@@ -529,8 +529,16 @@ body, button {
     right: 50px;
   }
   /* project section */
+  .projects {
+    height: 110vh;
+  }
   .project-grid {
     grid-template-rows: 200px 400px;
+  }
+  .title-card h3 {
+    font-weight: 600;
+    margin: 1.75em 0.5em 0.5em 0.5em;
+    font-size: 48px;
   }
   .title-card p {
     font-weight: 600;
@@ -587,12 +595,6 @@ body, button {
   .wave-6-svg {
     width: 100vw;
     bottom: calc(50vw + 65vh);
-  }
-  /* PROJECT */
-  .title-card h3 {
-    font-weight: 600;
-    margin: 1.75em 0.5em 0.5em 0.5em;
-    font-size: 48px;
   }
 }
 /* Smaller Laptop Screen break point */
@@ -658,11 +660,20 @@ body, button {
   .project-grid h3 {
     grid-column: span 2;
   }
-  .remove-card {
-    display: none;
+  .project-grid > div:nth-child(4) {
+    grid-column: span 2;
+    justify-self: center;
+    align-self: center;
+    /* 
+      since currently we are in a 2x2 grid this odd space 
+      takes the current calculated width from line 652 
+      and cuts it in half while adding 30px to compensate for
+      the gap
+    */
+    width: calc(((100% - 120px)/2) + 30px);
   }
   .wave-4-svg {
-    bottom: 85vh;
+    bottom: 83vh;
   }
 }
 /* Tablet (Maybe?) Screen break point */
@@ -712,59 +723,81 @@ body, button {
   }
   .abt-grid {
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
     width: 100vw;
     padding: 0;
   }
-  .abt-grid img:nth-child(2), .abt-grid img:nth-child(3), .abt-grid img:nth-child(4), .abt-grid img:nth-child(5)  {
+  /* ME BADGE */
+  .abt-grid img:nth-child(2) {
+    width: 10em;
+    height: 10em;
+    top: -20px;
+    right: 120px;
+    grid-row: 4;
+    grid-column: 4;
+  }
+  /* LUA BADGE */
+  /* FIX HERE ALSO THE ONE ABOVE LOL */
+  .abt-grid img:nth-child(3) {
+    display: block;
+    width: 8em;
+    height: 8em;
+    position: relative;
+    top: 30px;
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .abt-grid img:nth-child(4), .abt-grid img:nth-child(5)  {
     display: none;
+  }
+  /* ABOUT CONTENT (TITLE AND P) */
+  .abt-grid div {
+    align-self: start;
+    grid-row: 1 / span 2;
+    grid-column: span 4;
   }
   .wave-3-svg {
     position: relative; 
     right: 100px;
   }
   /* fix project and contact */
+  .projects {
+    height: 130vh;
+  }
   .project-grid {
     margin: 50px 175px 0 175px;
     width: calc(100% - 350px);
     display: flex;
     flex-direction: column;
-    gap: 30px;
   }
   .project-title {
-    width: 140px;
-  }
-  .project-grid h3 {
-    font-size: 38px;
+    font-size: 64px;
+    width: 180px;
   }
   .project-grid > div {
     height: 275px;
   }
-  .title-card p {
-    font-size: 20px;
+  .project-grid > div:nth-child(4) {
     /* 
-    CHANGE?????? fix
-    margin: 50px 180px 0 180px;
-    width: calc(100% - 360px);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .remove-card {
-    display: none;
-  }
-  .project-card {
-    height: 350px;
+      essentially unsetting the previous jank calculation
+      since we are now using flexbox instead of grid.
+      Note: we want 100% width of the parent element, .project-grid
+    */
+    margin: 30px;
+    width: 100%;
   }
   .title-card h3 {
-    margin: 1.75em 0.5em 0.25em 0.5em;
+    margin: 1.25em 0.5em 0.05em 0.5em;
+    font-size: 48px;
   }
   .title-card p {
-    font-size: 22px;
+    font-size: 20px;
   }
-  .wave-4-svg { 
-    bottom: 82vh;
-     */
+  .wave-4-svg {
+    width: 2920px;
+    right: 400px;
+    bottom: 116vh;
   }
 }
 /* Tablet (Maybe?) Screen break point */
@@ -816,7 +849,6 @@ body, button {
     width: calc(100% - 200px);
     display: flex;
     flex-direction: column;
-    gap: 10px;
   }
   .title-card h3 {
     margin: 1.25em 0.5em 0.5em 0.5em;
