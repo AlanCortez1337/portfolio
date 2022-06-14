@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
+  /* Background Colors */
   --green1: #02C39A;
   --green2: #0DAF94;
   --green3: #199C8E;
@@ -7,14 +8,20 @@
   --purple3: #2F7483;
   --purple2: #3B617D;
   --purple1: #464D77;
+  /* Complementary Colors */
   --purpleCard: #4A7A9D;
   --purpleCardSemiTransparent: rgba(74, 122, 157, 0.5);
   --purpleCardBorder: #426E8D;
   --purple1shadow: #626daa;
   --greenHighlist: #02F1BD;
   --textColor: #f8f8f8;
+  /* Scroll Bar Colors */
   --scrollBarThumb: #444B74;
   --scrollBarBackground: #1F7475;
+  /* Font Sizes */
+  --smallText: 18px;
+  --mediumText: 24px;
+  --largeText: 28px;
 }
 /* scrollbar */
 * {
@@ -32,6 +39,8 @@
 }
 button, h1, h2, h3, p, footer {
   color: var(--textColor);
+  margin: 0;
+  padding: 0;
 }
 body, button {
   margin: 0;
@@ -53,41 +62,40 @@ body, button {
   align-items: flex-start;
   width: 100vw;
   height: 100vh;
+  gap: 5vh;
   position: relative;
+  left: calc(5vw + 5vh);
   z-index: 2;
-  padding-left: 120px;
-}
-.blurp-hero h3, .blurp-hero h2, .blurp-hero h1{
-  margin: 0;
-  padding: 0;
 }
 .blurp-hero h3 {
-  font-size: 32px;
-  position: relative;
-  bottom: 90px;
-  left: 380px;
+  font-size: var(--mediumText);
+  left: 120px;
   background-color: var(--purple2);
   padding: 15px;
   border-radius: 20px 30px;
+  
 } 
 .blurp-hero h1{
-  font-size: 40px;
-  position: relative;
-  bottom: 10px;
+  font-size: var(--mediumText);
+  width: 300px;
+  text-align: center;
   background-color: var(--purple2);
   padding: 15px;
   border-radius: 20px 30px;
 }
 .blurp-hero button{
-  font-size: 32px;
+  font-size: var(--mediumText);
   font-weight: 700;
-  position: relative;
-  bottom: -90px;
-  left: 400px;
   background-color: var(--purple2);
   border: var(--purple3) 5px solid;
   padding: 15px;
   border-radius: 30px 20px;
+}
+.blurp-hero h2{
+  font-size: var(--smallText);
+  background-color: var(--purple1);
+  padding: 15px;
+  border-radius: 30px 20px 20px 30px;
 }
 .desktop-notice {
   display: block;
@@ -95,27 +103,18 @@ body, button {
 .mobile-notice {
   display: none;
 }
-.blurp-hero h2{
-  font-size: 28px;
-  position: relative;
-  bottom: 350px;
-  left: 1200px;
-  background-color: var(--cyan);
-  padding: 15px;
-  border-radius: 30px 20px 20px 30px;
-}
 .wave {
   position: relative;
 }
 .wave-1-svg {
   width: 1920px;
   position: absolute;
-  bottom: -25vh;
+  bottom: -20vh;
 }
 .wave-2-svg {
-  width: 1920px;
+  width: 3250px;
   position: absolute;
-  bottom: -15vh;
+  bottom: -34vh;
 }
 /* About me */
 .about-me {
@@ -144,28 +143,8 @@ body, button {
   z-index: 3;
   transition: box-shadow 800ms ease-in-out;
 }
-.abt-grid img:nth-child(2) {
-  border-color: var(--purple1);
-  grid-column: 2;
-  align-self: center;
-}
-.abt-grid img:nth-child(3) {
-  grid-column: 3;
-  align-self: end;
-}
-.abt-grid img:nth-child(4) {
-  grid-column: 2;
-  align-self: start;
-  border-color: var(--purple2);
-}
-.abt-grid img:nth-child(5) {
-  border-color: var(--purple2);
-}
-.abt-grid img:nth-child(2):hover, .abt-grid img:nth-child(3):hover {
-  box-shadow: 0px 0px 15px var(--purple1shadow);
-}
-.abt-grid img:nth-child(4):hover, .abt-grid img:nth-child(5):hover {
-  box-shadow: 0px 0px 10px var(--green1);
+.abt-grid img:nth-child(2), .abt-grid img:nth-child(3), .abt-grid img:nth-child(4), .abt-grid img:nth-child(5)  {
+  display: none;
 }
 /* About Me - blurp info */
 .abt-grid div {
@@ -179,15 +158,10 @@ body, button {
   align-items: flex-start;
   position: relative;
   z-index: 2;
-  padding-left: 120px;
-  padding-top: 17vh; 
-}
-.blurp-abt h3, .blurp-abt p{
-  margin: 0 0 60px 0;
-  padding: 0;
+  padding-top: 10vh; 
 }
 .blurp-abt h3{
-  font-size: 48px;
+  font-size: 38px;
   background-color: var(--purple1);
   padding: 15px;
   border-radius: 30px;
@@ -196,14 +170,14 @@ body, button {
   bottom: 60px;
 }
 .blurp-abt p {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 500;
   width: 60%;
   background-color: var(--purple2);
   padding: 25px;
   border-radius: 50px 30px;
   position: relative;
-  top: 20px;
+  top: 10px;
 }
 .blurp-abt .highlight {
   color: var(--greenHighlist);
@@ -213,19 +187,20 @@ body, button {
 }
 .wave-3-svg {
   position: relative; 
-  bottom: 79vh;
-  width: 1920px;
+  bottom: 89vh;
+  right: 300px;
+  width: 3020px;
 }
 /* Projects */
 .projects {
   background-color: var(--purple1);
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   overflow: hidden;
 }
 .project-grid {
-  margin: 50px 120px 0 120px;
-  width: calc(100% - 240px);
+  margin: 50px 8vw 0 8vw;
+  width: calc(100% - 16vw);
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -235,8 +210,9 @@ body, button {
   z-index: 2;
 }
 .project-grid h3 {
-  font-size: 48px;
-  grid-column: span 3;
+  font-size: 38px;
+    width: 140px;
+  grid-column: span 1;
 }
 .project-title {
   width: 180px;
@@ -272,13 +248,13 @@ body, button {
 }
 .title-card h3 {
   font-weight: 600;
-  margin: 1.75em 0.5em 0.5em 0.5em;
-  font-size: 54px;
+  font-size: 36px;
+  margin: 1.2em 0.5em 0em 0.5em;
   display: flex;
   gap: 0.5em;
 }
 .title-card p {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   text-align: center;
   padding: 18px 30px;
@@ -488,515 +464,4 @@ body, button {
   position: relative; 
   bottom: 100vh;
   width: 1920px;
-}
-/* Laptop */
-@media screen and (max-width: 1650px){
-  /* hero section */
-  .blurp-hero h3 {
-    bottom: 60px;
-    left: 300px;
-  } 
-  .blurp-hero h1{
-    bottom: 10px;
-    padding: 15px;
-  }
-  .blurp-hero button{
-    bottom: -50px;
-    left: 260px;
-  }
-  .blurp-hero h2{
-    font-size: 18px;
-    bottom: -120px;
-    background-color: var(--purple1);
-    left: 700px;
-  }
-  /* experimental */
-  .wave-1-svg {
-    width: 1650px;
-    position: absolute;
-    bottom: calc(-25vw + 25vh);
-  }
-  .wave-2-svg {
-    width: 1650px;
-    position: absolute;
-    bottom: -18vh;
-  }
-  /* about section */
-  .blurp-abt h3{
-    left: 240px;
-  }
-  .blurp-abt p {
-    font-size: 25px;
-    top: -30px;
-    right: 50px;
-  }
-  /* project section */
-  .projects {
-    height: 110vh;
-  }
-  .project-grid {
-    grid-template-rows: 200px 400px;
-  }
-  .title-card h3 {
-    font-weight: 600;
-    margin: 1.75em 0.5em 0.5em 0.5em;
-    font-size: 48px;
-  }
-  .title-card p {
-    font-weight: 600;
-    padding: 20px 20px;
-  }
-  .hover-effect a {
-    position: absolute;
-    bottom: 2%;
-    left: 78%;
-    padding: 0 25px;
-  }
-  /* contact section */
-  .contact-blurp p {
-    font-size: 24px;
-    width: 70%;
-    /* outer alignments */
-    position: relative;
-    top: 32px;
-  }
-  .contact-blurp button {
-    font-size: 28px;
-    position: relative;
-    bottom: 25px;
-  }
-  .contact-blurp footer {
-    font-size: 22px;
-    left: 30px;
-    bottom: 25px;
-  }
-  /* badges */
-  .github-badge {
-    font-size: unset;
-    /* outer alignment */
-    position: relative;
-    left: 50px;
-    top: 90px;
-  }
-  .linkedIn-badge {
-    width: 8em;
-    height: 8em;
-    font-size: 16px;
-  }
-  .resume-badge {
-    font-size: unset;
-    /* outer alignment */
-    position: relative;
-    left: 100px;
-    bottom: 50px;
-  }
-  .wave-5-svg {
-    width: 150vw;
-    right: 40vw;
-  }
-  .wave-6-svg {
-    width: 100vw;
-    bottom: calc(50vw + 65vh);
-  }
-}
-/* Smaller Laptop Screen break point */
-@media screen and (max-width: 1250px){
-  /* fix */
-  /* hero section */
-  .blurp-hero h3 {
-    bottom: 60px;
-    left: 300px;
-  } 
-  .blurp-hero h1{
-    bottom: 10px;
-    padding: 15px;
-  }
-  .blurp-hero button{
-    bottom: -50px;
-    left: 260px;
-  }
-  .blurp-hero h2{
-    bottom: -180px;
-    left: 500px;
-  }
-  .wave-2-svg {
-    bottom: -2vh;
-  }
-  /* about section */
-  .blurp-abt h3{
-    left: 240px;
-  }
-  .blurp-abt p {
-    font-size: 26px;
-    top: -30px;
-    right: 50px;
-  }
-  .abt-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-  .abt-grid img:nth-child(2) {
-    border-color: var(--purple2);
-    position: relative;
-    top: 120px;
-    right: 120px;
-  }
-  .abt-grid img:nth-child(2):hover{
-    box-shadow: 0px 0px 15px var(--green1);
-  }
-  .abt-grid img:nth-child(3), .abt-grid img:nth-child(4)  {
-    display: none;
-  }
-  /* fix */
-  /* project section */
-  .project-grid {
-    margin: 50px 60px 0 60px;
-    width: calc(100% - 120px);
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .title-card h3 {
-    font-weight: 600;
-    margin: 1.75em 0.5em 0.5em 0.5em;
-    font-size: 54px;
-  }
-  .project-grid h3 {
-    grid-column: span 2;
-  }
-  .project-grid > div:nth-child(4) {
-    grid-column: span 2;
-    justify-self: center;
-    align-self: center;
-    /* 
-      since currently we are in a 2x2 grid this odd space 
-      takes the current calculated width from line 652 
-      and cuts it in half while adding 30px to compensate for
-      the gap
-    */
-    width: calc(((100% - 120px)/2) + 30px);
-  }
-  .wave-4-svg {
-    bottom: 83vh;
-  }
-}
-/* Tablet (Maybe?) Screen break point */
-@media screen and (max-width: 930px){
-  /* fix */
-  /* hero section */
-  /* HERE */
-  .blurp-hero {
-    padding: 40px;
-  }
-  .blurp-hero h3 {
-    bottom: 60px;
-    left: 300px;
-  } 
-  .blurp-hero h1{
-    bottom: 10px;
-    padding: 15px;
-  }
-  .blurp-hero button{
-    bottom: -50px;
-    left: 260px;
-  }
-  .blurp-hero h2{
-    font-size: 18px;
-    bottom: -162px;
-  }
-  .wave-2-svg {
-    bottom: 10vh;
-  }
-  /* about section */
-  .blurp-abt h3{
-    left: 140px;
-  }
-  .blurp-abt p {
-    font-size: 28px;
-    top: 40px;
-    right: 0px;
-  }
-  .blurp-abt {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    z-index: 2;
-    padding-top: 17vh; 
-  }
-  .abt-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    width: 100vw;
-    padding: 0;
-  }
-  /* ME BADGE */
-  .abt-grid img:nth-child(2) {
-    width: 10em;
-    height: 10em;
-    top: 150px;
-    right: 120px;
-    grid-row: 4;
-    grid-column: 4;
-  }
-  /* LUA BADGE */
-  /* FIX HERE ALSO THE ONE ABOVE LOL */
-  .abt-grid img:nth-child(3) {
-    display: block;
-    width: 8em;
-    height: 8em;
-    position: relative;
-    top: -30px;
-    border-color: var(--purple2);
-    grid-row: 5;
-    grid-column: 1;
-  }
-  .abt-grid img:nth-child(3):hover {
-    box-shadow: 0px 0px 15px var(--green1);
-  }
-  .abt-grid img:nth-child(4), .abt-grid img:nth-child(5)  {
-    display: none;
-  }
-  /* ABOUT CONTENT (TITLE AND P) */
-  .abt-grid div {
-    align-self: start;
-    grid-row: 1 / span 2;
-    grid-column: span 4;
-  }
-  .blurp-abt p {
-    width: 72%;
-  }
-  .wave-3-svg {
-    bottom: 80vh;
-    right: 100px;
-  }
-  /* fix project and contact */
-  .projects {
-    height: 130vh;
-  }
-  .project-grid {
-    margin: 50px 175px 0 175px;
-    width: calc(100% - 350px);
-    display: flex;
-    flex-direction: column;
-  }
-  .project-title {
-    font-size: 64px;
-    width: 180px;
-  }
-  .project-grid > div {
-    height: 275px;
-  }
-  .project-grid > div:nth-child(4) {
-    /* 
-      essentially unsetting the previous jank calculation
-      since we are now using flexbox instead of grid.
-      Note: we want 100% width of the parent element, .project-grid
-    */
-    margin: 30px;
-    width: 100%;
-  }
-  .title-card h3 {
-    margin: 1.25em 0.5em 0.05em 0.5em;
-    font-size: 48px;
-  }
-  .title-card p {
-    font-size: 20px;
-  }
-  .wave-4-svg {
-    width: 2920px;
-    right: 400px;
-    bottom: 116vh;
-  }
-}
-/* Tablet (Maybe?) Screen break point */
-@media screen and (max-width: 750px){
-  /* fix */
-  /* hero section */
-  .blurp-hero {
-    width: calc(100vw - 30px);
-    padding: 15px;
-  }
-  .blurp-hero h3 {
-    font-size: 24px;
-    bottom: 180px;
-    left: 330px;
-  } 
-  .blurp-hero h1{
-    font-size: 28px;
-    bottom: 120px;
-    left: 50px;
-    padding: 15px;
-  }
-  .blurp-hero button{
-    font-size: 24px;
-    bottom: 40px;
-    left: 260px;
-  }
-  .blurp-hero h2{
-    font-size: 18px;
-    bottom: -102px;
-    left: 200px;
-  }
-  .wave-2-svg {
-    width: 3250px;
-    position: absolute;
-    bottom: -25vh;
-  }
-  /* fix, change the waves here */
-  /* about section */
-  .blurp-abt p {
-    font-size: 24px;
-    top: 10px;
-    right: 0px;
-  }
-  /* fix */
-  /* project section */
-  .project-grid {
-    /* now a flex for ease of use */
-    margin: 50px 100px 0 100px;
-    width: calc(100% - 200px);
-    display: flex;
-    flex-direction: column;
-  }
-  .title-card h3 {
-    margin: 1.25em 0.5em 0.5em 0.5em;
-  }
-  .title-card p {
-    font-size: 20px;
-  }
-}
-
-/* Small Tablet Screen break point */
-@media screen and (max-width: 660px){
-  /* hero section */
-  .blurp-hero {
-    width: calc(100vw - 30px);
-    padding: 10px;
-  }
-  .blurp-hero h3 {
-    font-size: 22px;
-    bottom: 180px;
-    left: 180px;
-  } 
-  .blurp-hero h1{
-    font-size: 20px;
-    bottom: 120px;
-    left: 20px;
-    padding: 15px;
-  }
-  .blurp-hero button{
-    font-size: 20px;
-    bottom: 40px;
-    left: 220px;
-  }
-  .blurp-hero h2{
-    font-size: 18px;
-    bottom: -102px;
-    left: 120px;
-  }
-  .wave-1-svg {
-    width: 1920px;
-    position: absolute;
-    bottom: -20vh;
-  }
-  .wave-2-svg {
-    width: 3250px;
-    position: absolute;
-    bottom: -34vh;
-  }
-  /* about section */
-  .abt-grid img:nth-child(2) {
-    width: 8em;
-    height: 8em;
-    border-width: 7px;
-  }
-  .abt-grid img:nth-child(3), .abt-grid img:nth-child(4), .abt-grid img:nth-child(5)  {
-    display: none;
-  }
-  .blurp-abt {
-    padding-left: 60px;
-    padding-top: 10vh; 
-  }
-  .blurp-abt h3 {
-    font-size: 38px;
-    margin: 0;
-  }
-  .blurp-abt p {
-    font-size: 22px;
-    top: 10px;
-    right: 0px;
-  }
-  .wave-3-svg {
-    bottom: 89vh;
-    right: 300px;
-    width: 3020px;
-  }
-  /* project section */
-  .project-grid h3 {
-    font-size: 38px;
-    width: 140px;
-  }
-  .project-grid {
-    /* now a flex for ease of use */
-    margin: 50px 8vw 0 8vw;
-    width: calc(100% - 16vw);
-    display: flex;
-    flex-direction: column;
-  }
-  .project-grid > div {
-    height: 225px;
-  }
-  .title-card h3 {
-    font-size: 36px;
-    margin: 1.2em 0.5em 0em 0.5em;
-  }
-  .title-card p {
-    font-size: 18px;
-  }
-}
-/* Tall Mobile devices */
-@media screen and (max-height: 930px) {
-  .wave-1-svg {
-    width: 1920px;
-    position: absolute;
-    bottom: -10vh;
-  }
-}
-/* Smaller Devices starting at 850px height */
-@media screen and (max-height: 850px) {
-  /* About Section */
-  .about-me {
-    height: 120vh;
-  }
-  .wave-3-svg {
-    bottom: 108vh;
-    right: 300px;
-    width: 3020px;
-  }
-  /* Project */
-  .projects {
-    height: 150vh;
-  }
-}
-/* 430 now */
-@media screen and (max-width: 430px) {
-  /* hero section */
-  .blurp-hero {
-    padding: 0;
-  }
-  .blurp-hero h3 {
-    left: 120px;
-  } 
-  .blurp-hero h1{
-    font-size: 24px;
-    width: 250px;
-    text-align: center;
-  }
-  .blurp-hero button{
-    left: 180px;
-  }
-  .blurp-hero h2{
-    left: 100px;
-  }
 }
