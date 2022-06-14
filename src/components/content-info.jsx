@@ -38,6 +38,7 @@ function Info({type}) {
                         animate={{y: ['0px', '15px']}}
                         whileHover={{scale: 1.05}}
                         whileTap={{rotate: 0}}
+                        className="cyan-bubble"
                     > I am Alan Cortez </motion.h3>
                      {/* What I do */}
                     <motion.h1
@@ -46,6 +47,7 @@ function Info({type}) {
                         animate={{y: ['30px', '50px']}}
                         whileHover={{scale: 1.08}}
                         whileTap={{rotate: 0}}
+                        className="cyan-bubble"
                     > An aspiring full stack web developer </motion.h1>
                      {/* Resume Button */}
 
@@ -74,6 +76,7 @@ function Info({type}) {
                         animate={{y: ['60px', '50px']}}
                         whileHover={{scale: 0.95}}
                         whileTap={{rotate: 0, scale: 0.95}}
+                        className="purple-bubble"
                     > 
                         <span className="desktop-notice">
                             Hover over the bubbles!
@@ -92,7 +95,7 @@ function Info({type}) {
                         style={{rotate: 12}}
                         whileHover={{rotate: 0}}
                         whileTap={{rotate: 0, scale: 0.9}}
-                        className="title"
+                        className="purple-bubble"
                     >About Me</motion.h3>
                     <motion.p
                         style={{rotate: -5}}
@@ -100,6 +103,7 @@ function Info({type}) {
                         animate={{y: ['5px', '-5px']}}
                         whileHover={{rotate: 0}}
                         whileTap={{rotate: 0, scale: 0.95}}
+                        className="cyan-bubble"
                     >
                         Hey, how's it going? <i>Well I suppose you can't answer that...</i> My name is Alan and I want <span className="highlight">to make your life easier</span>. 
                         Attending CSUF made me realize how far a great website can go, <i>and how bad one can get</i>. 
@@ -107,6 +111,10 @@ function Info({type}) {
                         On the side I love <span className="highlight">baking bread</span>, 
                         playing <span className="highlight">D&D</span>, and chilling with my bird <span className="highlight">Lua</span>.
                     </motion.p>
+                    <Badge badgeName={"me"}/>
+                    <Badge badgeName={"lua"}/>
+                    <Badge badgeName={"bread"}/>
+                    <Badge badgeName={"dnd"}/>
                 </div>
             }
             {type === 'project' &&
@@ -116,7 +124,7 @@ function Info({type}) {
                     animate={{y: ['5px', '-5px']}}
                     whileHover={{rotate: 0}}
                     whileTap={{rotate: 0, scale: 0.95}}
-                    className="project-title"
+                    className="project-title cyan-bubble"
                 >Projects</motion.h3>
             }
             {type === 'contact' &&

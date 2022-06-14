@@ -55,7 +55,7 @@ function ProjCard({type}) {
                 animate={{y: projects[type].yBoundry}}
                 whileHover={{ y: "0vh", rotate: 0}}
                 transition={yTransition}
-                onHoverEnd={changeVisibility}
+                // onHoverEnd={changeVisibility}
                 onClick={changeVisibility}
                 className="project-card"
             >
@@ -67,7 +67,7 @@ function ProjCard({type}) {
                             animate={{opacity: 1}}
                             exit={{opacity: 0}}
                             transition={{duration: 0.75, ease: "easeInOut"}}
-                            onHoverStart={changeVisibility} 
+                            // onHoverStart={changeVisibility} 
                             className="title-card"
                         >
                             <h3>
@@ -75,9 +75,10 @@ function ProjCard({type}) {
                                 {projects[type].title}
                                 {type === 1 && <IoGameController size={"1.5em"}/>}
                                 {type === 2 && <SiTinder size={"1.25em"}/>}
+                                
                             </h3>
+                            <i>tap for more</i>
                             
-                            <p> {projects[type].blurp} </p>
                         </motion.div> 
                         : 
                         <motion.div
@@ -88,6 +89,17 @@ function ProjCard({type}) {
                             transition={{duration: 0.75, ease: "easeInOut"}}
                             className={`hover-effect bg-${type}`}
                         >
+                            {/* Blurp */}
+                            <motion.p
+                                style={{opacity: 0.5}}
+                                transition={{duration: 0.75, 
+                                    ease: "easeIn"}}
+                                whileHover={{opacity: 1}}
+                                whileTap={{opacity: 1}}
+                            > 
+                                {projects[type].blurp} 
+                            </motion.p>
+                            {/* Github Icon */}
                             <motion.a
                                 initial={{color: "#f8f8f8"}}
                                 whileHover={{scale: 1.25, color: "#02F1BD"}}
