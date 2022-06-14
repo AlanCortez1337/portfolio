@@ -955,4 +955,48 @@ body, button {
     font-size: 18px;
   }
 }
+/* Tall Mobile devices */
+@media screen and (max-height: 930px) {
+  .wave-1-svg {
+    width: 1920px;
+    position: absolute;
+    bottom: -10vh;
+  }
+}
+/* Smaller Devices starting at 850px height */
+@media screen and (max-height: 850px) {
+  /* About Section */
+  .about-me {
+    height: 120vh;
+  }
+  .wave-3-svg {
+    bottom: 108vh;
+    right: 300px;
+    width: 3020px;
+  }
+  /* Project */
+  .projects {
+    height: 150vh;
+  }
+}
 /* 430 now */
+@media screen and (max-width: 430px) {
+  /* hero section */
+  .blurp-hero {
+    padding: 0;
+  }
+  .blurp-hero h3 {
+    left: 120px;
+  } 
+  .blurp-hero h1{
+    font-size: 24px;
+    width: 250px;
+    text-align: center;
+  }
+  .blurp-hero button{
+    left: 180px;
+  }
+  .blurp-hero h2{
+    left: 100px;
+  }
+}
