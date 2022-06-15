@@ -61,7 +61,7 @@ function ProjCard({type}) {
             >
                 <AnimatePresence>
                     {isVisible ? 
-                        <motion.div
+                        <motion.h3
                             key={`title${type}`}
                             initial={{opacity: 0}}
                             animate={{opacity: 1}}
@@ -70,16 +70,13 @@ function ProjCard({type}) {
                             // onHoverStart={changeVisibility} 
                             className="title-card"
                         >
-                            <h3>
                                 {type === 0 && <SiDiscord size={"1.25em"}/>}
                                 {projects[type].title}
                                 {type === 1 && <IoGameController size={"1.5em"}/>}
                                 {type === 2 && <SiTinder size={"1.25em"}/>}
                                 
-                            </h3>
-                            <i>tap for more</i>
                             
-                        </motion.div> 
+                        </motion.h3> 
                         : 
                         <motion.div
                             key={`content${type}`}

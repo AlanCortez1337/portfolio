@@ -118,14 +118,26 @@ function Info({type}) {
                 </div>
             }
             {type === 'project' &&
-                <motion.h3
-                    style={{rotate: 9}}
-                    transition={waveBounce}
-                    animate={{y: ['5px', '-5px']}}
-                    whileHover={{rotate: 0}}
-                    whileTap={{rotate: 0, scale: 0.95}}
-                    className="project-title cyan-bubble"
-                >Projects</motion.h3>
+                <>
+                    <motion.h3
+                        style={{rotate: 9}}
+                        transition={waveBounce}
+                        animate={{y: ['5px', '-5px']}}
+                        whileHover={{rotate: 0}}
+                        whileTap={{rotate: 0, scale: 0.95}}
+                        className="project-title cyan-bubble"
+                    >Projects</motion.h3>
+                    <motion.i
+                        style={{rotate: -3}}
+                        transition={waveBounce}
+                        animate={{y: ['-3px', '-9px']}}
+                        whileHover={{rotate: 0}}
+                        whileTap={{rotate: 0, scale: 0.95}}
+                        className="small-info cyan-bubble"
+                    >
+                        Tap For More Info
+                    </motion.i>
+                </>
             }
             {type === 'contact' &&
                 <div className="contact-blurp">  
@@ -136,6 +148,7 @@ function Info({type}) {
                         animate={{y: ['7px', '-1px']}}
                         whileHover={{rotate: 0}}
                         whileTap={{rotate: 0, scale: 1.05}}
+                        className="green-bubble"
                     >Contact Me</motion.h3>
                     {/* badges */}
                     <Badge badgeName={"linkedin"}/>
@@ -143,11 +156,12 @@ function Info({type}) {
                     <Badge badgeName={"resume"}/>
                     {/* contact info */}
                     <motion.p
-                        style={{rotate: 9}}
+                        style={{rotate: 3}}
                         transition={waveBounce}
                         animate={{y: ['0px', '10px']}}
                         whileHover={{rotate: 0, y:0}}
                         whileTap={{rotate: 0}}
+                        className="bright-green-bubble"
                     >
                         Thank you for reaching the end. While I currently 
                         have a few things on my plate, I would love to follow 
@@ -163,6 +177,7 @@ function Info({type}) {
                         className="contact-me-button"
                     >
                         <button
+                            className="bright-green-bubble"
                         >Let's Chat!</button>
                     </motion.a>
                     {/* footer */}
