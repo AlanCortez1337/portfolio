@@ -57,7 +57,7 @@ function ProjCard({type}) {
                 transition={yTransition}
                 // onHoverEnd={changeVisibility}
                 onClick={changeVisibility}
-                className="project-card"
+                className={`project-card  bg-${type}`}
             >
                 <AnimatePresence>
                     {isVisible ? 
@@ -87,18 +87,10 @@ function ProjCard({type}) {
                             animate={{opacity: 1}}
                             exit={{opacity: 0}}
                             transition={{duration: 0.75, ease: "easeInOut"}}
-                            className={`hover-effect bg-${type}`}
+                            className="hover-effect"
                         >
                             {/* Blurp */}
-                            <motion.p
-                                style={{opacity: 0.5}}
-                                transition={{duration: 0.75, 
-                                    ease: "easeIn"}}
-                                whileHover={{opacity: 1}}
-                                whileTap={{opacity: 1}}
-                            > 
-                                {projects[type].blurp} 
-                            </motion.p>
+                            <p> {projects[type].blurp} </p>
                             {/* Github Icon */}
                             <motion.a
                                 initial={{color: "#f8f8f8"}}

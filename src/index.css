@@ -10,7 +10,7 @@
   --purple1: #464D77;
   /* Complementary Colors */
   --purpleCard: #4A7A9D;
-  --purpleCardSemiTransparent: rgba(74, 122, 157, 0.5);
+  --purpleCardSemiTransparent: rgba(74, 122, 157, 0.6);
   --purpleCardBorder: #426E8D;
   --purpleBubbleBorder: #4f588a;
   --purple1shadow: #626daa;
@@ -49,6 +49,7 @@ body, button {
   padding: 0;
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
+  background: linear-gradient(var(--green1), var(--purple1), var(--green1));
 }
 /* text bubbles */
 .cyan-bubble {
@@ -227,20 +228,32 @@ body, button {
   height: 100%;
 }
 .title-card h3 {
+  background-color: var(--purpleCardSemiTransparent);
+  padding: 15px;
+  border-radius: 20px 30px;
   font-size: var(--titleText);
+  align-self: center;
   font-weight: 600;
-  margin: 0.5em;
   display: flex;
+  margin: 1em 0;
   gap: 0.5em;
+}
+.title-card i {
+  background-color: var(--purpleCardSemiTransparent);
+  padding: 15px;
+  border-radius: 30px 20px;
+  font-size: var(--smallText);
 }
 .hover-effect {
   height: 100%;
+  position: absolute;
 }
-
 .hover-effect p {
   font-size: var(--smallText);
-  background-color: #4A7A9D;
   font-weight: 500;
+  background-color: var(--purpleCardSemiTransparent);
+  padding: 15px;
+  border-radius: 30px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,19 +271,16 @@ body, button {
 /* Discord Bot Gif */
 .bg-0 {
   width: 100%;
-  height: 100%;
   position: relative;
   background-image: url("/assests/discordBotDemo.gif");
   background-repeat: no-repeat;
   background-size: 150% 150%;
   background-position: 0% 100%;
   border-radius: 25px;
-  
 }
 /* Memory Game Gif */
 .bg-1 {
   width: 100%;
-  height: 100%;
   position: relative;
   background-image: url("/assests/memoryGameDemo.gif");
   background-repeat: no-repeat;
@@ -281,7 +291,6 @@ body, button {
 /* Food Tinder Gif */
 .bg-2 {
   width: 100%;
-  height: 100%;
   background-image: url("/assests/foodTinderDemo.gif");
   background-repeat: no-repeat;
   background-size: cover;

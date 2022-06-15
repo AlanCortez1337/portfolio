@@ -1,6 +1,7 @@
+import React, {Suspense} from 'react'
 import Wave from "./components/waves"
 import Blurp from "./components/content-info"
-import Card from "./components/projectCards"
+const Card = React.lazy(() => import('./components/projectCards'))
 import './App.css'
 
 
@@ -23,12 +24,19 @@ function App() {
         <div className="project-grid">
           {/* Includes title */}
           <Blurp type={'project'}/>
+          
           {/* Discord Bot Card */}
-          <Card type={0}/>
+          <Suspense fallback={<div>loading Card</div>}>
+            <Card type={0}/>
+          </Suspense>
           {/* Memory Game Card */}
-          <Card type={1}/>
+          <Suspense fallback={<div>loading Card</div>}>
+            <Card type={1}/>
+          </Suspense>
           {/* Food Tinder Card */}
-          <Card type={2}/>
+          <Suspense fallback={<div>loading Card</div>}>
+            <Card type={2}/>
+          </Suspense>
         </div>
         <Wave shape={4}></Wave>
       </section>
