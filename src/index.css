@@ -20,6 +20,7 @@
   --scrollBarThumb: #444B74;
   --scrollBarBackground: #1F7475;
   /* Font Sizes */
+  --verySmallText: 12px;
   --smallText: 18px;
   --smallMediumText: 20px;
   --mediumText: 24px;
@@ -324,7 +325,7 @@ body {
 .contact {
   background-color: var(--purple2);
   width: 100vw;
-  height: 100vh;
+  height: auto;
   position: relative;
   z-index: 2; 
   overflow: hidden;
@@ -334,7 +335,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0fr repeat(4, 1fr);
+  grid-template-rows: 0fr repeat(3, 1fr);
   gap: 50px;
   position: relative;
   margin: 50px 8vw;
@@ -376,29 +377,34 @@ body {
   background-color: var(--green2);
 }
 .contact-blurp footer {
-  font-size: var(--smallText);
+  align-self: end;
+  font-size: var(--verySmallText);
+  text-align: center;
   font-weight: 700;
+  width: 100%;
   position: relative;
-  left: 30px;
-  bottom: calc(1vw - 1vh);
+  top: 40px;
+}
+.mobile-socials {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
 }
 /* badges */
 .contact-blurp a * {
   width: 100%;
+  color: white;
 }
 .linkedIn-badge, .github-badge, .resume-badge {
   display: none;
 }
-.mobile-socials {
-  display: none;
-}
 .wave-5-svg {
-  position: relative; 
-  bottom: 95vh;
+  position: absolute; 
+  bottom: -30vh;
   width: 1920px;
 }
 .wave-6-svg {
-  position: relative; 
-  bottom: 100vh;
+  position: absolute; 
+  bottom: -15vh;
   width: 1920px;
 }

@@ -196,7 +196,7 @@ function Info({type}) {
                                 <IoLogoLinkedin size={"2em"}/>
                             </a>
                         </div>
-                        Designed and Developed by Alan Cortez
+                        Designed and developed by Alan Cortez
                     </motion.footer>
                 </div>
             }
