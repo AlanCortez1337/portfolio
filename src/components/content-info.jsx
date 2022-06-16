@@ -170,7 +170,7 @@ function Info({type}) {
                     <motion.a
                         style={{rotate: -6}}
                         transition={waveBounce}
-                        animate={{y: ['0px', '-24px']}}
+                        animate={{y: ['0px', '-18px']}}
                         whileHover={{rotate: 0, scale: 1.05}}
                         whileTap={{rotate: 0, scale: 0.9}}
                         href="mailto:cortez.alan060@gmail.com"

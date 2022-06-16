@@ -51,7 +51,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: linear-gradient(var(--green1), var(--purple1), var(--green1));
+  background: var(--green1);
 }
 /* text bubbles */
 .bright-green-bubble {
@@ -119,11 +119,12 @@ body {
   font-size: var(--smallText);
   border-radius: 30px 20px 20px 30px;
 }
+/* Reveals Hover/Tap based on device */
 .desktop-notice {
-  display: block;
+  display: none;
 }
 .mobile-notice {
-  display: none;
+  display: block;
 }
 .wave {
   position: relative;
@@ -253,7 +254,6 @@ body {
   align-items: center;
   gap: 0.5em;
 }
-/* <i>tap for more</i> */
 .title-card i {
   background-color: var(--purpleCardSemiTransparent);
   padding: 15px;
@@ -317,7 +317,6 @@ body {
   position: absolute; 
   bottom: 1vh;
   right: -300px;
-  /* Just dissapears */
   width: 1920px;
   z-index: 1;
 }
@@ -350,7 +349,6 @@ body {
   font-size: var(--smallMediumText);
   font-weight: 600;
   text-align: center;
-  /* width: 70%; */
   background-color: var(--green1);
   padding: 25px;
   border-radius: 50px 30px;
@@ -407,4 +405,58 @@ body {
   position: absolute; 
   bottom: -15vh;
   width: 1920px;
+}
+/* medium height mobile devices */
+@media screen and (min-height: 800px) {
+  /* Hero Section */
+  .wave-1-svg {
+    bottom: -20vh;
+  }
+  .wave-2-svg {
+    bottom: -50vh;
+  }
+  /* Contact Section */
+  .contact-blurp p {
+    top: 12vh;
+  }
+  .contact-me-button {
+    top: 20vh;
+  }
+  .wave-5-svg {
+    bottom: -8.5vh;
+  }
+  .wave-6-svg {
+    bottom: -14vh;
+  }
+}
+/* very high mobile devices */
+@media screen and (min-height: 880px) {
+  /* Hero Section */
+  .wave-1-svg {
+    bottom: -10vh;
+  }
+  .wave-2-svg {
+    bottom: -35vh;
+  }
+  /* About Section */
+  .blurp-abt p {
+    grid-row: span 2;
+  }
+  .blurp-abt img:nth-child(3) {
+    display: block;
+    justify-self: center;
+    width: 8em;
+    height: 8em;
+    border: var(--purple3) 5px solid;
+  }
+  /* Contact Section */
+  .contact-blurp p {
+    top: 20vh;
+  }
+  .contact-me-button {
+    top: 28vh;
+  }
+  .wave-5-svg {
+    bottom: -8vh;
+  }
 }
