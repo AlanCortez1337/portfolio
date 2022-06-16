@@ -77,10 +77,10 @@ function BadgeImage({badgeName}) {
                     whileHover={{scale: 0.9}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
-                    className="linkedIn-badge"
+                    className="linkedIn-badge bright-green-bubble"
                     >
                     <IoLogoLinkedin 
-                        size={"8em"} 
+                        size={"5em"} 
                         color={"#464D77"}
                     />
                 </motion.a>
@@ -93,10 +93,10 @@ function BadgeImage({badgeName}) {
                     whileHover={{scale: 0.9}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
-                    className="github-badge"
+                    className="github-badge bright-green-bubble"
                 >
                     <IoLogoGithub 
-                        size={"12em"}
+                        size={"5em"}
                         color={"#3B617D"}
                     />
                 </motion.a>
@@ -110,7 +110,7 @@ function BadgeImage({badgeName}) {
                     whileHover={{scale: 1.3}}
                     whileTap={{scale: 0.9}}
                     transition={badgeBounce}
-                    className="resume-badge"
+                    className="resume-badge bright-green-bubble"
                 >
                     <IoDocumentText 
                         size={"5em"}
