@@ -176,9 +176,19 @@ function Info({type}) {
                         href="mailto:cortez.alan060@gmail.com"
                         className="contact-me-button"
                     >
-                        <button
-                            className="bright-green-bubble"
-                        >Let's Chat!</button>
+                        <motion.button
+                            initial={{borderRadius: '20px 30px 20px 30px'}}
+                            transition={waveBounce}
+                            whileHover={{
+                                transistion: {
+                                    duration: 0.4, 
+                                    yoyo: Infinity, 
+                                    ease: "ease"
+                                }, 
+                                borderRadius: '30px 20px 30px 20px',
+                            }}
+                            className="bright-green-bubble-inverse"
+                        >Let's Chat!</motion.button>
                     </motion.a>
                     {/* footer */}
                     <motion.footer

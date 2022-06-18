@@ -33,7 +33,7 @@ function BadgeImage({badgeName}) {
                 <motion.img
                     style={{borderRadius: '80px'}} 
                     animate={{rotate: 360, y: '-4vh', borderRadius: '20px'}}
-                    whileHover={{scale: 0.9}}
+                    whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
                     src={MeBadge} alt="me" className="badge badge1" width={225} height={225} 
@@ -44,7 +44,7 @@ function BadgeImage({badgeName}) {
                     style={{borderRadius: '20px'}} 
                     animate={{ rotate: -360, y: '-3vh', borderRadius: '80px' }}
                     whileHover={{scale: 1.1}}
-                    whileTap={{scale: 0.9}}
+                    whileTap={{scale: 0.8}}
                     transition={badgeBounce}
                     src={LuaBadge} alt="me" className="badge" width={175} height={175} 
                 />
@@ -53,7 +53,7 @@ function BadgeImage({badgeName}) {
                 <motion.img
                     style={{borderRadius: '30px'}} 
                     animate={{ rotate: -360, y: '3vh', borderRadius: '90px' }}
-                    whileHover={{scale: 0.9}}
+                    whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
                     src={BreadBadge} alt="me" className="badge" width={225} height={225} 
@@ -64,7 +64,7 @@ function BadgeImage({badgeName}) {
                     style={{borderRadius: '60px'}} 
                     animate={{rotate: 360, y: '3vh', borderRadius: '30px'}}
                     whileHover={{scale: 1.3}}
-                    whileTap={{scale: 0.9}}
+                    whileTap={{scale: 0.8}}
                     transition={badgeBounce}
                     src={DndBadge} alt="me" className="badge" width={150} height={150} 
                 />
@@ -74,7 +74,7 @@ function BadgeImage({badgeName}) {
                     href="https://www.linkedin.com/in/alancortez1337/"
                     style={{borderRadius: '10px'}}
                     animate={{rotate: -360, y: '-4vh', borderRadius: '60px'}}
-                    whileHover={{scale: 0.9}}
+                    whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
                     className="linkedIn-badge bright-green-bubble"
@@ -90,7 +90,7 @@ function BadgeImage({badgeName}) {
                     href="https://github.com/AlanCortez1337"
                     style={{borderRadius: '100px'}}
                     animate={{rotate: -360, y: '6vh', borderRadius: '40px'}}
-                    whileHover={{scale: 0.9}}
+                    whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
                     className="github-badge bright-green-bubble"
@@ -108,7 +108,7 @@ function BadgeImage({badgeName}) {
                     initial={{borderRadius: '50px'}}
                     animate={{rotate: 360, y: '-8vh', borderRadius: '20px'}}
                     whileHover={{scale: 1.3}}
-                    whileTap={{scale: 0.9}}
+                    whileTap={{scale: 0.8}}
                     transition={badgeBounce}
                     className="resume-badge bright-green-bubble"
                 >
