@@ -687,6 +687,9 @@ body {
     justify-self: unset;
     width: auto;
   }
+  .hover-effect p {
+    font-size: var(--largeText);
+  }
   .hover-effect a {
     left: 85%;
   }
