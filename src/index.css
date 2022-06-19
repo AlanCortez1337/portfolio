@@ -24,6 +24,7 @@
   --smallText: 18px;
   --smallMediumText: 20px;
   --mediumText: 24px;
+  --mediumLargeText: 26px;
   --largeText: 28px;
   --titleText: 38px;
 }
@@ -84,7 +85,7 @@ body {
 .hero {
   background-color: var(--green1);
   width: 100vw;
-  height: 100vh;
+  height: 800px;
   overflow: hidden;
 }
 .blurp-hero {
@@ -93,7 +94,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: calc(100vw - calc(2 *(5vw + 3vh)));
-  height: 100vh;
+  height: 100%;
   gap: 5vh;
   position: relative;
   left: calc(5vw + 3vh);
@@ -138,18 +139,18 @@ body {
 .wave-1-svg {
   width: 1920px;
   position: absolute;
-  bottom: -40vh;
+  bottom: -190px;
 }
 .wave-2-svg {
   width: 3250px;
   position: absolute;
-  bottom: -60vh;
+  bottom: -350px;
 }
 /* About me */
 .about-me {
   background-color: var(--purple2);
   width: 100vw;
-  height: 100vh;
+  height: 1000px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -183,6 +184,14 @@ body {
   font-weight: 500;
   width: 80%;
   border-radius: 50px 30px;
+  grid-row: span 2;
+}
+.blurp-abt img:nth-child(3) {
+  display: block;
+  justify-self: center;
+  width: 8em;
+  height: 8em;
+  border: var(--purple3) 5px solid;
 }
 .blurp-abt .highlight {
   color: var(--greenHighlist);
@@ -195,7 +204,7 @@ body {
 }
 .wave-3-svg {
   position: relative; 
-  bottom: 85vh;
+  bottom: 855px;
   right: 300px;
   width: 3020px;
 }
@@ -314,7 +323,7 @@ body {
 }
 .wave-4-svg {
   position: absolute; 
-  bottom: 1vh;
+  bottom: 10px;
   right: -300px;
   width: 1920px;
   z-index: 1;
@@ -323,14 +332,14 @@ body {
 .contact {
   background-color: var(--purple2);
   width: 100vw;
-  height: auto;
+  height: 730px;
   position: relative;
   z-index: 2; 
   overflow: hidden;
 }
 .contact-blurp {
   width: calc(100% - 16vw);
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0fr repeat(3, 1fr);
@@ -365,8 +374,6 @@ body {
 .contact-blurp button {
   font-size: var(--smallMediumText);
   font-weight: 700;
-  /* border: none; */
-  /* border-radius: 20px; */
   transition: all 500ms ease-in-out;
 }
 .contact-blurp button:hover {
@@ -379,7 +386,7 @@ body {
   font-weight: 700;
   width: 100%;
   position: relative;
-  top: 40px;
+  bottom: 60px;
 }
 .mobile-socials {
   display: flex;
@@ -396,67 +403,13 @@ body {
 }
 .wave-5-svg {
   position: absolute; 
-  bottom: -30vh;
+  bottom: -130px;
   width: 1920px;
 }
 .wave-6-svg {
   position: absolute; 
-  bottom: -15vh;
+  bottom: -60px;
   width: 1920px;
-}
-/* medium height mobile devices */
-@media screen and (min-height: 800px) {
-  /* Hero Section */
-  .wave-1-svg {
-    bottom: -20vh;
-  }
-  .wave-2-svg {
-    bottom: -50vh;
-  }
-  /* Contact Section */
-  .contact-blurp p {
-    top: 12vh;
-  }
-  .contact-me-button {
-    top: 20vh;
-  }
-  .wave-5-svg {
-    bottom: -8.5vh;
-  }
-  .wave-6-svg {
-    bottom: -14vh;
-  }
-}
-/* very high mobile devices */
-@media screen and (min-height: 880px) {
-  /* Hero Section */
-  .wave-1-svg {
-    bottom: -10vh;
-  }
-  .wave-2-svg {
-    bottom: -35vh;
-  }
-  /* About Section */
-  .blurp-abt p {
-    grid-row: span 2;
-  }
-  .blurp-abt img:nth-child(3) {
-    display: block;
-    justify-self: center;
-    width: 8em;
-    height: 8em;
-    border: var(--purple3) 5px solid;
-  }
-  /* Contact Section */
-  .contact-blurp p {
-    top: 20vh;
-  }
-  .contact-me-button {
-    top: 28vh;
-  }
-  .wave-5-svg {
-    bottom: -8vh;
-  }
 }
 /* Tablets */
 @media screen and (min-width: 740px) {
@@ -484,12 +437,6 @@ body {
   }
   .blurp-hero h2 {
     font-size: var(--mediumText);
-  }
-  .wave-1-svg {
-    bottom: 0vh;
-  }
-  .wave-2-svg {
-    bottom: -13vh;
   }
   /* About Section */
   .blurp-abt {
@@ -520,6 +467,9 @@ body {
     height: 9em;
     border: var(--purpleBubbleBorder) 5px solid;
   }
+  .wave-3-svg {
+    bottom: 855px;
+  }
   /* Project Section */
   .project-grid {
     width: calc(100% - 48vw);
@@ -544,22 +494,21 @@ body {
   /* Contact Section */
   .contact-blurp {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0fr 1fr 1fr 0fr;
+    grid-template-rows: 0fr repeat(3, 1fr) 0fr;
   }
   .contact-blurp h3 {
     grid-column: span 3;
   }
   .contact-blurp p {
-    font-size: var(--mediumText);
+    font-size: var(--smallMediumText);
     grid-column: 2 / span 2;
     grid-row: 2;
-    top: 10vh;
-    height: 190px;
+    /* height: 110px; */
   }
   .contact-me-button {
     grid-column: 3;
     grid-row: 3;
-    align-self: center;
+    align-self: end;
     top: 0;
   }
   .contact-me-button button {
@@ -570,19 +519,22 @@ body {
     font-size: var(--mediumText);
     grid-column: span 3;
     grid-row: 4;
+    bottom: 10px;
   }
   .linkedIn-badge, .github-badge, .resume-badge {
     display: block;
     justify-self: center;
     font-size: 1.25em;
-    width: 5em;
-    height: 5em;
+    width: 3em;
+    height: 3em;
   }
   .linkedIn-badge {
-    align-self: start;
+    align-self: end;
     grid-column: 2;
     grid-row: 3;
     padding: 14px;
+    position: relative;
+    top: 60px;
   }
   .github-badge {
     align-self: center;
@@ -592,6 +544,7 @@ body {
   }
   .resume-badge {
     align-self: end;
+    justify-self: start;
     grid-column: 1;
     grid-row: 2;
     padding: 8px;
@@ -599,25 +552,17 @@ body {
   .mobile-socials {
     display: none;
   }
-  .wave-5-svg {
-    bottom: -10vh;
-    width: 2640px;
-  }
   .wave-6-svg {
-    bottom: -12vh;
+    position: absolute; 
+    bottom: -50px;
+    left: -190px;
   }
 }
 /* Laptops */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1150px) {
   /* Hero Section */
   .blurp-hero {
-    width: calc(100vw - calc(7 *(5vw + 3vh)));
-  }
-  .wave-1-svg {
-    bottom: -10vh;
-  }
-  .wave-2-svg {
-    bottom: -13vh;
+    width: calc(100vw - calc(5 * (5vw + 3vh)));
   }
   /* About Section */
   .blurp-abt {
@@ -640,11 +585,14 @@ body {
     height: 11em;
     grid-row: span 2;
   }
+  .wave-1-svg {
+    bottom: -260px;
+  }
   /* Project Section */
   .project-grid {
     width: calc(100% - 24vw);
     margin: 50px 12vw;
-    gap: 60px;
+    gap: 80px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0fr 0fr repeat(2, 1fr);
   }
@@ -661,18 +609,22 @@ body {
   .project-grid > *:nth-child(5) {
     grid-column: span 2;
     justify-self: center;
-    width: calc(55vw - 300px);
+    width: calc(55vw - 100px);
   }
   .hover-effect a {
     left: 88%;
   }
   .wave-4-svg {
-    bottom: -30vh;
+    bottom: -300px;
+    right: -100px;
   }
   /* Contact Section */
+  .contact {
+    height: 1000px;
+  }
   .contact-blurp p {
-    font-size: var(--largeText);
-    width: 480px;
+    font-size: var(--mediumLargeText);
+    width: 440px;
   }
   .contact-me-button {
     justify-self: center;
@@ -682,16 +634,38 @@ body {
     font-size: var(--largeText);
     height: 80px;
   }
+  .github-badge, .resume-badge {
+    width: 6em;
+    height: 6em;
+  }
+  .github-badge > *, .resume-badge > * {
+    width: 6em;
+    height: 6em;
+  }
   .linkedIn-badge {
     align-self: center;
-    width: 6em;
-    height: 6em;
+    justify-self: start;
+    width: 7em;
+    height: 7em;
   }
   .linkedIn-badge > * {
-    width: 6em;
-    height: 6em;
+    width: 7em;
+    height: 7em;
+  }
+  .contact-blurp footer {
+    justify-self: start;
+    width: auto;
+    top: -20px;
   }
   .wave-5-svg {
-    bottom: -18vh;
+    bottom: -160px;
   }
+  .wave-6-svg {
+    bottom: -20px;
+    left: -100px;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1700px) {
+  
 }

@@ -43,7 +43,7 @@ function BadgeImage({badgeName}) {
                 <motion.img
                     style={{borderRadius: '20px'}} 
                     animate={{ rotate: -360, y: '-3vh', borderRadius: '80px' }}
-                    whileHover={{scale: 1.1}}
+                    whileHover={{scale: 1.2}}
                     whileTap={{scale: 0.8}}
                     transition={badgeBounce}
                     src={LuaBadge} alt="me" className="badge" width={175} height={175} 
@@ -63,7 +63,7 @@ function BadgeImage({badgeName}) {
                 <motion.img 
                     style={{borderRadius: '60px'}} 
                     animate={{rotate: 360, y: '3vh', borderRadius: '30px'}}
-                    whileHover={{scale: 1.3}}
+                    whileHover={{scale: 1.2}}
                     whileTap={{scale: 0.8}}
                     transition={badgeBounce}
                     src={DndBadge} alt="me" className="badge" width={150} height={150} 
@@ -80,7 +80,7 @@ function BadgeImage({badgeName}) {
                     className="linkedIn-badge bright-green-bubble"
                     >
                     <IoLogoLinkedin 
-                        size={"5em"} 
+                        size={"3em"} 
                         color={"#464D77"}
                     />
                 </motion.a>
@@ -88,15 +88,15 @@ function BadgeImage({badgeName}) {
             {badgeName === "github" && 
                 <motion.a
                     href="https://github.com/AlanCortez1337"
-                    style={{borderRadius: '100px'}}
-                    animate={{rotate: -360, y: '6vh', borderRadius: '40px'}}
+                    style={{borderRadius: '60px'}}
+                    animate={{rotate: -360, y: '6vh', borderRadius: '20px'}}
                     whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
                     className="github-badge bright-green-bubble"
                 >
                     <IoLogoGithub 
-                        size={"5em"}
+                        size={"3em"}
                         color={"#3B617D"}
                     />
                 </motion.a>
@@ -106,14 +106,14 @@ function BadgeImage({badgeName}) {
                 <motion.a
                     href="https://www.youtube.com/shorts/k8LnKGWmNTk?&ab_channel=1980sGamer"
                     initial={{borderRadius: '50px'}}
-                    animate={{rotate: 360, y: '-8vh', borderRadius: '20px'}}
+                    animate={{rotate: 360, y: '-5vh', borderRadius: '20px'}}
                     whileHover={{scale: 1.3}}
                     whileTap={{scale: 0.8}}
                     transition={badgeBounce}
                     className="resume-badge bright-green-bubble"
                 >
                     <IoDocumentText 
-                        size={"5em"}
+                        size={"3em"}
                         color={"#3B617D"}
                     />
                 </motion.a>
