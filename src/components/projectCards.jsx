@@ -10,7 +10,7 @@ function ProjCard({type}) {
         // Discord Bot Info
         {
             title: " Bot",
-            blurp: "My goal with this passion project was to annoy my friends to the maximum. The GitHub repository shows all the different features I have implemented.",
+            blurp: "My goal with this passion project was to annoy my friends to the maximum. My GitHub repository shows all the different features I have implemented.",
             link: "https://github.com/AlanCortez1337/Discord-Bot-Python",
             yBoundry: "-20px",
             rotate: "3deg"
@@ -18,14 +18,14 @@ function ProjCard({type}) {
         // Memory Game Info
         {
             title: "Memory ",
-            blurp: "This is my first finished React project which is a memory card game with funny animals. Additional information about this project is found in the GitHub repository.",
+            blurp: "This is my first finished React project which is a memory card game with funny animals. Additional information about this project is found in my GitHub repository.",
             yBoundry: "40px",
             rotate: "-2deg"
         },
         // Food Tinder Info
         {
             title: "Food ",
-            blurp: "In collaboration with my ACM club, we developed a Tinder clone for food. My contributions were the \"create pos\" page, the nav bar, and assisting in the login screen of Food Tinder.",
+            blurp: "In collaboration with my ACM club, we developed a Tinder clone for food. My contributions were the \"create post\" page, nav bar, and assisting in the login screen of Food Tinder.",
             link: "https://github.com/acmCSUFDev/Food-Tinder",
             yBoundry: "20px",
             rotate: "2deg"
