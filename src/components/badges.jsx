@@ -32,7 +32,7 @@ function BadgeImage({badgeName}) {
             {badgeName === "me" && 
                 <motion.img
                     style={{borderRadius: '80px'}} 
-                    animate={{rotate: 360, y: '-4vh', borderRadius: '20px'}}
+                    animate={{rotate: 360, y: '-30px', borderRadius: '20px'}}
                     whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
@@ -42,7 +42,7 @@ function BadgeImage({badgeName}) {
             {badgeName === "lua" && 
                 <motion.img
                     style={{borderRadius: '20px'}} 
-                    animate={{ rotate: -360, y: '-3vh', borderRadius: '80px' }}
+                    animate={{ rotate: -360, y: '-20px', borderRadius: '80px' }}
                     whileHover={{scale: 1.2}}
                     whileTap={{scale: 0.8}}
                     transition={badgeBounce}
@@ -52,7 +52,7 @@ function BadgeImage({badgeName}) {
             {badgeName === "bread" && 
                 <motion.img
                     style={{borderRadius: '30px'}} 
-                    animate={{ rotate: -360, y: '3vh', borderRadius: '90px' }}
+                    animate={{ rotate: -360, y: '50px', borderRadius: '30px' }}
                     whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
@@ -62,7 +62,7 @@ function BadgeImage({badgeName}) {
             {badgeName === "dnd" && 
                 <motion.img 
                     style={{borderRadius: '60px'}} 
-                    animate={{rotate: 360, y: '3vh', borderRadius: '30px'}}
+                    animate={{rotate: 360, y: '60px', borderRadius: '30px'}}
                     whileHover={{scale: 1.2}}
                     whileTap={{scale: 0.8}}
                     transition={badgeBounce}
@@ -73,7 +73,7 @@ function BadgeImage({badgeName}) {
                 <motion.a
                     href="https://www.linkedin.com/in/alancortez1337/"
                     style={{borderRadius: '10px'}}
-                    animate={{rotate: -360, y: '-4vh', borderRadius: '60px'}}
+                    animate={{rotate: -360, y: '-20px', borderRadius: '60px'}}
                     whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
@@ -89,7 +89,7 @@ function BadgeImage({badgeName}) {
                 <motion.a
                     href="https://github.com/AlanCortez1337"
                     style={{borderRadius: '60px'}}
-                    animate={{rotate: -360, y: '6vh', borderRadius: '20px'}}
+                    animate={{rotate: -360, y: '60px', borderRadius: '20px'}}
                     whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
@@ -106,7 +106,7 @@ function BadgeImage({badgeName}) {
                 <motion.a
                     href="https://www.youtube.com/shorts/k8LnKGWmNTk?&ab_channel=1980sGamer"
                     initial={{borderRadius: '50px'}}
-                    animate={{rotate: 360, y: '-5vh', borderRadius: '20px'}}
+                    animate={{rotate: 360, y: '-40px', borderRadius: '20px'}}
                     whileHover={{scale: 1.3}}
                     whileTap={{scale: 0.8}}
                     transition={badgeBounce}

@@ -12,7 +12,7 @@ function ProjCard({type}) {
             title: " Bot",
             blurp: "My goal with this passion project was to annoy my friends to the maximum. Interact to check out a demo of the working bot.",
             link: "https://github.com/AlanCortez1337/Discord-Bot-Python",
-            yBoundry: "-2vh",
+            yBoundry: "-20px",
             rotate: "3deg"
         },
         // Memory Game Info
@@ -20,7 +20,7 @@ function ProjCard({type}) {
             title: "Memory ",
             blurp: "This is my first finished React project which is a memory card game with funny animals. There is a link to play in the GitHub repository.",
             link: "https://github.com/AlanCortez1337/Memory-Mania",
-            yBoundry: "2vh",
+            yBoundry: "40px",
             rotate: "-2deg"
         },
         // Food Tinder Info
@@ -28,7 +28,7 @@ function ProjCard({type}) {
             title: "Food ",
             blurp: "In collaboration with my ACM club, I developed the create post page, the nav bar, and assisted in the login screen of Food Tinder.",
             link: "https://github.com/acmCSUFDev/Food-Tinder",
-            yBoundry: "-2vh",
+            yBoundry: "20px",
             rotate: "2deg"
         }
     ]
@@ -53,7 +53,7 @@ function ProjCard({type}) {
             <motion.div
                 style={{rotate: projects[type].rotate}} 
                 animate={{y: projects[type].yBoundry}}
-                whileHover={{ y: "0vh", rotate: 0}}
+                whileHover={{ y: "0px", rotate: 0}}
                 transition={yTransition}
                 // onHoverEnd={changeVisibility}
                 onClick={changeVisibility}

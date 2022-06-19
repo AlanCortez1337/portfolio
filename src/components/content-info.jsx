@@ -22,7 +22,7 @@ function Info({type}) {
 
     const scrollToContact = () => {
         window.scrollTo({
-            top: (10 * window.innerHeight),
+            top: 3650,
             behavior: "smooth"
         })
     }

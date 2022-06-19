@@ -17,7 +17,7 @@
   --greenHighlist: #02F1BD;
   --textColor: #f8f8f8;
   /* Scroll Bar Colors */
-  --scrollBarThumb: #444B74;
+  --scrollBarThumb: #576094;
   --scrollBarBackground: #1F7475;
   /* Font Sizes */
   --verySmallText: 12px;
@@ -95,7 +95,7 @@ body {
   align-items: flex-start;
   width: calc(100vw - calc(2 *(5vw + 3vh)));
   height: 100%;
-  gap: 5vh;
+  gap: 60px;
   position: relative;
   left: calc(5vw + 3vh);
   z-index: 2;
@@ -309,16 +309,16 @@ body {
   background-image: url("/assests/memoryGameDemo.gif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: 50% 0%;
+  background-position: 0%;
   border-radius: 25px;
 }
 /* Food Tinder Gif */
 .bg-2 {
   width: 100%;
+  position: relative;
   background-image: url("/assests/foodTinderDemo.gif");
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-size: 100% 100%;
   border-radius: 25px;
 }
 .wave-4-svg {
@@ -419,7 +419,7 @@ body {
   /* Hero Section */
   .blurp-hero {
     align-items: center;
-    gap: 8vh;
+    gap: 80px;
   }
   .blurp-hero > *:nth-child(odd) {
     position: relative;
@@ -503,7 +503,6 @@ body {
     font-size: var(--smallMediumText);
     grid-column: 2 / span 2;
     grid-row: 2;
-    /* height: 110px; */
   }
   .contact-me-button {
     grid-column: 3;
@@ -596,11 +595,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0fr 0fr repeat(2, 1fr);
   }
-  .project-title {
-    grid-column: span 2;
-  }
-  .small-info {
-    grid-row: 2;
+  .project-title, .small-info {
     grid-column: span 2;
   }
   .project-card {
@@ -609,7 +604,7 @@ body {
   .project-grid > *:nth-child(5) {
     grid-column: span 2;
     justify-self: center;
-    width: calc(55vw - 100px);
+    width: calc(100% - 40vw);
   }
   .hover-effect a {
     left: 88%;
@@ -624,7 +619,9 @@ body {
   }
   .contact-blurp p {
     font-size: var(--mediumLargeText);
+    align-self: end;
     width: 440px;
+    top: 92px;
   }
   .contact-me-button {
     justify-self: center;
@@ -635,8 +632,106 @@ body {
     height: 80px;
   }
   .github-badge, .resume-badge {
+    width: 4em;
+    height: 4em;
+  }
+  .github-badge > *, .resume-badge > * {
+    width: 4em;
+    height: 4em;
+  }
+  .linkedIn-badge {
+    align-self: center;
+    justify-self: start;
+    width: 5em;
+    height: 5em;
+  }
+  .linkedIn-badge > * {
+    width: 5em;
+    height: 5em;
+  }
+  .contact-blurp footer {
+    justify-self: start;
+    width: auto;
+    bottom: 25px;
+  }
+  .wave-5-svg {
+    bottom: 50px;
+  }
+  .wave-6-svg {
+    bottom: -20px;
+    left: -100px;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1700px) {
+  /* Hero Section */
+  .blurp-hero {
+    width: calc(100vw - calc(8 * (5vw + 3vh)));
+  }
+  /* Project Section */
+  .project-grid {
+    width: calc(100% - 16vw);
+    margin: 50px 8vw;
+    gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0fr 0fr 1fr;
+  }
+  .project-title, .small-info {
+    grid-column: span 3;
+  }
+  .project-card {
+    height: 375px;
+  }
+  .project-grid > *:nth-child(5) {
+    grid-column: span 1;
+    justify-self: unset;
+    width: auto;
+  }
+  .hover-effect a {
+    left: 85%;
+  }
+  .wave-4-svg {
+    bottom: -725px;
+    right: 0px;
+  }
+  /* Contact Section */
+  .contact {
+    height: 1000px;
+  }
+  .contact-blurp {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .contact-blurp h3 {
+    grid-column: 4 / span 1;
+    justify-self: center;
+  }
+  .contact-blurp p {
+    font-size: var(--mediumLargeText);
+    grid-column: 4 / span 1;
+    align-self: end;
+    width: 440px;
+    top: 92px;
+  }
+  .contact-me-button {
+    justify-self: center;
+    grid-column: 4;
+    height: 80px;
+  }
+  .contact-me-button button {
+    font-size: var(--largeText);
+    height: 80px;
+  }
+  .github-badge, .resume-badge {
     width: 6em;
     height: 6em;
+  }
+  .github-badge {
+    grid-column: 2;
+  }
+  .resume-badge {
+    justify-self: center;
+    align-self: start;
+    grid-row: 3;
   }
   .github-badge > *, .resume-badge > * {
     width: 6em;
@@ -645,6 +740,8 @@ body {
   .linkedIn-badge {
     align-self: center;
     justify-self: start;
+    grid-column: 3;
+    grid-row: 2 / span 2;
     width: 7em;
     height: 7em;
   }
@@ -655,17 +752,13 @@ body {
   .contact-blurp footer {
     justify-self: start;
     width: auto;
-    top: -20px;
+    bottom: 25px;
   }
   .wave-5-svg {
-    bottom: -160px;
+    bottom: 10px;
   }
   .wave-6-svg {
     bottom: -20px;
-    left: -100px;
+    left: 0px;
   }
-}
-/* Desktop */
-@media screen and (min-width: 1700px) {
-  
 }
