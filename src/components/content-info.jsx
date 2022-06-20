@@ -1,7 +1,6 @@
 import Badge from "./badges"
 import { motion } from "framer-motion"
 import { IoDocumentText, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
-import '../App.css'
 
 function Info({type}) {
     const waveBounce = {
