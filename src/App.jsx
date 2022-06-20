@@ -11,9 +11,9 @@ function App() {
     <>
       <section className="hero">
         {/* Includes welcome bubbles */}
-        <Suspense fallback={<div>Loading Hero Section Information</div>}>
+        {/* <Suspense fallback={<div>Loading Hero Section Information</div>}> */}
           <Blurp type={'hero'}/>
-        </Suspense>
+        {/* </Suspense> */}
         <Wave shape={1}></Wave>
         <Wave shape={2}></Wave>
       </section>
@@ -22,7 +22,9 @@ function App() {
         <Suspense fallback={<div>Loading About Section Information</div>}>
           <Blurp type={'about'}/> 
         </Suspense>
-        <Wave shape={3}></Wave>
+        <Suspense fallback={<div>woosh woosh wave loading</div>}>
+          <Wave shape={3}></Wave>
+        </Suspense>
       </section>
       <section className="projects">
         <div className="project-grid">
@@ -44,14 +46,20 @@ function App() {
             <Card type={2}/>
           </Suspense>
         </div>
+        <Suspense fallback={<div>woosh woosh wave loading</div>}>
+        </Suspense>
         <Wave shape={4}></Wave>
       </section>
       <section className="contact">
         <Suspense fallback={<div>Loading Contact Section Information</div>}>
           <Blurp type={'contact'}/>
         </Suspense>
-        <Wave shape={5}></Wave>
-        <Wave shape={6}></Wave>
+        <Suspense fallback={<div>woosh woosh wave loading</div>}>
+          <Wave shape={5}></Wave>
+        </Suspense>
+        <Suspense fallback={<div>woosh woosh wave loading</div>}>
+          <Wave shape={6}></Wave>
+        </Suspense>
       </section>
     </>
   )
