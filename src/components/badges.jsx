@@ -36,7 +36,7 @@ function BadgeImage({badgeName}) {
                     whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
-                    src={MeBadge} alt="me" className="badge badge1" width={225} height={225} 
+                    src={MeBadge} alt="mebadge" loading="lazy" className="badge badge1" width={225} height={225} 
                 />
             }
             {badgeName === "lua" && 
@@ -46,7 +46,7 @@ function BadgeImage({badgeName}) {
                     whileHover={{scale: 1.2}}
                     whileTap={{scale: 0.8}}
                     transition={badgeBounce}
-                    src={LuaBadge} alt="me" className="badge" width={175} height={175} 
+                    src={LuaBadge} alt="luabadge" loading="lazy" className="badge" width={175} height={175} 
                 />
             }
             {badgeName === "bread" && 
@@ -56,7 +56,7 @@ function BadgeImage({badgeName}) {
                     whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
-                    src={BreadBadge} alt="me" className="badge" width={225} height={225} 
+                    src={BreadBadge} alt="breadBadge" loading="lazy" className="badge" width={225} height={225} 
                 />
             }
             {badgeName === "dnd" && 
@@ -66,7 +66,7 @@ function BadgeImage({badgeName}) {
                     whileHover={{scale: 1.2}}
                     whileTap={{scale: 0.8}}
                     transition={badgeBounce}
-                    src={DndBadge} alt="me" className="badge" width={150} height={150} 
+                    src={DndBadge} alt="dndBadge" loading="lazy" className="badge" width={150} height={150} 
                 />
             }
             {badgeName === "linkedin" && 
