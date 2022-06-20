@@ -296,7 +296,7 @@ body {
 .bg-0 {
   width: 100%;
   position: relative;
-  background-image: url("/assests/discordBotDemo.gif");
+  background-image: url("/assests/discordBotDemo.webp");
   background-repeat: no-repeat;
   background-size: 150% 150%;
   background-position: 0% 100%;
@@ -306,7 +306,7 @@ body {
 .bg-1 {
   width: 100%;
   position: relative;
-  background-image: url("/assests/memoryGameDemo.gif");
+  background-image: url("/assests/memoryGameDemo.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 0%;
@@ -316,7 +316,7 @@ body {
 .bg-2 {
   width: 100%;
   position: relative;
-  background-image: url("/assests/foodTinderDemo.gif");
+  background-image: url("/assests/foodTinderDemo.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 25px;
