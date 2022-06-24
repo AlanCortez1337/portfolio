@@ -16,7 +16,6 @@ function ProjCard({type}) {
             title: " Bot",
             blurp: "My goal with this passion project was to annoy my friends to the maximum. My GitHub repository shows all the different features I have implemented.",
             link: "https://github.com/AlanCortez1337/Discord-Bot-Python",
-            gif: DiscordBotDemo,
             imgAltName: "discord bot demo project",
             yBoundry: "-20px",
             rotate: "3deg"
@@ -26,7 +25,6 @@ function ProjCard({type}) {
             title: "Memory ",
             blurp: "This is my first finished React project which is a memory card game with funny animals. Additional information about this project is found in my GitHub repository.",
             link: "https://github.com/AlanCortez1337/Memory-Mania",
-            gif: MemoryGameDemo,
             imgAltName: "memory game demo project",
             yBoundry: "40px",
             rotate: "-2deg"
@@ -36,7 +34,6 @@ function ProjCard({type}) {
             title: "Food ",
             blurp: "In collaboration with my ACM club, we developed a Tinder clone for food. My contributions were the \"create post\" page, nav bar, and assisting in the login screen of Food Tinder.",
             link: "https://github.com/acmCSUFDev/Food-Tinder",
-            gif: FoodTinderDemo,
             imgAltName: "food tinder demo project",
             yBoundry: "20px",
             rotate: "2deg"
@@ -65,11 +62,34 @@ function ProjCard({type}) {
                 animate={{y: projects[type].yBoundry}}
                 whileHover={{ y: "0px", rotate: 0}}
                 transition={yTransition}
-                // onHoverEnd={changeVisibility}
                 onClick={changeVisibility}
                 className={`project-card  bg-${type}`}
             >
-                <img src={projects[type].gif} alt={projects[type].imgAltName} loading="lazy" className="bg-Image"/>
+                {/* Background Gifs */}
+                {type === 0 && 
+                    <img 
+                        src={DiscordBotDemo} 
+                        alt={projects[type].imgAltName} 
+                        loading="lazy" 
+                        className="bg-Image"
+                    />
+                }
+                {type === 1 && 
+                    <img 
+                        src={MemoryGameDemo} 
+                        alt={projects[type].imgAltName} 
+                        loading="lazy" 
+                        className="bg-Image"
+                    />
+                }
+                {type === 2 && 
+                    <img 
+                        src={FoodTinderDemo} 
+                        alt={projects[type].imgAltName} 
+                        loading="lazy" 
+                        className="bg-Image"
+                    />
+                }
                 <AnimatePresence>
                     {isVisible ? 
                         <motion.h3
@@ -78,7 +98,6 @@ function ProjCard({type}) {
                             animate={{opacity: 1}}
                             exit={{opacity: 0}}
                             transition={{duration: 0.75, ease: "easeInOut"}}
-                            // onHoverStart={changeVisibility} 
                             className="title-card"
                         >
                                 {type === 0 && <SiDiscord size={"1.25em"}/>}
