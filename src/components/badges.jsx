@@ -77,6 +77,7 @@ function BadgeImage({badgeName}) {
                     whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
+                    aria-label="LinkedIn"
                     className="linkedIn-badge bright-green-bubble"
                     >
                     <IoLogoLinkedin 
@@ -93,6 +94,7 @@ function BadgeImage({badgeName}) {
                     whileHover={{scale: 0.8}}
                     whileTap={{scale: 1.1}}
                     transition={badgeBounce}
+                    aria-label="GitHub Profile"
                     className="github-badge bright-green-bubble"
                 >
                     <IoLogoGithub 
@@ -104,12 +106,13 @@ function BadgeImage({badgeName}) {
             } 
             {badgeName === "resume" && 
                 <motion.a
-                    href="https://www.youtube.com/shorts/k8LnKGWmNTk?&ab_channel=1980sGamer"
+                    href="https://docs.google.com/document/d/1WgFxvm5z1IBIdMeri4NDSyZzI855fQZRAZP5GZUopmc/edit?usp=sharing"
                     initial={{borderRadius: '50px'}}
                     animate={{rotate: 360, y: '-40px', borderRadius: '20px'}}
                     whileHover={{scale: 1.3}}
                     whileTap={{scale: 0.8}}
                     transition={badgeBounce}
+                    aria-label="Resume"
                     className="resume-badge bright-green-bubble"
                 >
                     <IoDocumentText 

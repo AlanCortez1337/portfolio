@@ -9,12 +9,13 @@
   --purple2: #3B617D;
   --purple1: #464D77;
   /* Complementary Colors */
+  --greenBubbleBackground: #09B796;
   --purpleCard: #4A7A9D;
   --purpleCardSemiTransparent: rgba(74, 122, 157, 0.75);
   --purpleCardBorder: #426E8D;
   --purpleBubbleBorder: #4f588a;
   --purple1shadow: #626daa;
-  --greenHighlist: #02F1BD;
+  --greenHighlist: #23FDCE;
   --textColor: #f8f8f8;
   /* Scroll Bar Colors */
   --scrollBarThumb: #576094;
@@ -56,8 +57,8 @@ body {
 }
 /* text bubbles */
 .bright-green-bubble {
-  background-color: var(--green1);
-  border: var(--green2) 5px solid;
+  background-color: var(--greenBubbleBackground);
+  border: var(--green1) 5px solid;
   padding: 15px;
 }
 .bright-green-bubble-inverse {
@@ -357,7 +358,6 @@ body {
   font-size: var(--smallMediumText);
   font-weight: 600;
   text-align: center;
-  background-color: var(--green1);
   padding: 25px;
   border-radius: 50px 30px;
   justify-self: center;

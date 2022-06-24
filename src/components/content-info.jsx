@@ -195,13 +195,22 @@ function Info({type}) {
                         animate={{y: ['0px', '-15px']}}
                     >
                         <div className="mobile-socials">
-                            <a href="https://www.youtube.com/shorts/k8LnKGWmNTk?&ab_channel=1980sGamer">
+                            <a 
+                                href="https://docs.google.com/document/d/1WgFxvm5z1IBIdMeri4NDSyZzI855fQZRAZP5GZUopmc/edit?usp=sharing"
+                                aria-label="Resume"
+                            >
                                 <IoDocumentText size={"2em"}/>
                             </a>
-                            <a href="https://github.com/AlanCortez1337">
+                            <a 
+                                href="https://github.com/AlanCortez1337"
+                                aria-label="GitHub Profile"
+                            >
                                 <IoLogoGithub size={"2em"}/>
                             </a>
-                            <a href="https://www.linkedin.com/in/alancortez1337/">
+                            <a 
+                                href="https://www.linkedin.com/in/alancortez1337/" 
+                                aria-label="LinkedIn"
+                            >
                                 <IoLogoLinkedin size={"2em"}/>
                             </a>
                         </div>
