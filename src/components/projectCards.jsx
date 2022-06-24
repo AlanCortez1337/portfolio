@@ -2,9 +2,9 @@ import { IoGameController, IoLogoGithub } from "react-icons/io5";
 import { SiTinder, SiDiscord } from "react-icons/si";
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import DiscordBotDemo from "/assests/DiscordBotDemo.gif"
-import MemoryGameDemo from "/assests/MemoryGameDemo.gif"
-import FoodTinderDemo from "/assests/FoodTinderDemo.gif"
+import DiscordBotDemo from "/assests/discordBotDemo.gif"
+import MemoryGameDemo from "/assests/memoryGameDemo.gif"
+import FoodTinderDemo from "/assests/foodTinderDemo.gif"
 
 
 function ProjCard({type}) {
