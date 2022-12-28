@@ -2,14 +2,22 @@
 import Wave from "./components/waves"
 import Blurp from "./components/content-info"
 import Card from "./components/projectCards"
-// const Blurp = React.lazy(() => import('./components/content-info'))
-// const Card = React.lazy(() => import('./components/projectCards'))
+import Modal from "./components/modal"
+import { useState } from "react"
+import { AnimatePresence } from "framer-motion"
 
 
 function App() {
 
+  const [modalOpen, setModalOpen] = useState(true)
+
+  const close = () => setModalOpen(false);
+
   return (
     <>
+      <AnimatePresence initial={false} exitBeforeEnter={true}>
+        {modalOpen && <Modal isOpen={close}/> }
+      </AnimatePresence>
       <section className="hero">
         {/* Includes welcome bubbles */}
         {/* <Suspense fallback={<div>Loading Hero Section Information</div>}> */}

@@ -55,6 +55,66 @@ body {
   overflow-x: hidden;
   background: var(--green1);
 }
+/* Modal */
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc(100vw - 20%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding: 0 10%;
+}
+.modal {
+  padding: 30px 40px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: var(--purple1);
+  border: 10px solid black;
+  box-shadow: 5px 5px black;
+}
+.modal-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal h1 {
+  font-size: 24px;
+  text-align: center;
+}
+.modal p {
+  font-size: 18px;
+  text-align: center;
+}
+.modal a {
+  color: var(--greenHighlist);
+  font-weight: 700;
+}
+.modal button {
+  font-weight: 600;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: var(--greenHighlist);
+  border: 5px solid black;
+  box-shadow: 5px 5px black;
+  color: black;
+  transition: all 450ms ease-in-out;
+}
+.modal button:hover {
+  transform: scale(1.1);
+  box-shadow: 12px 12px black;
+}
+
 /* text bubbles */
 .bright-green-bubble {
   background-color: var(--greenBubbleBackground);
@@ -391,6 +451,24 @@ body {
 @media screen and (min-width: 740px) {
   body {
     --titleText: 50px;
+  }
+  /* Modal */
+  .backdrop {
+    width: calc(100vw - 20%);
+    padding: 0 10%;
+  }
+  .modal h1 {
+    font-size: 48px;
+  }
+  .modal p {
+    font-size: 24px;
+  }
+  .modal button {
+    font-size: 24px;
+    font-weight: 700;
+    background-color: var(--greenHighlist);
+    border: 5px solid black;
+    box-shadow: 5px 5px black;
   }
   /* Hero Section */
   .blurp-hero {
